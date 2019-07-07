@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <com.jaribha.customviews.fonts.FontTextView
+        app:font="Lato-Regular.ttf"
+        android:id="@+id/noRewards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:textSize="20sp"
+        android:text="No Records Found!" />
+
+    <ListView
+        android:id="@+id/rewardsList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/screen_margin_portrait"
+        android:layout_marginRight="@dimen/screen_margin_portrait"
+        android:dividerHeight="@dimen/value10"
+        tools:listitem="@layout/rewards_screen_item" />
+
+</RelativeLayout>

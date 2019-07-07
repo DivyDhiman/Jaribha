@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/value10"
+        android:layout_marginLeft="@dimen/value20"
+        android:layout_marginTop="@dimen/value20"
+        android:orientation="horizontal">
+
+        <com.jaribha.customviews.BezelImageView
+            android:id="@+id/profileImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/user_pic"
+            app:borderDrawable="@drawable/border_drawable"
+            app:maskDrawable="@drawable/circle_mask" />
+
+        <LinearLayout
+            android:id="@+id/layout_edit_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/value20"
+            android:layout_toRightOf="@+id/profileImage"
+            android:orientation="vertical">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/app_name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/md_white_1000"
+                app:font="Lato-Regular.ttf" />
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:id="@+id/tv_edit_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/edit_profile"
+                android:textColor="@color/md_white_1000"
+                app:font="Lato-Regular.ttf" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:layout_above="@+id/bottom"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/mainContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/value20"
+                android:layout_marginRight="@dimen/value40"
+                android:background="@drawable/line_space"
+                android:visibility="gone" />
+
+            <com.jaribha.customviews.ExpandableHeightListView
+                android:id="@+id/listView_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/value130"
+                android:divider="@color/transparent"
+                android:scrollbars="none" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/value20"
+                android:layout_marginRight="400dp"
+                android:background="@drawable/line_space" />
+
+            <com.jaribha.customviews.ExpandableHeightListView
+                android:id="@+id/listView_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/value130"
+                android:layout_marginTop="@dimen/value5"
+                android:divider="@color/transparent"
+                android:scrollbars="none" />
+
+            <ImageView
+                android:id="@+id/footerLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/value20"
+                android:layout_marginRight="400dp"
+                android:background="@drawable/line_space" />
+
+            <!--<include layout="@layout/drawer_footer" />-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="@dimen/value45"
+        android:paddingTop="5dp">
+
+        <com.jaribha.customviews.fonts.FontTextView
+            android:id="@+id/tv_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/value30"
+            android:drawableLeft="@drawable/ic_menu_setting"
+            android:drawablePadding="12dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/value10"
+            android:paddingTop="@dimen/value10"
+            android:text="@string/action_settings"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/md_white_1000"
+            android:visibility="visible"
+            app:font="Lato-Regular.ttf" />
+
+        <com.jaribha.customviews.fonts.FontTextView
+            android:id="@+id/tv_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_menu_logout"
+            android:drawablePadding="12dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/value10"
+            android:paddingTop="@dimen/value10"
+            android:text="Logout"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/md_white_1000"
+            android:visibility="visible"
+            app:font="Lato-Regular.ttf" />
+
+    </LinearLayout>
+</RelativeLayout>

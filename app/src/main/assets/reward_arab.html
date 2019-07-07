@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<style>
+    /* Webfont: Lato-Black */@font-face {
+        font-family: 'LatoWebBlack';
+        src: url('fonts/Lato-Black.eot'); /* IE9 Compat Modes */
+        src: url('fonts/Lato-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('fonts/Lato-Black.woff2') format('woff2'), /* Modern Browsers */
+        url('fonts/Lato-Black.woff') format('woff'), /* Modern Browsers */
+        url('fonts/Lato-Black.ttf') format('truetype');
+        font-style: normal;
+        font-weight: normal;
+        text-rendering: optimizeLegibility;
+    }
+
+/* Webfont: Lato-BlackItalic */@font-face {
+    font-family: 'LatoWebBlack';
+    src: url('fonts/Lato-BlackItalic.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-BlackItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Lato-BlackItalic.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Lato-BlackItalic.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Lato-BlackItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-Bold */@font-face {
+    font-family: 'LatoWebBold';
+    src: url('fonts/Lato-Bold.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Lato-Bold.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Lato-Bold.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Lato-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-BoldItalic */@font-face {
+    font-family: 'LatoWebBold';
+    src: url('fonts/Lato-BoldItalic.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Lato-BoldItalic.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Lato-BoldItalic.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Lato-BoldItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-Hairline */@font-face {
+    font-family: 'LatoWebHairline';
+    src: url('fonts/Lato-Hairline.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-Hairline.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Lato-Hairline.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Lato-Hairline.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Lato-Hairline.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-HairlineItalic */@font-face {
+    font-family: 'LatoWebHairline';
+    src: url('fonts/Lato-HairlineItalic.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-HairlineItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Lato-HairlineItalic.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Lato-HairlineItalic.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Lato-HairlineItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-Heavy */@font-face {
+    font-family: 'LatoWebHeavy';
+    src: url('fonts/Lato-Heavy.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-Heavy.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Lato-Heavy.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Lato-Heavy.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Lato-Heavy.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-HeavyItalic */@font-face {
+    font-family: 'LatoWebHeavy';
+    src: url('fonts/Lato-HeavyItalic.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-HeavyItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Lato-HeavyItalic.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Lato-HeavyItalic.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Lato-HeavyItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-Italic */@font-face {
+    font-family: 'LatoWeb';
+    src: url('fonts/Lato-Italic.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Lato-Italic.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Lato-Italic.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Lato-Italic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-Light */@font-face {
+    font-family: 'LatoWebLight';
+    src: url('fonts/Lato-Light.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Lato-Light.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Lato-Light.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Lato-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-LightItalic */@font-face {
+    font-family: 'LatoWebLight';
+    src: url('fonts/Lato-LightItalic.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-LightItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Lato-LightItalic.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Lato-LightItalic.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Lato-LightItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-Medium */@font-face {
+    font-family: 'LatoWebMedium';
+    src: url('fonts/Lato-Medium.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Lato-Medium.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Lato-Medium.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Lato-Medium.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-MediumItalic */@font-face {
+    font-family: 'LatoWebMedium';
+    src: url('fonts/Lato-MediumItalic.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-MediumItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Lato-MediumItalic.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Lato-MediumItalic.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Lato-MediumItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-Regular */@font-face {
+    font-family: 'LatoWeb';
+    src: url('fonts/Lato-Regular.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Lato-Regular.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Lato-Regular.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Lato-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-Semibold */@font-face {
+    font-family: 'LatoWebSemibold';
+    src: url('fonts/Lato-Semibold.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Lato-Semibold.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Lato-Semibold.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Lato-Semibold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-SemiboldItalic */@font-face {
+    font-family: 'LatoWebSemibold';
+    src: url('fonts/Lato-SemiboldItalic.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-SemiboldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Lato-SemiboldItalic.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Lato-SemiboldItalic.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Lato-SemiboldItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-Thin */@font-face {
+    font-family: 'LatoWebThin';
+    src: url('fonts/Lato-Thin.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Lato-Thin.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Lato-Thin.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Lato-Thin.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-ThinItalic */@font-face {
+    font-family: 'LatoWebThin';
+    src: url('fonts/Lato-ThinItalic.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-ThinItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Lato-ThinItalic.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Lato-ThinItalic.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Lato-ThinItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+	direction:rtl;
+}
+.timeline-body p {color: #fff;}
+
+.heade {background: #ddd;}
+.topheading h2 {text-align: left;color: #ec6d5e;}
+.topheading h3 {font-size: 16px;margin-bottom: 30px;text-align: left;}
+
+.middle h2{color:#22A8C4;}
+
+ul.rig {
+    font-size: 0;
+    list-style: outside none none;
+    margin: 0 auto;
+    text-align: center;
+    padding: 6% 0;
+}
+ul.rig li {
+    display: inline-block;
+    background: #fff;
+    vertical-align: top;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+ul.rig li img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 0 10px;
+}
+ul.rig li h3 {
+    margin: 0 0 5px;
+    text-align: center;
+    color:#22A8C4;
+    line-height: 30px;
+}
+ul.rig li p {
+    color: #000;
+    font-size: 16px;
+    line-height: 20px;
+}
+.mid.bottom {
+    background: #e9e9e9 none repeat scroll 0 0;
+    clear: both;
+    display: block;
+    margin: 3% 0;
+    padding: 3% 0;
+    text-align: center;
+}
+.mid.bottom > h3 {
+    color: #22badc;
+    font-size: 20px;
+    margin: 15px 0 10px;
+}
+.last .col-md-12 {
+    border-bottom: 10px solid #e9e9e9;
+}
+
+.last h4 {color: #22a8c4;font-size: 20px;}
+
+@media screen and (max-width: 1920px) {
+
+}
+
+@media screen and (max-width: 1600px) {
+.timeline li .timeline-panel {background: #C79213;width: 45%;}
+.noclear {clear: none !important;top: -3em;}
+.timeline-inverted.secondlast {top: 0;}
+.nclear{clear:none;text-align: center;top: 5em;}
+.timeline-inverted.last {top: 5em;}
+.noclear.last {top: -5em;}
+.nclear p {padding: 10px 25%;}
+}
+
+
+@media screen and (max-width: 1280px) {
+    .timeline li .timeline-panel {width: 47%;}
+}
+
+@media screen and (max-width: 1024px) {
+    .timeline li .timeline-panel {width: 43%;}
+    .timeline {width: 95%;}
+    .noclear.last {top: -3em;}
+}
+
+
+@media screen and (max-width: 800px) {
+    .timeline li .timeline-panel {width: 45%;}
+    .timeline > li > .timeline-panel::before {top: 115px;}
+    .timeline > li > .timeline-panel::after {top: 116px;}
+    .timeline > li > .timeline-badge {top: 115px;}
+}
+
+@media screen and (max-width: 768px) {
+    .timeline li .timeline-panel {width: 40%;}
+    .timeline > li > .timeline-panel::before {top: 26px;}
+    .timeline > li > .timeline-panel::after {top: 25px;}
+    .timeline li .timeline-panel {min-height: auto;}
+    .timeline > li > .timeline-badge {top: 60px;}
+    .noclear.last {top: -6em;}
+    .container{padding: 0 25px;}
+
+    ul.rig {float: left;}
+    ul.rig li img {
+    float: left;
+    height: auto;
+    margin: 3% 2% 2%;
+    max-width: 100%;
+    vertical-align: inherit;
+}
+ul.rig li {
+    border-bottom: 1px solid #ccc;
+    display: block;
+    float: left;
+    width: 100%;
+}
+   ul.rig li h3 {
+    color: #22a8c4;
+    line-height: 30px;
+    margin: 34px 0 5px;text-align: left;}
+    ul.rig li p {text-align: left;}
+}
+
+@media screen and (max-width: 736px) {
+    .timeline li .timeline-panel {width: 45%;}
+    .timeline-title {font-size: 12px;}
+    .noclear.last {top: -5em;}
+}
+
+@media screen and (max-width: 667px) {
+    .timeline li .timeline-panel {width: 44%;}
+    .timeline > li > .timeline-panel::before {top: 25px;}
+    .timeline > li > .timeline-panel::after {top: 26px;}
+    .timeline > li > .timeline-badge {top: 58px;}
+    .noclear.last {top: -6em;}
+}
+
+
+@media screen and (max-width: 640px) {
+    .timeline li .timeline-panel {width: 37%;}
+    .timeline > li > .timeline-panel::after {top: 26px;}
+    .timeline > li > .timeline-panel::before {top: 25px;}
+    .timeline > li > .timeline-badge {top: 55px;}
+}
+
+@media screen and (max-width: 600px) {
+    .timeline li .timeline-panel {width: 43%;}
+
+}
+
+
+@media screen and (max-width: 568px) {
+ul.rig li img {
+    float: left;
+    height: auto;
+    margin: 16px 5% 6% 0;
+    max-width: 100%;
+    vertical-align: inherit;
+}
+ul.rig li h3 {font-size: 20px;}
+ul.rig li p {font-size: 14px;}
+.mid.bottom {
+    padding: 3% 15px;
+    text-align: left;
+}
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .topheading h2 {font-size: 26px;}
+    .noclear.last {top: -93px;}
+.container {
+    padding: 0 10px;
+}
+.h2, h2 {
+    font-size: 24px;
+}
+
+}
+
+@media screen and (max-width: 414px) {
+    .timeline li .timeline-panel {width: 42%;}
+    .timeline-title {font-size: 13px;}
+    .noclear.last {top: -136px;}
+    .container {padding: 0 10px;}
+    .topheading h2 {
+    font-size: 22px;
+}
+.h2, h2 {
+    font-size: 22px;
+}
+ul.rig li h3 {
+    font-size: 14px;
+    line-height: 16px;}
+    ul.rig li img {
+    max-width: 30%;}
+    ul.rig li p {
+    font-size: 12px;
+    line-height: 16px;
+}
+.topheading h3 {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 16px;
+}
+}
+
+
+
+@media screen and (max-width: 320px) {
+.timeline > li > .timeline-badge {line-height: 24px;}
+.timeline > li > .timeline-badge {
+    font-size: 16px;
+    height: 25px;
+    left: 50%;
+    line-height: 24px;
+    margin-left: -11px;
+    position: absolute;
+    text-align: center;
+    width: 25px;
+}
+.noclear {top: -92px;}
+.noclear.last {top: -200px;}
+.nclear p {padding: 10px 8%;}
+}
+    </style>
+</head>
+<body>
+    <div class="container heade">
+        <div class="container topheading">
+            <h2>كيف يمكنني ان انشأ مكافأة؟</h2>
+            <h3>المكافآت هي دليل على التقدير المقدم من المنتجين لشكر جميع من ساهم في المشروع. ويجب ان تكون المكافآت مبتكرة ومادية وغير مبالغ فيها. ويجب ان تتصل المكافأت مرة اخرى بالمشروع. </h3>
+            <h5>على سبيل المثال، في حالة ان المشروع هو تصميم وانتاج ساعة يد جديدة، عندئذ احدى المكافأت يمكن ان تكون تقديم هذه الساعة، بالطبع وفقا لاختيار المنتج.</h5>
+        </div> 
+    </div>   
+    <div class="container"> 
+        <div class="container middle">  
+            <h2>كيفية انشاء مكافأة </h2>
+
+            إذا كان مشروعك هو منتج عندئذ يمكن للشخص الداعم لك ان يحصل على المنتج نفسه. ويمكنك حتى ان تشمل مذكرة شكر خاص او خطاب موقع. او يمكنك اختيار واحد او أكثر من التالي: 
+
+
+            <ul class="col-md-12 rig">
+                <li class="col-md-4">
+                    <img src="http://jaribha.inventmedia.info/jaribha/app/webroot/img/reward_creative_collaboration.png" />
+                    <h3>التعاون المبتكر</h3>
+                    <p>ان تجعل داعمك يظهر كجزء من مشروعك. على سبيل المثال كشخصية في الكتاب الذي يتم كتابته/نشره، لوحة شخصية او حتى اطلاق اسمه في اغنية.</p>
+                </li>
+                <li class="col-md-4">
+                    <img src="http://jaribha.inventmedia.info/jaribha/app/webroot/img/reward_creative_mementos.png" />
+                    <h3>التجارب المبدعة</h3>
+                    <p>يمكن لداعمك ان يحصل على فرصة للمشاركة في مسرحية وزيارة موقع فيلم او يتم منحه حفلة غنائية خاصة وعشاء مع المؤلف او المشاركة في عرض ازياء. </p>
+                </li>
+                <li class="col-md-4">
+                    <img src="http://jaribha.inventmedia.info/jaribha/app/webroot/img/reward_creative_experiences.png" />
+                    <h3>  التجارب المبدعة</h3>
+                    <p>يمكن لداعمك ان يحصل على فرصة للمشاركة في مسرحية وزيارة موقع فيلم او يتم منحه حفلة غنائية خاصة وعشاء مع المؤلف او المشاركة في عرض ازياء.</p>
+                </li>
+            </ul>
+
+            <div class="mid bottom">
+                
+                <h3>كافآت التسعير:</h3>
+
+وتأكد من عرض الجوائز التي سوف تفيد الشخص الداعم لك بنفس القدر الذي يمكنك الاستفادة منه. وتأكد من ان تجعلها جذابة وان تأخذ في الاعتبار ان الداعمين يقومون بدعمك لانهم يؤمنون بمشروعك وليس بسبب جوائزك.
+
+
+<h3>تسعير الجوائز يجب ان يتم بشكل عادل </h3>
+
+In the list below you can see the most common rewards that you may offer your Supporters.
+            </div>    
+        </div>
+        <div class="container last">
+           <div class="col-md-12">
+            <h4>فن</h4>
+											<ol>
+												<li> قطع فنية حصرية مع التوقيع </li>
+												<li>يجب ادراج اسم الداعم فى لوحة الداعمين التى سيتم عرضها فى باب الدخول فى صالة العرض الأولى. وبالاضافة الى ذلك، يجب مراسلة الداعمين عن طريق البريد الالكترونى وارسال صورة لوحة الداعمين لهم.  </li>
+												<li>تحديثات كاملة والقصة الكاملة وراء الحدث وصور شخصيات هامة جداً للحدث نفسه </li>
+												<li>دعوات لكل معرض فنى مستضاف</li>
+											</ol>
+           </div>
+           <div class="col-md-12">
+            <h4>رقص</h4>
+											<ol>
+                                                <li>أولوية الحجز لكل عرض راقص </li>
+                                                <li>يجب ادراج اسم الداعم فى الشكر والتقدير</li>
+                                                <li> نسخة دى فى دى من الأداء للداعمين ليطلعوا عما قد ساعدوا فى انشائه </li>
+                                                <li>دروس خاصة فى الرقص</li>
+                                                <li>بوسترات موقعة من الراقصين</li>
+                                                <li>ايماءة لفن الرقص تُنشأ فى عرض الرقص على شرف الداعم </li>
+                                                <li> أداء خاص للأصدقاء والعائلة من اختيارك </li>
+                                            </ol>
+           </div>
+		   <div class="col-md-12">
+            <h4>تصميم</h4>
+											<ol>
+                                                <li>بطاقات شكر تقدير خالص</li>
+                                                <li>تى-شيرت مصمم خصيصاً تحمل هذا التصميم</li>
+                                                <li>حزمة تتضمن تصميم المشروع مع توقيع بارز من الخلف، ستيكرز للتصميمات ومخطط بالتعلميات مكتمل الألوان وكتيب صغير يعنى بكيفية استخدامه</li>
+                                                <li>تحديثات سنوية للتصميم </li>
+                                                <li>سمات مخصصة مثل الألوان، النقوش والتعبئة</li>
+                                                <li>شحن مجانى لجميع أنحاء العالم</li>
+                                            </ol>
+           </div>
+		   
+           <div class="col-md-12">
+            <h4>موضة</h4>
+											<ol>
+                                                <li> فميص أو أعالى الصهاريج تحمل اسم/شعار المشروع </li>
+                                                <li>بطاقات شكر مع كتاب يبدو مطبوعاً من كل لقطة تصوير</li>
+                                                <li>معظم الأشياء التى تُباع كثيراً (فستان، بلوز، غطاء الرأس، تنورة)</li>
+                                                <li>فساتين مصممة خصيصاً لأحداث خاصة</li>
+                                                <li> أصناف موسمية ذات طبعات محدودة</li>
+                                                <li>بطاقة عضوية</li>
+                                                <li>دعوات لشخصيات هامة جداً لعروض وأحداث موضة حصرية "مقاعد امامية ومواقف مجانية للسيارات" </li>
+                                                <li> خصومات 10% على كافة المشتريات</li>
+                                                <li>الحصول على فرصة عمل مع المنشئين لتصميم مطبوعات مصممة خصيصاً. ببساطة يتم انتقاء قطعة واحدة من التشكيلة ونطبّق عليها طباعتنا الخاصة لجعلها تبدو فريدة وذات صلة بالمنشئين.</li>
+                                                <li>حضور معارض تصوير حصرية مع عارضين محترفين ومصورين</li>
+                                                <li>العمل على فكرة ذات تصميم محدد يمكن تطبيقها على التصميم ذاته وبنائها لك انت (الداعم) </li>
+                                                <li>شحن مجانى لجميع أنحاء العالم</li>
+                                            </ol>
+           </div>
+           <div class="col-md-12">
+            <h4>نشر</h4>
+											<ol>
+                                                <li>دعوة لحضور حفلة استقبال خاصة جداً لنشر الكتاب</li>
+                                                <li>قميص مصمم خصيصاً ""تى شيرت أسود أو ابيض يحمل صورة مطبوعة لغلاف الكتاب فى الواجهة وتوقيع المؤلف فى خلفية التى شيرت" </li>
+                                                <li>سيتلقى الداعمون نسخة من الكتاب</li>
+                                                <li>صفحة شكر خاصة داخل الكتاب مخصصة للداعمين</li>
+                                                <li>شحن مجانى لجميع أنحاء العالم</li>
+                                            </ol>
+           </div>
+           <div class="col-md-12">
+            <h4>تكنولوجيا</h4>
+											<ol>
+                                                <li>بطاقة شكر من أعضاء الفريق</li>
+                                                <li>سيتم ارسال تحديثات منتظمة واخر مستجدات التكنولوجيا عن طريق البريد الالكترونى</li>
+                                                <li>اجتماع شخصى مع مُنشئي التكنولوجيا للإجابة على كافة تساؤلاتكم ومساعدتكم بأية أفكار تمتلكونها يمكن ان تساعد فى الانتاج</li>
+                                                <li>شحن مجانى</li>
+                                                <li>حزمة تتضمن تكنولوجيا مع توقيع بارز، مخطط تعليمات بألوان كاملة ومرشد صغير بكيفية الاستعمال</li>
+                                                <li>كفالة مدى الحياة</li>
+                                            </ol>
+           </div>
+           <div class="col-md-12">
+            <h4>افلام وفيديو</h4>
+											<ol>
+                                                <li>نسخة من الــ"سى دى" للعرض الأول</li>
+                                                <li>زيارة من وراء الكواليس لكل عرض</li>
+                                                <li>تسمية شخصيات بعد بعض الداعمين</li>
+                                                <li>بوستر موقع من فريق وطاقم العمل</li>
+                                                <li>جولة لشخصيات هامة جداً للعرض الأول الحصرى "مواقف سيارات مجانية، مقاعد أمامية وزيارة خلف الكواليس".</li>
+                                                <li>دعوة للجلوس "خلف الكواليس" وحضور بروفة للعمل والتمتع بالتحدث مع فريق العمل والمخرج. </li>
+                                                <li>أداء خاص للأصدقاء والعائلة من اختيارك</li>
+                                            </ol>
+           </div>
+           <div class="col-md-12">
+            <h4>طعام</h4>
+											<ol>
+                                                <li>  قائمة موقعة من فريق العمل كإيماءة شكر </li>
+                                                <li> تلقى كتيب "بى دى اف" به +20 وصفة طعام</li>
+                                                <li> تلقى كتيب مطبوع لطريقة عمل 30+ وصفة أكل</li>
+                                                <li> تلقى كافة تحديثات المشروع</li>
+                                                <li> دروس خاصة فى الطهى</li>
+                                                <li> أولوية الحجز</li>
+                                                <li> حزمة شخصيات هامة جداً "مواقف مجانية للسيارات، 10% خصم و (1) حلوى من اختيارك" </li>
+                                                <li> ختيار اطباق بعد بعض الداعمين</li>
+                                                <li> سيتم ادراج أسماء الداعمين فى نهاية قائمة الطعام</li>
+                                                <li> دعوات لحضور أحداث خاصة</li>
+                                                <li> عشاء مجانى من أحدث قوائم الطعام</li>
+                                            </ol>
+           </div>
+           <div class="col-md-12">
+            <h4>موسيقى</h4>
+											<ol>
+                                                <li>سيتم تسليمكم سى دى موقَّع بالألبوم الجديد بالاضافة الى تى-شيرت (قميص) مطبوع عليه غلاف الألبوم.</li>
+                                                <li> اغنية مهداة لهؤلاء اللذين قدموا المساعدة والدعم </li>
+                                                <li> جهاز "آى بود" 16 جيجا جديد محمَّل عليه كافة أغانى الألبوم قبل تاريخ اطلاقه الرسمى</li>
+                                                <li> سيتم ادراج اسم الداعم فى صفحة الشكر والتقدير للألبوم. </li>
+                                                <li> تحديثات بأية أحداث وحفلات موسيقية عبر البريد الالكترونى </li>
+                                                <li> زيارات من وراء الكواليس وجولة لشخصيات هامة جداً </li>
+                                                <li> سيلفى مسرحى مع الفرقة الموسيقية /المغنى سيتم وضعه على صفحاتهم الرسمية على الانستجرام/الفيس بوك  </li>
+                                                <li> أداء خاص فى حفلة، منزل أو مدرسة لأصدقائك وعائلتك  </li>
+                                                <li> حضور أحداث خاصة لإظهار استمرار الود والدعم</li>
+                                                <li>  فيديو صغير وثائقى خلف الكواليس عن صنع الألبوم  </li>
+                                                <li> فيديو شكر من الفرقة الموسيقية/المغنى </li>
+                                            </ol>
+           </div>
+           <div class="col-md-12">
+            <h4>صور فوتوغرافية </h4>
+											<ol>
+                                                <li>مطبوعة واحدة موقَّعة لصور مفضلة لفنان من المشروع</li>
+                                                <li>نسخة موقعَّة لنموذج مصغر بالحجم الطبيعى لكتيب صور من المشروع </li>
+                                                <li> سيتم ادراج اسم الداعم وعرضه فى فاعليات الحدث </li>
+                                            </ol>
+           </div>
+           <div class="col-md-12">
+            <h4>ادوات تجميل </h4>
+											<ol>
+                                                <li> تسمية منتجات بعد اسم الداعم </li>
+                                                <li> دروس خصوصية مجانية </li>
+                                                <li>جلسة مكياج مجانية لعدد اثنين </li>
+                                                <li> 10% خصم على كافة منتجات الجمال لمدة عام </li>
+                                                <li> دعوات لحضور أحداث حصرية </li>
+                                            </ol>
+           </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

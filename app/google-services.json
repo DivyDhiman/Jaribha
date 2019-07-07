@@ -1,0 +1,72 @@
+{
+  "project_info": {
+    "project_id": "jaribha-1105",
+    "project_number": "296580390064",
+    "name": "Jaribha"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:296580390064:android:095d3d01b724173a",
+        "client_id": "android:com.jaribha",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.jaribha",
+          "certificate_hash": []
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "296580390064-kulnujrs6hkkleda8ho17q3770vse0m6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jaribha",
+            "certificate_hash": "8C89E4B173BE659A2154DB5CF7C3F7EF96D7F127"
+          }
+        },
+        {
+          "client_id": "296580390064-cbk69n25rjhrg2mgjbfe9qijl94ttr0a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jaribha",
+            "certificate_hash": "56F7370EB86CCC10108EC7314A428BC4FB955CF6"
+          }
+        },
+        {
+          "client_id": "296580390064-2t7gmaqnq0kjnafp3jh24nl928f3upns.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jaribha",
+            "certificate_hash": "62E75A7681F443608B555F6F8A7E94213BF965C1"
+          }
+        },
+        {
+          "client_id": "296580390064-861ens70pfj2sjk13cddio1vq74pqbbs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 2,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 2
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

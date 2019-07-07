@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/value15"
+                android:text="Making a dream, a reality..."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#32ABC6"
+                android:textStyle="italic|bold"
+                android:visibility="gone"
+                app:font="Lato-SemiboldItalic.ttf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_white_1000"
+                android:orientation="vertical"
+                android:padding="@dimen/value10">
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/value5"
+                    android:text="I wouldn't call it a hobby but a lifestyle."
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="italic|bold"
+                    android:visibility="gone"
+                    app:font="Lato-SemiboldItalic.ttf" />
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:id="@+id/storyDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:font="Lato-Regular.ttf" />
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/value15"
+                    android:text="The Beginning"
+                    android:visibility="gone"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#32ABC6"
+                    android:textStyle="bold"
+                    app:font="Lato-Semibold.ttf" />
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:layout_width="wrap_content"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:text="The kitchen remained largely unaffected by architectural advances throughout the Middle Ages; open fire remained the only method of heating food. European medieval kitchens were dark, smoky, and sooty places, whence their name. In European medieval cities around the 10th to 12th centuries, the kitchen still used an open fire hearth in the middle of the room. In wealthy homes, the ground floor was often used as a stable while the kitchen was located on the floor above, like the bedroom and the hall. In castles and monasteries, the living and working areas were separated; the kitchen was sometimes moved to a separate building, and thus could not serve anymore to heat the living rooms. In some castles the kitchen was retained in the same structure, but servants were strictly separated from nobles, by constructing separate spiral stone staircases for use of servants to bring food to upper levels. An extant example of such a medieval kitchen with servants' staircase is at Muchalls Castle in Scotland. In Japanese homes, the kitchen started to become a separate room within the main building at that time."
+                    app:font="Lato-Regular.ttf" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:paddingBottom="@dimen/value20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/value5">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/create_your_jaribha_account_now"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/md_red_500"
+                app:font="Lato-Regular.ttf" />
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/value5"
+                android:gravity="center"
+                android:text="@string/verify_your_account_in_the_next_few_steps"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:font="Lato-Bold_0.ttf" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/value45"
+            android:layout_marginRight="@dimen/value45"
+            android:layout_marginTop="@dimen/value10"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/value5">
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:text="@string/Aaccount_information"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/title_colors"
+                        app:font="Lato-Regular.ttf" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.jaribha.customviews.fonts.FontEditText
+                            android:id="@+id/edt_account_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:hint="@string/account_number"
+                            android:inputType="text"
+                            android:maxLength="15"
+                            android:textColorHint="@color/md_grey_400"
+                            app:font="Lato-Regular.ttf" />
+
+                        <com.jaribha.customviews.fonts.FontEditText
+                            android:id="@+id/edt_swift_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:hint="@string/swift_number"
+                            android:inputType="text"
+                            android:maxLength="15"
+                            android:textColorHint="@color/md_grey_400"
+                            app:font="Lato-Regular.ttf" />
+
+                        <com.jaribha.customviews.fonts.FontTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/value5"
+                            android:text="@string/swift_society_for_worldwide_interbank_financial"
+                            android:textColor="@color/md_grey_400"
+                            android:textStyle="italic"
+                            app:font="Lato-Italic.ttf" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value20"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/value5">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="5"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/title_colors"
+                            android:visibility="invisible" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/md_white_1000"
+                            android:orientation="vertical">
+
+                            <com.jaribha.customviews.fonts.FontEditText
+                                android:id="@+id/edt_name_of_bank"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:hint="@string/name_of_bank"
+                                android:inputType="text"
+                                android:textColorHint="@color/md_grey_400"
+                                app:font="Lato-Regular.ttf" />
+
+                            <com.jaribha.customviews.fonts.FontEditText
+                                android:id="@+id/edt_routing_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:hint="@string/routing_number_of_bank_IBAN"
+                                android:inputType="text"
+                                android:maxLength="20"
+                                android:textColorHint="@color/md_grey_400"
+                                app:font="Lato-Regular.ttf" />
+
+                            <com.jaribha.customviews.fonts.FontEditText
+                                android:id="@+id/edt_other_bank"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="top"
+                                android:hint="@string/any_other_bank_detail"
+                                android:inputType="text"
+                                android:minHeight="@dimen/value105"
+                                android:textColorHint="@color/md_grey_400"
+                                app:font="Lato-Regular.ttf" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.jaribha.customviews.fonts.FontButton
+                    android:id="@+id/btn_save_next_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value15"
+                    android:background="@drawable/main_button_red"
+                    android:text="@string/save_and_next"
+                    android:textAllCaps="false"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:font="Lato-Bold_0.ttf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.9"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/value10">
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/for_all_creators"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:font="Lato-Bold_0.ttf" />
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value5"
+                    android:text="@string/you_are_accountable_for_all_projects_registered"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/black"
+                    app:font="Lato-Regular.ttf" />
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value10"
+                    android:text="@string/for_all_returning_creators"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:font="Lato-Bold_0.ttf" />
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value5"
+                    android:text="@string/if_you_are_not_successful_in_reaching_your_project"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/black"
+                    app:font="Lato-Regular.ttf" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

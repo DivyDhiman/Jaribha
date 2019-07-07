@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_start_new_project"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <WebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/termsCheckBox" />
+
+            <com.jaribha.customviews.fonts.FontCheckBox
+                android:id="@+id/termsCheckBox"
+                style="@style/Widget.CheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/value5"
+                android:layout_marginLeft="@dimen/value20"
+                android:layout_marginRight="@dimen/value20"
+                android:layout_marginTop="@dimen/value5"
+                android:checked="false"
+                android:padding="@dimen/value10"
+                android:paddingLeft="@dimen/value10"
+                android:textColor="@color/black"
+                app:font="Lato-Regular.ttf" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.jaribha.customviews.fonts.FontButton
+        android:id="@+id/btn_start_new_project"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/main_button_red"
+        android:text="@string/startnew_project"
+        android:textAllCaps="false"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white"
+        app:font="Lato-SemiBold.ttf" />
+
+</RelativeLayout>

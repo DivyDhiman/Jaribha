@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+    <com.jaribha.customviews.fonts.FontTextView
+        app:font="Lato-Regular.ttf"
+        android:id="@+id/noSupporters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:textSize="20sp"
+        android:text="No Records Found!" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/value50"
+        android:layout_marginRight="@dimen/value50"
+        android:layout_marginTop="@dimen/value20"
+        android:background="@color/md_white_1000"
+        android:padding="@dimen/value10">
+
+        <ListView
+            android:id="@+id/supporterListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

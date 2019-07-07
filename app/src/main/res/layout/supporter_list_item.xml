@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/value20"
+        android:background="@color/md_white_1000"
+        android:padding="@dimen/value10">
+
+        <com.jaribha.customviews.BezelImageView
+            android:id="@+id/supportImage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/user_pic"
+            app:borderDrawable="@drawable/orange_border_drawable"
+            app:maskDrawable="@drawable/circle_mask" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/value10"
+            android:layout_marginRight="@dimen/value10"
+            android:layout_toLeftOf="@+id/supportType"
+            android:layout_toRightOf="@+id/supportImage"
+            android:orientation="vertical">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:id="@+id/supportName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                app:font="Lato-Semibold.ttf" />
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:id="@+id/supportTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/value5"
+                android:paddingTop="@dimen/value5"
+                android:singleLine="true"
+                android:textColor="@color/md_grey_500"
+                app:font="Lato-Regular.ttf" />
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:id="@+id/supportCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textStyle="bold"
+                app:font="Lato-Semibold.ttf" />
+        </LinearLayout>
+
+        <com.jaribha.customviews.fonts.FontTextView
+            android:id="@+id/supportType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold|italic"
+            app:font="Lato-SemiboldItalic.ttf" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

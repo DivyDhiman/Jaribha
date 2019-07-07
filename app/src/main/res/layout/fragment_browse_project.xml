@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value10"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line_space" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/recentlyLaunched"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/value10">
+
+        <com.jaribha.customviews.fonts.FontTextView
+            android:id="@+id/titleFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/icon_arrow_down"
+            android:text="@string/recently_launched"
+            android:textStyle="bold"
+            app:font="Lato-Bold_0.ttf" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.jaribha.customviews.fonts.FontTextView
+            android:id="@+id/noRecents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="No Project Found"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:font="Lato-Regular.ttf" />
+
+        <ListView
+            android:id="@+id/projectsList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/background"
+            android:dividerHeight="5dp"
+            tools:listitem="@layout/project_list_item_card_view" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

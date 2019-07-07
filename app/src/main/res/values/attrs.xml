@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Defines the custom XML attributes supported for a HorizontalListView -->
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+
+    <declare-styleable name="BezelImageView">
+        <attr name="maskDrawable" format="reference" />
+        <attr name="borderDrawable" format="reference" />
+        <attr name="desaturateOnPress" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="pstsTabSwitch" format="boolean" />
+        <attr name="pstsActivateTextColor" format="color" />
+        <attr name="pstsDeactivateTextColor" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="Typefaceable">
+        <attr name="font" format="string" />
+        <attr name="letterSpace" format="float" />
+        <attr name="textTransform">
+            <enum name="none" value="0" />
+            <enum name="uppercase" value="1" />
+            <enum name="lowercase" value="2" />
+        </attr>
+        <attr name="html" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ChatMessageView">
+        <attr name="cmv_showArrow" format="boolean" />
+        <attr name="cmv_arrowPosition" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="top" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+        <attr name="cmv_arrowGravity" format="enum">
+            <enum name="start" value="0" />
+            <enum name="center" value="1" />
+            <enum name="end" value="2" />
+        </attr>
+        <attr name="cmv_backgroundColor" format="color" />
+        <attr name="cmv_backgroundColorPressed" format="color" />
+        <attr name="cmv_cornerRadius" format="dimension" />
+        <attr name="cmv_contentPadding" format="dimension" />
+        <attr name="cmv_arrowMargin" format="dimension" />
+
+    </declare-styleable>
+
+</resources>

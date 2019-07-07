@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/value20"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/md_white_1000"
+            android:orientation="vertical"
+            android:padding="@dimen/value10">
+
+            <com.jaribha.customviews.fonts.FontEditText
+                android:id="@+id/edt_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"
+                android:hint="Full Name"
+                android:inputType="textCapWords"
+                android:padding="@dimen/value10"
+                android:paddingBottom="@dimen/value15"
+                android:textColorHint="@color/md_grey_800"
+                android:textSize="15sp"
+                app:font="Lato-Bold_0.ttf" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EBECEF" />
+
+
+            <com.jaribha.customviews.fonts.FontEditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"
+                android:hint="Email Id"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/value10"
+                android:paddingBottom="@dimen/value15"
+                android:textColorHint="@color/md_grey_800"
+                android:textSize="15sp"
+
+                app:font="Lato-Bold_0.ttf" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EBECEF" />
+
+
+            <com.jaribha.customviews.fonts.FontEditText
+                android:id="@+id/edt_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"
+                android:gravity="center|left"
+                android:hint="Telephone/ Mobile"
+                android:inputType="number"
+                android:padding="@dimen/value10"
+                android:paddingBottom="@dimen/value15"
+                android:textColorHint="@color/md_grey_800"
+                android:textSize="15sp"
+
+                app:font="Lato-Bold_0.ttf" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EBECEF" />
+
+
+            <com.jaribha.customviews.fonts.FontEditText
+                android:id="@+id/edt_fax_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"
+                android:hint="Fax Number (optional)"
+                android:inputType="number"
+                android:padding="@dimen/value10"
+                android:paddingBottom="@dimen/value15"
+                android:textColorHint="@color/md_grey_800"
+                android:textSize="15sp"
+
+                app:font="Lato-Bold_0.ttf" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EBECEF" />
+
+
+            <com.jaribha.customviews.fonts.FontEditText
+                android:id="@+id/edt_message"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="Comments/Message"
+                android:padding="@dimen/value10"
+                android:paddingBottom="@dimen/value15"
+                android:textColorHint="@color/md_grey_800"
+                android:textSize="15sp"
+
+                app:font="Lato-Bold_0.ttf" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EBECEF" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.jaribha.customviews.fonts.FontButton
+        android:id="@+id/submit"
+        style="@style/Widget.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/value15"
+        android:text="@string/submit"
+        android:textAllCaps="false"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        app:font="Lato-Semibold.ttf" />
+
+</RelativeLayout>

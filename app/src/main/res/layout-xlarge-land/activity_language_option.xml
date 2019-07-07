@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/language_bg">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/value15"
+        android:src="@drawable/btn_back" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/value20"
+        android:src="@drawable/img_jaribha_language_screen" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/screen_margin_portrait"
+        android:layout_marginRight="@dimen/screen_margin_portrait"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical">
+
+        <com.jaribha.customviews.fonts.FontTextView
+            android:id="@+id/txtChooseYourLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value20"
+            app:font="Lato-Regular.ttf"
+            android:text="Choose Your Language"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value60"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btnArabic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arabic_language_screen_unselect" />
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:id="@+id/orTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/value50"
+                android:layout_marginRight="@dimen/value50"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/or_caps"
+                app:font="Lato-Regular.ttf"
+                android:textSize="40sp"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/btnEnglish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/english_language_screen_unselect" />
+
+        </LinearLayout>
+
+        <com.jaribha.customviews.fonts.FontButton
+            android:id="@+id/btnContinue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value60"
+            android:background="@drawable/main_button_red"
+            android:text="Continue to Explainer Video"
+            android:textAllCaps="false"
+            app:font="Lato-Regular.ttf"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

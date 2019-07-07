@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:orientation="vertical"
+            android:padding="@dimen/value10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Supporters Steps"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#F48481" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value5"
+                android:gravity="center_horizontal"
+                android:text="We call this person the 'Supporter' because he/she is supporting the Creator to reach the Project Goal for a reward in return."
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/md_white_1000"
+            android:paddingBottom="@dimen/value20">
+
+            <ImageView
+                android:id="@+id/iv_point01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/point_scroll_yellow" />
+
+            <View
+                android:id="@+id/view02"
+                android:layout_width="3dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/iv_point01"
+                android:layout_centerHorizontal="true"
+                android:background="@color/md_grey_500" />
+
+            <ImageView
+                android:id="@+id/iv_point03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view02"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/point_scroll_white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/value5"
+                android:layout_marginTop="31dp"
+                android:layout_toLeftOf="@+id/view02"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yellow_background"
+                    android:gravity="center"
+                    android:padding="@dimen/value10"
+                    android:text="Create an account and sign in"
+                    android:textColor="@color/md_white_1000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/shape_yellow_left" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view12"
+                android:layout_width="3dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/iv_point03"
+                android:layout_centerHorizontal="true"
+                android:background="@color/md_grey_500" />
+
+            <ImageView
+                android:id="@+id/iv_point13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view12"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/point_scroll_white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="81dp"
+                android:layout_toRightOf="@+id/iv_point13"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/shape_yellow_right" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yellow_background"
+                    android:gravity="center"
+                    android:padding="@dimen/value10"
+                    android:text="Browse to look for a project to support."
+                    android:textColor="@color/md_white_1000" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view22"
+                android:layout_width="3dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/iv_point13"
+                android:layout_centerHorizontal="true"
+                android:background="@color/md_grey_500" />
+
+            <ImageView
+                android:id="@+id/iv_point23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view22"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/point_scroll_white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="140dp"
+                android:layout_toLeftOf="@+id/iv_point23"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yellow_background"
+                    android:gravity="center"
+                    android:padding="@dimen/value10"
+                    android:text="Find a project."
+                    android:textColor="@color/md_white_1000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/shape_yellow_left" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view42"
+                android:layout_width="3dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/iv_point23"
+                android:layout_centerHorizontal="true"
+                android:background="@color/md_grey_500" />
+
+            <ImageView
+                android:id="@+id/iv_point33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view42"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/point_scroll_white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:layout_toRightOf="@+id/iv_point23"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/shape_yellow_right" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yellow_background"
+                    android:gravity="center"
+                    android:padding="@dimen/value10"
+                    android:text="When a decision is made to support a project the Supporter will be directed to a payment portal."
+                    android:textColor="@color/md_white_1000" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view52"
+                android:layout_width="3dp"
+                android:layout_height="55dp"
+                android:layout_below="@+id/iv_point33"
+                android:layout_centerHorizontal="true"
+                android:background="@color/md_grey_500" />
+
+            <TextView
+                android:id="@+id/tv_alloted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view52"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:padding="@dimen/value5"
+                android:textStyle="bold"
+                android:text="Awaits to see if the project is successful\nor unsuccessful in reaching the Goal\nAmount." />
+
+            <View
+                android:id="@+id/view62"
+                android:layout_width="3dp"
+                android:layout_height="55dp"
+                android:layout_below="@+id/tv_alloted"
+                android:layout_centerHorizontal="true"
+                android:background="@color/md_grey_500" />
+
+            <ImageView
+                android:id="@+id/iv_point43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view62"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/point_scroll_white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="330dp"
+                android:layout_toRightOf="@+id/iv_point43"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/shape_yellow_right" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yellow_background"
+                    android:gravity="center"
+                    android:padding="@dimen/value10"
+                    android:text="If the project is unsuccessful, the Supporter will receive the amount supported back minus the processing fee (3%)"
+                    android:textColor="@color/md_white_1000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="324dp"
+                android:layout_toLeftOf="@+id/iv_point43"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yellow_background"
+                    android:gravity="center"
+                    android:padding="@dimen/value10"
+                    android:text="If the project is successful, the Creator will contact the Supporter in regards to the reward promised, if any."
+                    android:textColor="@color/md_white_1000" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/shape_yellow_left" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view72"
+                android:layout_width="3dp"
+                android:layout_height="55dp"
+                android:layout_below="@+id/iv_point43"
+                android:layout_centerHorizontal="true"
+                android:background="@color/md_grey_500" />
+
+            <TextView
+                android:id="@+id/tv_learn_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view72"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:padding="@dimen/value5"
+                android:text="Learn more at Help Center"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

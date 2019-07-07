@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/value20">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Free"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#F48481"
+                app:font="Lato-Regular.ttf" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/md_white_1000"
+            android:orientation="vertical"
+            android:padding="@dimen/value20">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Project Fees"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/app_theme_color"
+                app:font="Lato-Regular.ttf" />
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value5"
+                android:text="Jaribha takes 10% fee of the Goal Amount successfully collected"
+                android:textStyle="italic"
+                app:font="Lato-Italic.ttf" />
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value15"
+                android:text="Sponsor Fees"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/app_theme_color"
+                app:font="Lato-Regular.ttf" />
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value5"
+                android:text="Sponsorship prices are subject to change for each project however there are two types of Sponsors."
+                android:textStyle="italic"
+                app:font="Lato-Italic.ttf" />
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value15"
+                android:text="Refund"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/app_theme_color"
+                app:font="Lato-Regular.ttf" />
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value5"
+                android:text="Sponsorship prices are subject to change for each project however there are two types of Sponsors."
+                android:textStyle="italic"
+                app:font="Lato-Italic.ttf" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

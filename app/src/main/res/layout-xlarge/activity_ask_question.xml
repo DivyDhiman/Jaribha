@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/action_bar1" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_bar"
+        android:layout_marginLeft="@dimen/screen_margin_portrait"
+        android:layout_marginRight="@dimen/screen_margin_portrait">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:id="@+id/askTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:padding="@dimen/value10"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"
+                app:font="Lato-Semibold.ttf" />
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:id="@+id/toAskTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:paddingBottom="@dimen/value10"
+                android:paddingLeft="@dimen/value10"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/md_grey_700"
+                app:font="Lato-Semibold.ttf" />
+
+            <com.jaribha.customviews.fonts.FontEditText
+                android:id="@+id/edt_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:background="@color/md_white_1000"
+                android:gravity="top"
+                android:hint="@string/write_your_question_here"
+                android:minHeight="@dimen/value200"
+                android:padding="@dimen/value10"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColorHint="@color/md_grey_500"
+                android:textStyle="italic"
+                app:font="Lato-Italic.ttf" />
+
+            <com.jaribha.customviews.fonts.FontButton
+                android:id="@+id/btn_send"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginTop="@dimen/value15"
+                android:background="@drawable/main_button_red"
+                android:text="@string/send"
+                android:textAllCaps="false"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:font="Lato-Bold_0.ttf" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

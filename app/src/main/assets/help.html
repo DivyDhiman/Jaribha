@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<style>
+body{background-color: #F5F5F5;}
+.panel-default > .panel-heading {background-color: #fff;}
+.panel-heading .accordion-toggle:after {font-family: 'Glyphicons Halflings';float: right; color: grey;content: "\e114"; }
+.panel-heading .accordion-toggle.collapsed:after {content: "\e114"; }
+.accordion-toggle{text-decoration: none!important;}
+.mainhead h3 {color: #20a1bc;font-size: 16px;font-weight: bold;margin: 15px;}
+.panel-group .panel + .panel {margin-top: 0;}
+.noline {font-size: 14px;font-weight: 600;}
+a:focus {outline: none;}
+@media (max-width:568px){
+.noline {font-size: 13px;font-weight: bold;}
+.panel-body {font-size: 13px;}
+}
+
+</style>
+<script>
+		$(document).ready(function(){
+			$('#helpSearchBtn').click(function(event){
+				event.preventDefault();
+				var s;
+				s = $('#helpSearchBox').val();
+				$('.help-item-list').hide();
+				$( ".help-item-list :contains(" + s + ")" ).parents(".help-item-list").show();
+			});
+			
+			$('#helpSearchBox').keypress(function(e){
+				if(e.which == 13){//Enter key pressed
+					$('#helpSearchBtn').click();//Trigger search button click event
+				}
+			});	
+		});
+		
+</script>
+</head>
+<body>
+    <form method="post" id="searchformID" role="form">
+		<div class="form-group input-group">
+            <input type="text" class="form-control" id="helpSearchBox" value="" name="search">
+            <span class="input-group-btn">
+            <button type="submit" id="helpSearchBtn" class="btn btn-default"><i class="fa fa-search"></i></button>
+            </span>
+        </div>
+    </form>
+
+<div class="panel-group" id="accordion">
+
+<!--
+Below div is my div i gonna put all this stuff in this div.
+<div class="help-item-list"></div>
+
+ i am putting below line of code 
+ <div class="row-fluid mainhead">
+	<h3>Jaribha's core individuals</h3> 
+  </div>
+  inside class="help-item-list".
+-->
+<div class="help-item-list">
+  <div class="row-fluid mainhead">
+	<h3>Jaribha's core individuals</h3> 
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">Who is Jaribha ?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse">
+      <div class="panel-body">
+        Not who, but what - Jaribha is an online platform that facilitates and manages contributions, allowing "project owners" also known as "Creators” to share their projects to get Supporters to contribute and make their projects come to life. The website allows Creators to develop and detail their projects on their own individual pages and gain support through Supporters that want to support projects based on their own personal interests and reaping token and modest rewards.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">Who is the "Creator" ?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse">
+      <div class="panel-body">
+      The Creator is any project owner on Jaribha, or any person submitting an idea on Jaribha that desires exposure, feedback and community support to reach the Project Goal following the all-or-nothing method.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">Who is the “Supporter”?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse">
+      <div class="panel-body">
+      The person contributing to a project. They can be friends, family or simply any member of the community who has supported a project.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">Who are the Sponsors?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFour" class="panel-collapse collapse">
+      <div class="panel-body">
+    Sponsors are users who choose to affiliate themselves with certain projects and Creators. Sponsors support projects by including their logos on their selected project pages. Users can sponsor pages, however Creators are still fully responsible for their own projects.<br><br>
+
+    Sponsor: A company or an individual that wishes to sponsor a project.<br><br>
+
+    To become a sponsor, click on "become a Sponsor" button found in the project page.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">What is a Community?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFive" class="panel-collapse collapse">
+      <div class="panel-body">
+   A community is a social unit of any size that shares common values. An individual can create a project and choose the community they belong to, thus giving Creators a sense of credibility, and the community good exposure.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapsesix">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">How can I connect to Jaribha on social media?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapsesix" class="panel-collapse collapse">
+      <div class="panel-body">
+   Jaribha is available on various social media platforms. Please find the links found on the footer of any page on the site.<br>
+    For further enquiry and support, please contact support@jaribha.com
+      </div>
+    </div>
+  </div>
+  
+</div>
+<!--Class Div  End-->  
+<div class="help-item-list">
+<div class="row-fluid mainhead">
+ <h3>Creating a project</h3> 
+</div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">How do I create a project?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">
+    If you have a project or an idea that you want to see come to life, you can submit it here by clicking Start Project. You must ensure your project follows all of Jaribha guidelines and requirements.<br>
+    As a Creator on Jaribha, you are responsible in creating videos, content, images and plans of your idea or project, as well as list the total amount of support you will need to raise in order to execute it.<br>
+    You must also create different support categories and amounts, which also include rewards for each support category. The number of support categories is up to you, the Creator.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse21">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">Does Jaribha process and review all projects before they launch?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse21" class="panel-collapse collapse">
+      <div class="panel-body">
+        Yes - after you submit all your details, our team will review the details of your project and contact you with a status update within 1-3 weeks. Jaribha's review process is to keep the website as safe and secure as possible for Supporters and Creators.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse22">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">Do all submitted projects get approved?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse22" class="panel-collapse collapse">
+      <div class="panel-body">
+        Jaribha is the sole decision maker in approving projects. While reserving its right not to approve any project for any reason, only projects that meet Jaribha's guidelines and requirements will get approved. To learn more about Jaribha's guidelines, <a href="https://jaribha.com/help/guideline" target="_blank">please click here</a> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="help-item-list">
+<div class="row-fluid mainhead">
+ <h3>Your jaribha account</h3> 
+</div>  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">How do I change my profile name?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">
+       Sign into your Jaribha account and click on "Settings." Go to "Profile"
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse31">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">How do I change the email address linked to my Jaribha account?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse31" class="panel-collapse collapse">
+      <div class="panel-body">
+       You cannot. You can create a new account.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse32">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">How do I unsubscribe from or manage emails I receive from Jaribha?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse32" class="panel-collapse collapse">
+      <div class="panel-body">
+       Sign into your Jaribha Account, go to "Settings" and click on "Notifications".
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse32">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">I forgot my password, what do I do now?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse32" class="panel-collapse collapse">
+      <div class="panel-body">
+       Click forgot password on the login page.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse33">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">How do I cancel my Jaribha account?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse33" class="panel-collapse collapse">
+      <div class="panel-body">
+       To cancel your account you must contact us by email support@jaribha.com. You cannot cancel your account when your project is live.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="help-item-list">
+<div class="row-fluid mainhead">
+ <h3>Creators</h3> 
+</div>  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">What is the Project Goal or Goal Amount?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse4" class="panel-collapse collapse">
+      <div class="panel-body">
+       The Project Goal or the Goal Amount is the amount set by the Creator that the Creator believes represents the minimum amount needed to complete the project and fulfill all rewards
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse41">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">What is the “all-or-nothing” method?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse41" class="panel-collapse collapse">
+      <div class="panel-body">
+       This is the method that Jaribha is based on. The "all-or-nothing" method means Creators must generate the entire required amount to hit the Project Goal they desire within the Project Period. If Creators are unable to generate the Goal Amount, then they get nothing in return and all the support generated during the Project Period will be given back to their Supporters.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse42">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">After a project reaches its Goal Amount and is successfully supported, does Jaribha acquire some percentage of the project's ownership? ?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse42" class="panel-collapse collapse">
+      <div class="panel-body">
+       Jaribha doesn't take ownership of any project or idea submitted. It is the Creator's complete responsibility in following through with their project.
+      </div>
+    </div>
+  </div>
+
+   <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse43">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">Who can create a project?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse43" class="panel-collapse collapse">
+      <div class="panel-body">
+       Jaribha accepts filmmakers, musicians, artists, designers, NGO volunteers, athletes and more who all have an independent project, campaign, invention, or event they need to materialize. A Creator is anyone who has a project or idea that fits Jaribha's guidelines and requirements.
+      </div>
+    </div>
+  </div>
+
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse44">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">Can I accept support after the duration has ended?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse44" class="panel-collapse collapse">
+      <div class="panel-body">
+      Supporting opportunities on Jaribha are limited to the Project Period and will automatically be closed at the end of the Project Period. You will not be allowed to accept any contributions to your projects on Jaribha past your deadline.
+      </div>
+    </div>
+  </div>
+
+   <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse45">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">What is the Project Period?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse45" class="panel-collapse collapse">
+      <div class="panel-body">
+      It is the Creator's deadline to reach the Project Goal. The duration is set by the Creator but may not exceed 120 days.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse46">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">What happens when my Goal Amount is not reached?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse46" class="panel-collapse collapse">
+      <div class="panel-body">
+      Jaribha will set your project's status as unsuccessful. You may create a new project with the same exact idea if you wish. Unsuccessfully supported projects will be kept on the site.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse47">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">What happens when my Goal Amount is reached and/or passed?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse47" class="panel-collapse collapse">
+      <div class="panel-body">
+      Our team will review the details and provide the Creator with the raised support 1-3 weeks from the end of the Project Period less the Project Fee.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse48">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">What is the Project Fee?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse48" class="panel-collapse collapse">
+      <div class="panel-body">
+     Successfully supported projects will incur a 10% fee, deducted from the total generated Goal Amount. The fee includes Jaribha’s fee, third party fees and wire transfer fees and thus are subject to change without notice (please see Terms and Conditions for more details).
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse49">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">What is the minimum and maximum Goal Amount?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse49" class="panel-collapse collapse">
+      <div class="panel-body">
+     There is no minimum or maximum Goal Amount for Creators. That is left up to their project requirements.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse491">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">Do all projects require a Goal Amount and a Project Period?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse491" class="panel-collapse collapse">
+      <div class="panel-body">
+     Yes, all projects require a Goal Amount and a Project Period of a maximum duration of 120 days.
+      </div>
+    </div>
+  </div>
+
+   <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse492">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">Can I create more than one project at the same time?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse492" class="panel-collapse collapse">
+      <div class="panel-body">
+     Yes, each Creator is allowed to have as many active and public projects at any given time.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse493">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">What type of projects will not be approved?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse493" class="panel-collapse collapse">
+      <div class="panel-body">
+    Projects must follow Jaribha's guidelines and requirements. Projects must also fall under one of Jaribha's categories. Please see Guidelines and <a href="https://jaribha.com/help/terms" target="_blank">Terms and Conditions.</a> 
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse494">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">Can I edit my project after it goes live?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse494" class="panel-collapse collapse">
+      <div class="panel-body">
+    Creators can adjust and amend their projects up until it goes live on the website. Once the details are set and the public can view the project, the Creator can no longer adjust their project page. However, Creators can include updates to their projects at any time, with an ability to reach out to their Supporters at any time. 
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse495">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">Can I change my Goal Amount after my project goes live?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse495" class="panel-collapse collapse">
+      <div class="panel-body">
+      No, the Goal Amount can only be adjusted before submitting the project to us. Once submitted, the Creator can no longer change the amount. Jaribha encourages all Creators to detail and plan their projects before going live to ensure they meet and obtain their target.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse496">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">Can I change my rewards?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse496" class="panel-collapse collapse">
+      <div class="panel-body">
+      Once a project is submitted, the Creator can no longer change their rewards. Jaribha encourages all Creators to detail and plan their projects before going live to ensure they place accurate and realistic rewards.
+      </div>
+    </div>
+  </div>
+
+   <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse497">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">Can I terminate my project before the end date?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse497" class="panel-collapse collapse">
+      <div class="panel-body">
+      Once the project is live, the Creator cannot delete or terminate the project. Jaribha's team will be authorized to take down projects at any time should they feel they are violating any guidelines or requirements. Creators are urged to alert Jaribha's team of any reasons to take down a project and Jaribha's team will review requests case-by-case.
+      </div>
+    </div>
+  </div>
+<!-- collap 5 start-->
+</div>
+
+<div class="help-item-list">
+<div class="row-fluid mainhead">
+ <h3>Supporters</h3> 
+</div>  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">Who is the "Supporter"?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse5" class="panel-collapse collapse">
+      <div class="panel-body">
+       The person contributing to a project. They can be friends, family or simply any member of the community who has supported a project.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse51">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">How do I support a project?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse51" class="panel-collapse collapse">
+      <div class="panel-body">
+       To support a project, you must first set-up an account with Jaribha. Once you've gone through the needed registration process you can view different projects and support them by using your debit or credit card. The minimum amount to contribute on Jaribha is $10 (please see Terms and Conditions for more details).
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse52">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">Who can support a project?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse52" class="panel-collapse collapse">
+      <div class="panel-body">
+      Anybody can support a project! Of course, as long, as you are at least 18 years of age and have a debit or credit card. Support a project you would like to see come to life, any project that interests you or maybe support a Creator you want to see succeed. Remember, projects and Creators will only be successful because of you.
+      </div>
+    </div>
+  </div>
+
+   <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse53">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">How does supporting work?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse53" class="panel-collapse collapse">
+      <div class="panel-body">
+       First, choose the project you would like to support and then choose the amount you would like to contribute.
+Contribution amounts are predetermined based on the Rewards. However, you may submit an amount that is not a predetermined option as long as the amount is equal to or higher than the reward amount that you chose.
+       </div>
+    </div>
+  </div>
+
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse54">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">What happens when my Goal Amount is not reached?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse54" class="panel-collapse collapse">
+      <div class="panel-body">
+      If the project doesn't reach the Project Goal in the time allocated, then Jaribha will reimburse Supporters with the money they've contributed. There may be some amounts deducted depending on any third party fees (please see Terms and Conditions for more details).
+      </div>
+    </div>
+  </div>
+
+   <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse55">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">Is there a minimum or maximum contribution amount?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse55" class="panel-collapse collapse">
+      <div class="panel-body">
+      The minimum amount to contribute on Jaribha is $10 (please see Terms and Conditions for more details). However, there is no maximum.<br>
+
+What you contribute will only be shared with the Creator. The general public will not have access to your contribution amount. You can see this in your profile.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse56">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">When supporting a project, what information will the Creator receive from my contribution?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse56" class="panel-collapse collapse">
+      <div class="panel-body">
+      Creators will be able to see how much you've contributed to their project along with any personal information you choose to share.<br>
+Please note that Creators will have access to your name, phone number and delivery address in order to provide their contribution reward once the project successfully reaches its goal.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse57">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">How do I know the project I’m supporting is legitimate?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse57" class="panel-collapse collapse">
+      <div class="panel-body">
+      Supporters must decide themselves on the credibility and worthiness of each project and contribute to the projects with Creators that have detailed their production plan. Jaribha has a team of professionals to evaluate and assess each project and Creator before allowing them to establish a project page. Jaribha also has basic criteria that Creators need to meet before they are given project pages. However, since Jaribha has no ownership of the project, it is the Creator who is the only one responsible in following-through with their project.<br><br>
+
+      Basic ways to determine the credibility of the project:
+      <ul>
+      <li>Does the Creator share enough background information, steps, outlines, details etc. about their project?</li>
+      <li>Does the Supporter know other people that have supported the project?</li>
+      <li>Does the Supporter know the Creator personally?</li>
+      <li>Did the Supporter hear about the project and Creator from a friend or family member?</li>
+      <li>Has the Supporter heard a lot of positive feedback about the project and Creator online or through social media channels? Jaribha requires Creators to share their names and basic information about themselves, which means Creators risk their reputation if they do not complete their projects as promised. Supporters can also connect with Creators and ask questions before and after contributing.</li>
+      </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse58">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">Basic ways to determine the credibility of the project</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse58" class="panel-collapse collapse">
+      <div class="panel-body">
+        Basic ways to determine the credibility of the project:
+        Does the Creator share enough background information, steps, outlines, details etc. about their project?
+        Does the Supporter know other people that have supported the project?
+        Does the Supporter know the Creator personally?
+        Did the Supporter hear about the project and Creator from a friend or family member?
+        Has the Supporter heard a lot of positive feedback about the project and Creator online or through social media channels? Jaribha requires Creators to share their names and basic information about themselves, which means Creators risk their reputation if they do not complete their projects as promised. Supporters can also connect with Creators and ask questions before and after contributing.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse59">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">I do not live in Kuwait, can I still support a project?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse59" class="panel-collapse collapse">
+      <div class="panel-body">
+     Of course! Anybody, anywhere can support a project on Jaribha given they are at least 18 years of age and have a working debit card or any valid credit card that works with our payment gateway. Jaribha does not save any of this information nor does it have access to it. We also have an EVSSL through Thwarte.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse591">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">Will I be informed if and when a project reaches its Goal Amount?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse591" class="panel-collapse collapse">
+      <div class="panel-body">
+     Count on it - The Creator is encouraged to provide Supporters with updates on the go and during major milestones. Also, Jaribha will send an email to all Supporters when a project successfully reaches its goal amount
+      </div>
+    </div>
+  </div>
+
+   <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse592">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">Can I withdraw my support?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse592" class="panel-collapse collapse">
+      <div class="panel-body">
+     Once a Supporter has contributed to a project, they may not withdraw their support. This is to ensure we don't add any challenges or disappointments to the Creator's project. Should the project not reach its goal, the amount will be returned back to the Supporter (see Terms and Conditions for more details)
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse593">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">My debit card or credit card got declined, what happens now?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse593" class="panel-collapse collapse">
+      <div class="panel-body">
+    Should your debit or credit card get declined we advise you to check directly with your bank to resolve the issue and then try using an alternative debit or credit card. If a debit or credit card is declined, then your contribution has failed to go through.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse594">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">How can I contact the Creator?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse594" class="panel-collapse collapse">
+      <div class="panel-body">
+        You may directly ask the Creator your question through the project page or visit the Creator’s profile for the contact information. 
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse595">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">Can I check all my support transactions?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse595" class="panel-collapse collapse">
+      <div class="panel-body">
+      Yes, you can view this on your history page.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="help-item-list">
+ <div class="row-fluid mainhead">
+ <h3>Sponsors</h3> 
+</div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">Who are the Sponsors?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse6" class="panel-collapse collapse">
+      <div class="panel-body">
+    Sponsors are users who choose to affiliate themselves with certain projects and Creators. Sponsors support projects by including their logos on their selected project pages. Even though users are sponsoring pages, Creators are still fully responsible for their own projects.
+Each Sponsor has to pay a "Jaribha Sponsor Fee" and "Creator Sponsor Fee". Fees are subject to change. The Sponsor may be an established company or an individual that has a talent and wants to "sponsor" a project. (Please see Terms and Conditions for more details)
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse61">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">What is "Jaribha Sponsor Fee" and "Creator Sponsor Fee"?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse61" class="panel-collapse collapse">
+      <div class="panel-body">
+        The Sponsor pays a fixed nonrefundable fee to Jaribha called “Jaribha Sponsor Fee” and a fixed fee to the Creator called “Creator Sponsor Fee”. The fee to the Creator can be refundable if and when a project unsuccessfully reaches its goal. It will not be refunded in any other case. 
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse62">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">How Can Sponsors Keep Track of their Sponsorships?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse62" class="panel-collapse collapse">
+      <div class="panel-body">
+        Sponsors can see all their sponsored projects with the amounts they paid on their history page. They can also click on the sponsored tab in their portfolio to view the projects they sponsored with no detail.
+      </div>
+    </div>
+  </div> 
+
+   <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse63">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">How to become a Sponsor?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse63" class="panel-collapse collapse">
+      <div class="panel-body">
+        To become a Sponsor, click on the "sponsor" button found in the header and also in the project detail page of any project. Fill in the form and send it. Sponsors have to sign an actual contract. 
+      </div>
+    </div>
+  </div> 
+</div>
+
+<div class="help-item-list">
+<div class="row-fluid mainhead">
+ <h3>Community</h3> 
+</div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">What if someone belongs to more than one Community?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse7" class="panel-collapse collapse">
+      <div class="panel-body">
+    Choose the Community you’re more affiliated with or feel your project relates more to.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse71">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">Does a Community pay a fee?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse71" class="panel-collapse collapse">
+      <div class="panel-body">
+        Communities do not need to pay a fee. (Please see Terms and Conditions for more details).
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse72">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">What if a Creator does not belong in the Community they chose?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse72" class="panel-collapse collapse">
+      <div class="panel-body">
+        Jaribha contacts the Community to see if the Creator belongs to the Community before approving the project.
+      </div>
+    </div>
+  </div> 
+</div>
+
+<div class="help-item-list">
+<div class="row-fluid mainhead">
+ <h3>Rewards</h3> 
+</div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse8">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">What are rewards?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse8" class="panel-collapse collapse">
+      <div class="panel-body">
+        Rewards are modest giveaways given to Supporters as a token of appreciation for their contribution to a project. Rewards are determined and produced by the Creator during the planning phase of the project. Creators must provide the allocated rewards to their Supporters should their projects be successfully supported. If the project is unsuccessfully supported, then the Creator is not committed to providing rewards.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse81">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">How do I create a reward?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse81" class="panel-collapse collapse">
+      <div class="panel-body">
+        Rewards should be simple and modest. Different rewards may be created, and they should be fair. For example, a Supporter who has contributed $500 should receive a more enticing reward than a Supporter who has contributed $30.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse82">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">How do I redeem my reward?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse82" class="panel-collapse collapse">
+      <div class="panel-body">
+        If you have supported a successful project, then you should be receiving your reward as promised from the Creator by their estimated date. The Creator can either choose to deliver the reward to the address you shared once you've made a Jaribha account or request that you pick it up from a location. Updates will be provided directly by the Creator on how to redeem your rewards.
+      </div>
+    </div>
+  </div> 
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse83">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">Who is responsible for transferring the rewards to the Supporters?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse83" class="panel-collapse collapse">
+      <div class="panel-body">
+        It is the Creator's responsibility to deliver the rewards as per their promised details. Creators can choose to ask Supporters to pick up their rewards. It is the Supporter's responsibility to provide an accurate delivery address to receive the reward should the Creator want to deliver the reward.
+      </div>
+    </div>
+  </div> 
+</div>
+
+<div class="help-item-list">
+<div class="row-fluid mainhead">
+ <h3>Miscellaneous</h3> 
+</div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse9">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">Can I support my own project?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse9" class="panel-collapse collapse">
+      <div class="panel-body">
+        Of course! Creators can support their own projects. Creators can choose to give back and also support other projects from other Creators.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse91">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">What are project updates and how can a supporter receive project updates?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse91" class="panel-collapse collapse">
+      <div class="panel-body">
+        Once a Supporter has contributed to a project, the Supporter may receive pertinent updates regarding the supported project from the Creator directly if available through email.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse92">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">Tips on creating a project video</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse92" class="panel-collapse collapse">
+      <div class="panel-body">
+        Make sure your video is fun, short, simple and catchy. Featuring yourself in your video helps in getting the community to better engage and trust you. Be clear and precise but to the point. Don't read off of a paper, because you want to connect with the community and not read the news to them! Just be yourself and people will connect with you.
+      </div>
+    </div>
+  </div> 
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse93">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">Can I check and see who are all my Sponsors and Supporters?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse93" class="panel-collapse collapse">
+      <div class="panel-body">
+        Yes, you can do so when you go to your profile then click on created, then click on the small icon called "Supporters and Sponsors" found on each of your projects.
+      </div>
+    </div>
+  </div> 
+</div>
+   
+<!-- collapse div end here-->
+</div>
+</div>
+
+</body>
+</html>

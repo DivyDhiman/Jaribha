@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edtTxtReport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_send"
+        android:layout_margin="@dimen/value5"
+        android:background="@drawable/rectangle"
+        android:gravity="left|top"
+        android:hint="Add comment"
+        android:minLines="5"
+        android:paddingBottom="@dimen/value5"
+        android:paddingLeft="@dimen/value10"
+        android:paddingRight="@dimen/value10"
+        android:paddingTop="@dimen/value5"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColorHint="@color/md_grey_400" />
+
+</LinearLayout>

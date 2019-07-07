@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/DrawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/action_bar1" />
+
+    <com.jaribha.customviews.PagerSlidingTabStrip
+        android:id="@+id/projectInfoTabs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value45"
+        android:background="@color/md_white_1000"
+        app:pstsActivateTextColor="@color/black"
+        app:pstsDeactivateTextColor="#797B81"
+        app:pstsDividerColor="@color/transparent"
+        app:pstsIndicatorColor="#FF543D"
+        app:pstsIndicatorHeight="3dp"
+        app:pstsShouldExpand="true"
+        app:pstsTabSwitch="true"
+        app:pstsTextAllCaps="false" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/projectInfoPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

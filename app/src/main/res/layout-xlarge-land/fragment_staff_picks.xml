@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line_space" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.jaribha.customviews.fonts.FontTextView
+            android:id="@+id/noRecents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="No Project Found"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:font="Lato-Regular.ttf" />
+
+
+        <GridView
+            android:id="@+id/projectsGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/value20"
+            android:layout_marginRight="@dimen/value20"
+            android:horizontalSpacing="@dimen/value15"
+            android:numColumns="3"
+            android:verticalSpacing="@dimen/value15"
+            tools:listitem="@layout/project_list_item_card_view" />
+
+    </RelativeLayout>
+</LinearLayout>

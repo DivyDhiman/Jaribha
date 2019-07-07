@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line_space" />
+
+    <ListView
+        android:id="@+id/list_history_supporters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/value50"
+        android:layout_marginRight="@dimen/value50"
+        android:layout_marginTop="@dimen/value20"
+        android:background="@color/white"
+        android:divider="@drawable/line_space"
+        tools:listitem="@layout/item_history_sponsor" />
+
+    <GridView
+        android:id="@+id/grid_history_supporters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/screen_margin_portrait"
+        android:layout_marginRight="@dimen/screen_margin_portrait"
+        android:layout_marginTop="@dimen/value20"
+        android:background="@color/background"
+        android:horizontalSpacing="@dimen/value20"
+        android:numColumns="2"
+        android:verticalSpacing="@dimen/value10"
+        android:visibility="gone"
+        tools:listitem="@layout/item_history_sponsor" />
+
+</LinearLayout>

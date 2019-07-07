@@ -1,0 +1,836 @@
+<resources>
+
+    <string name="app_name">Jaribha</string>
+    <string name="hello_world">مرحبا بالعالم!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- GCM project number   -->
+    <string name="project_id">296580390064</string>
+
+    <!--Login screen-->
+    <string name="spamming_me_desc">لا يسمح المبدعين مشروع المزعج. وهذا يشمل إرسال رسائل البريد الإلكتروني غير المرغوب فيها كتلة والرسائل غير المرغوب فيها على أي منصة وسائل الاعلام الاجتماعية.</string>
+    <string name="this_is_desc">Jaribha هو للمشاريع التي تحتاج إلى دعم فقط. يجب أن يكون مشروعا خطة وهدف واضح.</string>
+    <string name="prohibited_rewards_desc">يحظر السحوبات والخصومات وكوبونات، عوائد مالية والعروض الاستثمارية. إذا كان لديك أي سبب آخر لماذا مكافأة خاطئة يرجى توضيح في التعليقات.</string>
+
+    <string name="login_cancel_fb">تسجيل الدخول الغاء</string>
+    <string name="login_error_fb">خطأ في تسجيل الدخول</string>
+    <string name="select_no_community">حدد لا الجماعة</string>
+    <string name="image_required">الصورة المطلوبة</string>
+    <string name="successfully_login">بنجاح الدخول</string>
+    <string name="please_enter_email">الرجاء إدخال اسم المستخدم البريد .</string>
+    <string name="email_already_exist_please_different_email">البريد الالكتروني موجود بالفعل. الرجاء إدخال مختلف معرف البريد الإلكتروني .</string>
+    <string name="required_information">معلومات مطلوبة</string>
+    <string name="continue2">استمر</string>
+    <string name="cancel">إلغاء</string>
+    <string name="invalid_email">معرف البريد الإلكتروني غير صالح</string>
+    <string name="invalid_email_or_password">عنوان هذا البريد الإلكتروني أو كلمة المرور غير صالحة</string>
+    <string name="error">خطأ</string>
+    <string name="you_cant_ask">لا يمكنك طرح السؤال على نفسك!</string>
+    <string name="zero">0%</string>
+    <string name="try_again">حاول ثانية</string>
+    <string name="invalid_password">هذه كلمة المرور قصيرة جدا</string>
+    <string name="field_required">هذه الخانة مطلوبه</string>
+    <string name="please_select_image">يرجى اختيار صورة</string>
+    <string name="internet">يرجى التحقق من اتصال الإنترنت الخاص بك وحاول مرة أخرى!</string>
+    <string name="success">نجاح</string>
+    <string name="success1">نجاح!!</string>
+    <string name="add_new_community">إضافة المجموعات الجديدة</string>
+    <string name="email_setting">أعلام إعداد البريد الإلكتروني التحديث</string>
+    <string name="community_added">المجتمع واضاف بنجاح</string>
+    <string name="msg_add">واضاف رسالة</string>
+    <string name="add_image_from">إضافة صورة من</string>
+    <string name="capture">أسر</string>
+    <string name="gallery">صالة عرض</string>
+    <string name="edit_project">تحرير مشروع</string>
+    <string name="features">جميع الميزات</string>
+    <string name="camera_error">خطأ الكاميرا</string>
+    <string name="incorrect_mobile">عدد تليفون الذي أدخلته غير صحيح</string>
+    <string name="skip">تخطى</string>
+    <string name="ask_a_question">طرح سؤال</string>
+    <string name="ask_a_question_about">طرح سؤال حول</string>
+    <string name="become_a_sponsor">تصبح الراعي</string>
+    <string name="full_name_required">الاسم الكامل المطلوب</string>
+    <string name="company_name_required">اسم الشركة المطلوب</string>
+    <string name="email_required">البريد الإلكتروني معرف المطلوب</string>
+    <string name="please_enter_valid_email">الرجاء إدخال معرف بريد إلكتروني صحيح</string>
+    <string name="mobile_no_required">رقم الجوال المطلوب</string>
+    <string name="thank_you">شكرا</string>
+
+    <string name="sponsor_submitted_successfully">شكرا لاهتمامك لتصبح الراعي!</string>
+    <string name="recently_launched">أطلقت مؤخرا</string>
+    <string name="all_cat">جميع الفئات</string>
+    <string name="all_country">كل البلدان</string>
+    <string name="most_popular">الاكثر شهره</string>
+    <string name="ending_soon">ستنتهى قريبا</string>
+    <string name="most_supported">الأكثر المدعومة</string>
+    <string name="filter">فلتر</string>
+    <string name="error_pass_match">كلمة المرور وتأكيد كلمة المرور لا يقابل.</string>
+    <string name="invalid_old_password">القديمة كلمة السر غير صحيحة</string>
+    <string name="please_enter_message">يرجى كتابة رسالة</string>
+    <string name="account">حساب</string>
+    <string name="community_details">تفاصيل المجتمع</string>
+    <string name="projects_under">&#160;مشاريع تحت</string>
+    <string name="no_projects_available_under">&#160;لا مشاريع المتاحة في إطار</string>
+    <string name="create_a_project">إنشاء مشروع</string>
+    <string name="guidelines">المبادئ التوجيهية</string>
+    <string name="basics">مبادئ</string>
+    <string name="story">قصة</string>
+    <string name="about_you">حولك</string>
+    <string name="eeward">جائزة او مكافاة</string>
+    <string name="review">مراجعة</string>
+    <string name="edit_profile">تعديل الملف الشخصي</string>
+    <string name="categories">الفئات</string>
+    <string name="all_features">جميع الميزات</string>
+    <string name="country">بلد</string>
+    <string name="how_it_work">كيف تعمل</string>
+    <string name="help">مساعدة</string>
+    <string name="history">التاريخ</string>
+    <string name="messages">رسائل</string>
+    <string name="favourites">مفضلة</string>
+    <string name="rewards">المكافآت</string>
+    <string name="guideline">التوجيهي</string>
+    <string name="contact_us">اتصل بنا</string>
+    <string name="jaribha_weekly_newsletter">Jaribha النشرة الأسبوعية</string>
+    <string name="hello">مرحبا!</string>
+    <string name="sign_in_to_jaribha">تسجيل الدخول إلى Jaribha</string>
+    <string name="setting">ضبط</string>
+    <string name="please_click_back_again_to_exit">الرجاء الضغط العودة مرة أخرى للخروج</string>
+    <string name="edit">تحرير</string>
+    <string name="settings">إعدادات</string>
+    <string name="login_cancel">تسجيل الدخول الغاء</string>
+    <string name="logout">خروج</string>
+    <string name="do_you_want_to_logout">هل تريد تسجيل الخروج؟</string>
+    <string name="login_error">خطأ في تسجيل الدخول</string>
+    <string name="email_already_exist_please_enter_different_email_id">البريد الالكتروني موجود بالفعل. الرجاء إدخال مختلف معرف البريد الإلكتروني.</string>
+    <string name="more_info">مزيد من المعلومات</string>
+    <string name="risk_challenge">المخاطر وتحدي</string>
+    <string name="faqs">الأسئلة الأكثر شيوعا</string>
+    <string name="joined">انضم-</string>
+    <string name="my_portfolio">محفظتي</string>
+    <string name="at">&#160;في&#160;</string>
+    <string name="no_user_activity">أي نشاط المستخدم</string>
+    <string name="no_project_created">خلقت أي مشاريع حتى الآن</string>
+    <string name="no_projects_supported">أي مشاريع دعمت بعد</string>
+    <string name="no_project_sponsored">برعاية أي مشاريع حتى الآن</string>
+    <string name="no_favorite_projects">أي مشاريع المفضلة لديك بعد</string>
+    <string name="created">مكون</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="push">إدفع</string>
+    <string name="notifications">الإشعارات</string>
+    <string name="notification">إعلام</string>
+    <string name="change_languages">تغيير اللغات</string>
+    <string name="activity">نشاط</string>
+    <string name="sponsored">برعاية</string>
+    <string name="supported">"124%\nأيد"</string>
+    <string name="project_payment">مشروع الدفع</string>
+    <string name="step_1">الخطوة 1</string>
+    <string name="step_2">الخطوة 2</string>
+    <string name="step_3">ا3خطوة 2</string>
+    <string name="project_by">المشروع</string>
+    <string name="project_details">تفاصيل المشروع</string>
+    <string name="info">معلومات</string>
+    <string name="update">تحديث</string>
+    <string name="comments">تعليقات</string>
+    <string name="report">تقرير</string>
+    <string name="successfully_published">نشرت بنجاح</string>
+    <string name="successfully_completed">الانتهاء بنجاح</string>
+    <string name="failed">فشل</string>
+    <string name="sign_up">سجل</string>
+    <string name="sign_up_new">اشترك></string>
+    <string name="dont_have_account_new">لم يكن لديك حساب؟</string>
+    <string name="newsletter_update_on_new_projects_and_successful_project">النشرة (تحديث على مشاريع جديدة ومشروع ناجح)</string>
+    <string name="i_agree_to_Jaribha">أنا أوافق على Jaribha</string>
+    <string name="terms_and_conditions">الأحكام والشروط</string>
+    <string name="terms_and_conditions_new">البنود و الظروف</string>
+    <string name="privacy_policy">سياسة الخصوصية.</string>
+    <string name="email_does_not_match">البريد الإلكتروني لا يتطابق</string>
+    <string name="password_does_not_match">كلمة السر غير متطابقة</string>
+    <string name="select_language">اختار اللغة</string>
+    <string name="sponsor_details">تفاصيل الراعي</string>
+    <string name="Can_not_play_this_video.">لا يمكن ان تلعب هذا الفيديو.</string>
+    <string name="for_your_contact_us">For your Contact us</string>Ok
+    <string name="ok">حسنا</string>
+    <string name="by">&#160;بواسطة</string>
+    <string name="days">أيام</string>
+    <string name="in">&#160;في&#160;</string>
+    <string name="your_project_has_been_successfully">وقد تم تقديم المشروع الخاص بك بنجاح لفريق الادارة jaribha ل. بمجرد الموافقة عليها، سوف مشروعك تذهب مباشرة.</string>
+    <string name="home">الصفحة الرئيسية</string>
+    <string name="fail">فشل</string>
+    <string name="please_accept_terms_and_condition_privacy_policy">وتفضلوا بقبول الشروط والأحكام وسياسة الخصوصية</string>
+    <string name="should_you_be_able_to_meet_your_project_goal">يجب أن تكون قادرة على تلبية احتياجاتكم هدف مشروع أو تمريرها، وسوف Jaribha توفر لك كامل المبلغ في غضون 14 يوما من تاريخ نهاية، وأقل من 10٪ من رسوم المشروع</string>
+    <string name="should_you_unsuccessfully_meet_your_project_goal">يجب عليك دون جدوى تلبية احتياجاتكم هدف المشروع من قبل الإطار الزمني الذي وضع، سيتم تصنيف المشروع كما هو غير ناجحة، وسوف تعاد هذا الدعم ولدت لمشروعك لجميع أنصار الخاص بك.</string>
+    <string name="supporting_a_project_multiple_times">يسمح بدعم مشروع عدة مرات من قبل مستخدم واحد.</string>
+    <string name="jaribha_welcomes_new_project_categories">ترحب Jaribha فئات المشاريع الجديدة وإذا كنت لا أعتقد أن مشروعك يناسب أي من مقولاتنا، يرجى مراسلتنا على</string>
+    <string name="support_jaribha_id">support@jaribha.com</string>
+    <string name="We_will_review_your_suggested_category">ونحن سوف يستعرض فئة المقترحة بك والبريد الالكتروني لكم مع الرد</string>
+    <string name="projects_falling_under_categories">المشاريع التي تقع تحت الفئات المذكورة / ينظر إليه على الموقع قد تكون معتمدة / إنشاء / برعاية في Jaribha.</string>
+    <string name="a_project_or_idea_could_be_anything_from_starting">مشروع أو فكرة يمكن أن يكون أي شيء من بدء خط الملابس، ونشر الكتاب، وخلق لعبة أو حدث، اختراع منتج جديد وغيرها الكثير. كل الخالق يضع هدف المشروع ومهلة زمنية لإنجاز المشروع.</string>
+    <string name="jaribha_will_continue_to_add_or_delete_categories">ستواصل Jaribha لإضافة / حذف فئات في المستقبل. يرجى مراجعة موقعنا على الانترنت بانتظام للحصول على التحديثات.</string>
+    <string name="i_understand_that_in_order_to_launch">وأنا أفهم أنه من أجل إطلاق، يجب أن مشروعي تلبية المبادئ التوجيهية مشروع ويجب أن تلبي شروط الأهلية. أوافق أيضا على Jaribha وتضمينه في</string>
+    <string name="more_info_plus">مزيد من المعلومات +</string>
+    <string name="more_info_minus">مزيد من المعلومات -</string>
+    <string name="important">هام:</string>
+    <string name="please_remember_to_include">يرجى تذكر أن تشمل إصدار اللغة الإنجليزية من وصفك، والمكافآت وغيرها من العناصر. للفيديو، يمكنك أن تفعل هذا مع ترجمة أو نسخة. لا تستخدم الموسيقى، الصور، الفيديو، أو المحتويات الأخرى التي لم يكن لديك الحق في. باستخدام مواد حقوق الطبع والنشر هي دائما تقريبا ضد القانون وJaribha لا يمكن أن تتغاضى عن أي انتهاك الملكية الفكرية.</string>
+    <string name="There_are_always_risks_and_challenges_when_completing">هناك دائما مخاطر وتحديات عند استكمال المشروع الخاص بك، ويجب أن تكون مستعدة ومؤهلة للتغلب عليها. \ في تأخير إنتاج \ تسمح للحوادث، أو حتى لا حساب المبلغ الذي تحتاجه لاستكمال المشروع الخاص بك هي كل التحديات والمخاطر قابلة للحياة أنك قد يواجهونها. مواجهة التحديات والمخاطر المرتبطة استكمال وتسليم المكافآت الخاصة بك هنا. \ ن أنصار \ n يمكنك مساعدة على فهم أفضل لك وجعلها تشعر بالثقة أن عليك أن تعمل بجد لمن خلال المتابعة مع المكافآت وعودك.</string>
+    <string name="biography_required">السيرة الذاتية المطلوبة</string>
+    <string name="user_name_required">اسم المستخدم المطلوبة</string>
+    <string name="country_required">بلد المطلوبة</string>
+    <string name="city_required">المدينة المطلوبة</string>
+    <string name="address_required">عنوان المطلوبة</string>
+    <string name="phone_number_required">رقم الهاتف المطلوب</string>
+    <string name="unable_to_get_data">غير قادر على الحصول على البيانات، يرجى التحقق من اتصالك بالإنترنت.</string>
+    <string name="please_accept_terms_condition_and_privacy_policy">وتفضلوا بقبول الشروط والأحكام وسياسة الخصوصية</string>
+    <string name="january">كانون الثاني</string>
+    <string name="february">فبراير</string>
+    <string name="march">مارس</string>
+    <string name="april">أبريل</string>
+    <string name="may">قد</string>
+    <string name="june">يونيو</string>
+    <string name="july">يوليو</string>
+    <string name="august">أغسطس</string>
+    <string name="september">سبتمبر</string>
+    <string name="october">شهر اكتوبر</string>
+    <string name="november">تشرين الثاني</string>
+    <string name="december">ديسمبر</string>
+    <string name="art">فن</string>
+    <string name="beauty">جمال</string>
+    <string name="crafts">الحرف</string>
+    <string name="create_proj">إنشاء مشروع</string>
+    <string name="dance">رقص</string>
+    <string name="cosmetics">مواد تجميل</string>
+    <string name="comics">رسوم هزلية</string>
+    <string name="film_and_video">فيلم والفيديو</string>
+    <string name="literary">أدبي</string>
+    <string name="small_Business">أعمال صغيرة</string>
+    <string name="food">طعام</string>
+    <string name="music">موسيقى</string>
+    <string name="sports">رياضات</string>
+    <string name="environment">بيئة</string>
+    <string name="games">ألعاب</string>
+    <string name="non_profit">غير ربحية</string>
+    <string name="technology">تكنولوجيا</string>
+    <string name="design">تصميم</string>
+    <string name="fashion">موضة</string>
+    <string name="health">الصحة</string>
+    <string name="photography">التصوير</string>
+    <string name="theater">مسرح</string>
+    <string name="staff_picks">يختار الموظفين</string>
+    <string name="recently">مؤخرا</string>
+    <string name="small_projects">مشاريع صغيرة</string>
+    <string name="community">مجتمع</string>
+    <string name="select_community">حدد الجماعة</string>
+    <string name="community_by">المجتمع بواسطة</string>
+    <string name="not_who_but_what_jaribha_is_an_online_platform">ليس من، ولكن ما - Jaribha هو منصة على الانترنت التي تسهل وتدير المساهمات، السماح لأصحاب المشروع المعروف أيضا باسم المبدعين للمشاركة مشاريعهم للحصول على أنصار للمساهمة وتقديم مشاريعهم تأتي في الحياة. موقع يسمح المبدعين لتطوير والتفاصيل مشاريعهم على الصفحات الفردية الخاصة بهم وكسب الدعم من خلال مؤيدو التي ترغب في دعم المشاريع القائمة على مصالحهم الشخصية وجني المكافآت رمزية ومتواضعة.</string>
+    <string name="he_creator_is_any_project_owner_on_jaribha">الخالق هو صاحب أي مشروع على Jaribha، أو أي شخص تقديم فكرة عن Jaribha التي يرغب التعرض، وردود الفعل والمجتمع الدعم للوصول إلى هدف مشروع وفقا للطريقة كل شيء أو لا شيء.</string>
+    <string name="the_person_contributing_to_a_project">الشخص المساهمة في المشروع. ويمكن أن تكون الأصدقاء أو العائلة أو ببساطة أي عضو من أعضاء المجتمع الذي أيد المشروع.</string>
+    <string name="a_community_is_a_social_unit_of_any_size_that_shares">والمجتمع هو وحدة اجتماعية من أي حجم الذي يحمل قيم مشتركة. يمكن للفرد إنشاء مشروع واختيار المجتمع الذي تنتمي إليه، وهذا العطاء يخلق شعورا من المصداقية، والتعرض جيدة المجتمع.</string>
+    <string name="acknowledgements_must_also_go_to_my_friends">يجب شكر أيضا يذهب إلى أصدقائي وأنا نتقدم بأحر الشكر لجميع أعضاء هيئة التدريس لالكريمة التعاون تمديدها لمدة الانتهاء من المشروع.</string>
+    <string name="if_you_have_a_project_or_an_idea_that_you_want_to_see_come">إذا كان لديك مشروع أو فكرة أن كنت تريد أن ترى تأتي في الحياة، يمكنك إرساله هنا بدء المشروع. عليك التأكد من مشروعك يتبع جميع المبادئ التوجيهية والمتطلبات Jaribha. كما الخالق على Jaribha، كنت مسؤولا في خلق أشرطة الفيديو، والمحتوى، والصور وخطط لديك فكرة أو مشروع، وكذلك قائمة المبلغ الإجمالي للدعم سوف تحتاج إلى رفع من أجل تنفيذه. يجب عليك أيضا إنشاء فئات الدعم المختلفة والمبالغ، والتي تشمل أيضا المكافآت لكل فئة الدعم. عدد فئات الدعم متروك لكم الخالق.</string>
+    <string name="jaribha_is_the_sole_decision_maker_in_approving">Jaribha هو صانع القرار الوحيد في الموافقة على المشاريع. في حين تحتفظ بحقها في عدم الموافقة على أي مشروع لأي سبب من الأسباب، سوف تحصل على الموافقة على مشروعات فقط التي تلبي المبادئ التوجيهية والمتطلبات Jaribha. لمعرفة المزيد حول المبادئ التوجيهية Jaribha، الرجاء الضغط هنا</string>
+    <string name="browse_projects">استعراض مشاريع</string>
+    <string name="sponsors">الرعاة</string>
+    <string name="sponsor">كفيل</string>
+    <string name="creators">المبدعين</string>
+    <string name="supporters">أنصار</string>
+    <string name="estimated_delivery">التسليم،</string>
+    <string name="oh_no">اوه لا!</string>
+    <string name="thanks">شكر</string>
+    <string name="your_payment_has_been_successfully_performed">وقد تم إجراء الدفع الخاص بك بنجاح.</string>
+    <string name="payment_successfully">الدفع بنجاح!</string>
+
+    <string name="comment_added">التعليق واضاف بنجاح</string>
+    <string name="project_to_be_funded_by">المشروعات التي سيتم تمويلها من قبل</string>
+    <string name="invalid_video_url">رابط الفيديو غير صالح</string>
+    <string name="not_found">غير معثور عليه</string>
+    <string name="overview_not_found">نظرة عامة لم يتم العثور على</string>
+    <string name="no_sponsors_found">لا الرعاة العثور</string>
+    <string name="proj_not_found">مشروع لم يتم العثور</string>
+    <string name="update_added">تحديث أضيف بنجاح</string>
+    <string name="popular_projects">مشاريع شعبية</string>
+    <string name="communities">مجتمعات</string>
+    <string name="projects">مشاريع</string>
+    <string name="all_projects">جميع المشاريع</string>
+    <string name="for_str">إلى</string>
+    <string name="to_change_your_support_amount">تغيير مبلغ الدعم الخاص بك، أدخل المبلغ الجديد أدناه.</string>
+    <string name="its_up_to_you_any_amount_of">والامر متروك لكم أي مبلغ من</string>
+    <string name="or_more">&#160;او اكثر.</string>
+    <string name="please_select_terms_and_conditions.">يرجى تحديد الشروط والأحكام.</string>
+    <string name="change_language">غير اللغة</string>
+    <string name="sponsor_limited">الراعي (المحدودة)</string>
+    <string name="supporter_unlimited">مؤيد (غير محدود)</string>
+    <string name="Reward_dollar">مكافأة $&#160;</string>
+    <string name="international">دولي</string>
+    <string name="none">لا شيء</string>
+    <string name="domestic">المنزلي</string>
+    <string name="successfully_submitted">مقدم بنجاح</string>
+    <string name="incomplete">غير مكتمل</string>
+    <string name="no_shipping_involved">لا تشارك الشحن</string>
+    <string name="sold_out">بيعت كلها</string>
+    <string name="projects_supported">مشاريع) معتمد</string>
+    <string name="apply">تطبيق</string>
+    <string name="community_details_public">تفاصيل المجتمع (العامة)</string>
+    <string name="create_a_community_where_the_creators">خلق مجتمع حيث المبدعين يمكن أن يرتبط مشروع مع.</string>
+    <string name="community_image">صورة المجتمع</string>
+    <string name="community_title_public">عنوان المجتمع (العامة)</string>
+    <string name="write_here">اكتب هنا</string>
+    <string name="choose_a_project_title_that_is_simple">اختيار عنوان المشروع التي هي بسيطة ومحددة ولا تنسى. إذا كان ذلك ممكنا، تأكد من أن تشمل العنوان أو اسم أي من المواد ذات الصلة إلى المشروع.</string>
+    <string name="community_email_public">المجتمع البريد الإلكتروني (العامة)</string>
+    <string name="enter_email">أدخل البريد الإلكتروني</string>
+    <string name="community_description">المجتمع الوصف</string>
+    <string name="zero_div_by">0/200</string>
+    <string name="if_you_had_to_describe_your">إذا كان لديك لوصف المشروع الخاص بك في تغريدة واحدة، كيف يمكنك أن تفعل ذلك؟</string>
+    <string name="address_public">عنوان (العامة)</string>
+    <string name="phone_number_public">رقم الهاتف (العامة)</string>
+    <string name="enter_phone_number">أدخل رقم الهاتف</string>
+    <string name="as_a_default_each_project_is_automatically">كما افتراضية تم تعيين كل مشروع تلقائيا في 120 يوما. ملاحظة: هناك 1–3 أسابيع الوقت اللازم لتجهيز لتوزيع وتجهيز المعاملات بعد مشروعك ناجحا. يرجى تخطيط المشاريع وفقا لذلك.</string>
+    <string name="social_connect">الاتصال الاجتماعي</string>
+    <string name="website">موقع الكتروني</string>
+    <string name="facebook_page">صفحة الفيسبوك</string>
+    <string name="twitter">تغريد</string>
+    <string name="linkedin_page">الصفحة ينكدين</string>
+    <string name="google_plus">بالإضافة إلى جوجل</string>
+    <string name="youtube">موقع YouTube</string>
+    <string name="instagram">إنستاجرام</string>
+    <string name="other">آخر</string>
+    <string name="for_jaribha_office_propose">لاقتراح مكتب Jaribha</string>
+    <string name="person_name_private">اسم الشخص (خاص)</string>
+    <string name="enter_name">أدخل الاسم</string>
+    <string name="person_email_private">شخص البريد الإلكتروني (خاص)</string>
+    <string name="person_work_mobile_private">شخص العمل / موبايل (خاص)</string>
+    <string name="enter_number">أدخل رقم</string>
+    <string name="submit">عرض</string>
+    <string name="instructions">تعليمات</string>
+    <string name="ask_a_question_about_child_cloths">طرح سؤال حول ملابس الطفل</string>
+    <string name="to">إلى:</string>
+    <string name="write_your_question_here">إرسال سؤالك هنا!</string>
+    <string name="send">إرسال</string>
+    <string name="send_caps">إرسال</string>
+    <string name="company_name">اسم الشركة</string>
+    <string name="phone">هاتف</string>
+    <string name="reply_here">الرد هنا …</string>
+    <string name="american_institute_of_architecture_students">المعهد الأمريكي للهندسة المعمارية الطلاب</string>
+    <string name="the_american_institute_of_architecture_students_AIAS">المعهد الأمريكي للطلاب الهندسة المعمارية (آياس) هو غير ربحية، منظمة مستقلة، يديرها الطلاب مكرسة لتقديم البرامج التي لا تضاهى والمعلومات والموارد بشأن القضايا الحاسمة في التعليم المعماري. مهمة AIAS في تعزيز السابقين …</string>
+    <string name="projects_under_american">مشاريع قيد المعهد الأمريكي للهندسة المعمارية الطلاب</string>
+    <string name="choose_your_language">اختر لغتك</string>
+    <string name="or_caps">أو</string>
+    <string name="continue_to_explainer_video">يواصل المفسر فيديو</string>
+    <string name="or">أو</string>
+    <string name="description">وصف</string>
+    <string name="all_features_for_dance_in_all_countries">جميع الميزات للرقص في جميع البلدان</string>
+    <string name="bad_video">سوء فيديو</string>
+    <string name="bad_images">صور سيئة</string>
+    <string name="bad_language">لغة سيئة</string>
+    <string name="prohibited_rewards">المكافآت يحظر</string>
+    <string name="this_is_a_project">هذا ليس مشروعا</string>
+    <string name="this_project_creator_is_spamming_me">هذا الخالق المشروع غير مرغوب لي</string>
+    <string name="please_choose_one_of_the_following">الرجاء اختيار أحد الخيارات التالية وإضافة تعليق إذا اخترت أدناه</string>
+    <string name="report_this_project_to_jaribha">عن هذا المشروع لjaribha</string>
+    <string name="ask_a_question_about_testing">طرح سؤال حول اختبار</string>
+    <string name="become_a_sponser">أصبح راعي</string>
+    <string name="change_password">تغيير كلمة السر</string>
+    <string name="old_password">كلمة المرور القديمة</string>
+    <string name="new_password">كلمة السر الجديدة</string>
+    <string name="confirm_new_password">تأكيد كلمة المرور الجديدة</string>
+    <string name="add_comment">أضف تعليق</string>
+    <string name="description_here">الوصف هنا</string>
+    <string name="leave_a_comment">اترك تعليقا</string>
+    <string name="no_image_available">لا توجد صور متاحة</string>
+    <string name="project_title">عنوان المشروع</string>
+    <string name="by_username_in_select_category">من خلال اسم المستخدم في تحديد فئة</string>
+    <string name="project_location">موقع المشروع</string>
+    <string name="days_left">ايام متبقية</string>
+    <string name="short_description">وصف قصير</string>
+    <string name="almost_there">هناك تقريبا!</string>
+    <string name="review_your_project_entirely_here">مراجعة المشروع الخاص بك تماما هنا وتعديل قبل أن تقدم.</string>
+    <string name="before_you_submit">قبل أن تقدم</string>
+    <string name="check_the_page_preview_below_to_make_sure_all_your">تحقق معاينة الصفحة أدناه للتأكد من كل ما تبذلونه من المواد المشروع هو دقيقة وكاملة. إذا كنت تحب ما ترى ثم، انقر فوق إرسال مشروعك!</string>
+    <string name="after_you_submit">بعد إرسالك</string>
+    <string name="once_you_have_hit_submit">مرة واحدة كنت قد بلغت تقديم، سيكون لدينا فريق مراجعة تفاصيل المشروع لضمان كنت قد اجتمعت كل من المبادئ التوجيهية مشروع Jaribha. سيكون لدينا فريق يعلمك في غضون 1–3 أسابيع في البريد الإلكتروني المسجل مع الوضع الحالي للمشروع الخاص بك. من الموافقة على مشروعك، وسوف تذهب تلقائيا على الهواء مباشرة.</string>
+    <string name="help_infusions_kw_grow">مساعدة ضخ تنمو كيلوواط!</string>
+    <string name="by_patty_marotte">بواسطة باتي Marotte</string>
+    <string name="days_goal">أيام الهدف</string>
+    <string name="our_aim_is_to_discover_extraordinary_potential">هدفنا هو اكتشاف إمكانيات هائلة في الشباب وتطويره من خلال هذه التجربة مرة واحدة في واحد في حياته. ونحن نقدم هذه العقول الشابة المشرقة فرصة لإتقان المهارات والتقنيات اللازمة لتحقيق أهدافهم. ويتم اختيار حماته استنادا إلى عملية فحص شاملة والتأكد من أنها تلبي معايير عالية لدينا من التميز.</string>
+    <string name="overview">نظرة عامة</string>
+    <string name="our_sponsors">الرعاة</string>
+    <string name="yout_title">يووت عنوان</string>
+    <string name="brief_text_will_go_here">ونص مختصر تذهب هنا …</string>
+    <string name="submit_your_project">إرسال مشروعك</string>
+    <string name="contact_me">اتصل بي</string>
+    <string name="support_doller">دعم $</string>
+    <string name="infusions_kw_leased_a_site_where_we_have_started">المؤجرة ضخ KW موقع حيث بدأنا البناء لمطبخ الإنتاج. لأننا كنا الاعمال المنزلية لدينا الآن لشراء كل شيء من الصفر لجميع الضروريات المطبخ لدينا!</string>
+    <string name="supporter_and_sponsor">مؤيد أو الراعي</string>
+    <string name="your_title">لقبك</string>
+    <string name="risk_and_challenge">خطر وتحدي</string>
+    <string name="sirdab_lab">مختبر Sirdab</string>
+    <string name="please_enter_your_email_id">معلومات مطلوبة</string>
+    <string name="delete">حذف</string>
+    <string name="please_check_fb_settings">يرجى التحقق من إعدادات الفيسبوك الخاص بك وحاول مرة أخرى</string>
+    <string name="please_check_google_settings">يرجى التحقق من إعدادات جوجل الخاص بك وحاول مرة أخرى</string>
+    <string name="please_check_linkedin_settings">يرجى التحقق من إعدادات تابعني على الخاص بك وحاول مرة أخرى</string>
+    <string name="first_letter_not_zero">لا يجب أن يكون الحرف الأول 0.</string>
+    <string name="are_you_sure_to_delete_this_reward">هل أنت متأكد من حذف هذه المكافأة؟</string>
+    <string name="at_mubarak_center">مركز المبارك</string>
+    <string name="no">لا</string>
+    <string name="yes">نعم فعلا</string>
+    <string name="no_projects">لا مشاريع تم العثور عليها!</string>
+    <string name="no_records">لا توجد سجلات!</string>
+    <string name="delete_project">هل أنت متأكد من حذف هذا المشروع؟</string>
+    <string name="all_categories">جميع الفئات</string>
+    <string name="reset">إعادة تعيين</string>
+    <string name="email_id">البريد الإلكتروني معرف</string>
+    <string name="telephone_mobile">الهاتف / الجوال</string>
+    <string name="fax_number_optional">رقم الفاكس (اختياري)</string>
+    <string name="comments_message">تعليقات / رسالة</string>
+    <string name="telephone_mobile_optional">الهاتف / الجوال (اختياري)</string>
+    <string name="fax_number">رقم الفاكس</string>
+    <string name="optional">اختياري</string>
+    <string name="all_countries">كل البلدان</string>
+    <string name="tell_us_little_bit_about_you">حدثنا قليلا عنك!</string>
+    <string name="people_would_like_to_get_to_know_you_more">يود الناس للتعرف عليك أكثر.</string>
+    <string name="profile_photo">صورة الملف الشخصي</string>
+    <string name="upload_an_image_choose_an_image_from_your_phone">تحميل صورة \ اختر صورة من هاتفك</string>
+    <string name="biography">سيرة ذاتية</string>
+    <string name="your_location">مكانك</string>
+    <string name="select_country">اختر البلد</string>
+    <string name="select_city">اختر مدينة</string>
+    <string name="address">عنوان</string>
+    <string name="please_enter_valid_url">يرجى إدخال عنوان URL صالح.</string>
+    <string name="mobile_phone_number">رقم الهاتف الجوال</string>
+    <string name="include_links_that_will_help_supporters">تتضمن وصلات من شأنها أن تساعد أنصار الحصول على شعور من أنت ومؤهلاتك لتنفيذ المشروع. بلوق الخاص بك أو موقع شخصي، حساب الفيسبوك / التغريد الخاص بك، وأمثلة من عملك هي مثالية!</string>
+    <string name="save_and_next">حفظ والتالي</string>
+    <string name="create_your_jaribha_account_now">إنشاء حساب Jaribha الخاص بك الآن!</string>
+    <string name="verify_your_account_in_the_next_few_steps">التحقق من حسابك في الخطوات القليلة المقبلة.</string>
+    <string name="Aaccount_information">معلومات الحساب</string>
+    <string name="account_number">رقم حساب</string>
+    <string name="countries_not_found">بلدان لم يتم العثور</string>
+    <string name="cat_not_found">فئات لم يتم العثور</string>
+    <string name="swift_number">عدد سريعا</string>
+    <string name="swift_society_for_worldwide_interbank_financial">SWIFT-جمعية الاتصالات المالية العالمية بين البنوك. سويفت هو شكل موحد رموز معرف المصرف (BIC) وأنه هو رمز هوية فريدة من نوعها لبنك معين. وتستخدم هذه الرموز عند تحويل الأموال بين البنوك. يرجى الاتصال البنك الذي تتعامل معه ليسأل عن رمز SWIFT.</string>
+    <string name="name_of_bank">اسم البنك</string>
+    <string name="community_not_found">المجتمعات لم يتم العثور على</string>
+    <string name="cities_not_found">مدن لم يتم العثور على</string>
+    <string name="routing_number_of_bank_IBAN">توجيه عدد من الضفة (IBAN)</string>
+    <string name="any_other_bank_detail">أي باقي التفاصيل البنك</string>
+    <string name="for_all_creators">لجميع المبدعين</string>
+    <string name="you_are_accountable_for_all_projects_registered">كنت مسؤولا عن جميع المشاريع المسجلة تحت اسمك وجميع المكافآت وعد أنصار و / أو الرعاة.</string>
+    <string name="for_all_returning_creators">لجميع المبدعين العودة</string>
+    <string name="if_you_are_not_successful_in_reaching_your_project">إذا لم تكن ناجحة في الوصول إلى هدفك مشروع في المرة الاولى، قد يقدم المشروع الخاص بك مرة أخرى. ومع ذلك، يرجى إجراء تغييرات قابلة للحياة في الفيديو المشروع والعرض والمكافآت لتحسين أفضل معدل نجاحك في المرة الثانية.</string>
+    <string name="kicking_off_your_new_project">مستهلا المشروع الجديد الخاص بك!</string>
+    <string name="start_by_introducing_us_to_the_basics">ابدأ بالتعريف بنا إلى الأساسيات.</string>
+    <string name="project_image">صورة مشروع</string>
+    <string name="project_image1">صورة \n مشروع</string>
+    <string name="category_select">اختر الفئة</string>
+    <string name="select_category">اختيار عنوان المشروع التي هي بسيطة ومحددة ولا تنسى. إذا كان ذلك ممكنا، تأكد من أن تشمل العنوان أو اسم أي من المواد ذات الصلة إلى المشروع.</string>
+    <string name="category">فئة</string>
+    <string name="if_you_had_to_describe_your_project">إذا كان لديك لوصف المشروع الخاص بك في تغريدة واحدة، كيف يمكنك أن تفعل ذلك؟</string>
+    <string name="project_period">مدة المشروع</string>
+    <string name="select_period">حدد الفترة</string>
+    <string name="project_goal_US_dollar">مشروع الهدف (دولار أمريكي)</string>
+    <string name="your_project_goal_should_be_the_minimum_amount_needed">يجب أن يكون لديك هدف مشروع الحد الأدنى اللازم لإنجاز المشروع وتلبية جميع المكافآت. تذكر، ويستند Jaribha على مفهوم كل شيء أو لا شيء، مما يعني أنه يمكنك دائما الحصول على أكثر من هدفك مشروع ولكن أبدا أقل من المبلغ الذي قمت المخصصة لإنجاز المشروع. \ n \ n في مشروعك بنجاح المعتمدة، وJaribha تطبيق رسوم المشروع (انظر الشروط والأحكام لمزيد من التفاصيل). إذا كنت لا تلبية احتياجاتكم هدف المشروع في الوقت المحدد، سيتم إرجاع المبالغ التي تم جمعها حتى الآن لأنصار أقل أي رسوم المعاملات (راجع شروط والشروط لمزيد من التفاصيل). \ في \ تذكر ان هناك العديد من أعضاء دراية في مجتمعنا . لا نقلل من قدرتهم على تحديد ما إذا كان المبلغ هدفك هو واقعي أم لا. \ n \ n لضمان مجتمع يثق دقة هدفك، وضمان هو بحث المشروع بشكل جيد ودائما تأكد من مشاركة أكبر قدر من التفاصيل يمكنك على صفحة المشروع الخاص بك.</string>
+    <string name="pick_a_community_you_are_part_of">اختيار المجتمع الذي هي جزء من أو المرتبطة. وسوف يجري في إطار المجتمع تساعد على إعطاء مزيد من التعرض لمشروعك من خلال شبكة للمجتمع. اختيار فقط مجتمع كنت جزءا منه، إذا لم تكن جزءا من مجتمع ترك الأمر كما حدد لا الجماعة. \ n راجع كل jaribha (المجتمعات).</string>
+    <string name="these_are_the_project_guidelines">هذه هي المبادئ التوجيهية مشروع.</string>
+    <string name="all_projects_must_meet_the">يجب أن تتوافق جميع مشاريع المبادئ التوجيهية لإطلاق، لذا يرجى قراءتها بعناية.</string>
+    <string name="getting_support_for_your_project">الحصول على الدعم لمشروعك يقوم على كل شيء أو لا شيء.</string>
+    <string name="if_your_project_does_not_fall_under">اذا لم يتراجع مشروعك تحت واحدة من فئات Jaribha يمكنك الاتصال بنا</string>
+    <string name="startnew_project">بدء مشروع جديد</string>
+    <string name="list_out_your_sponsor_fee_and_project_rewards">قائمة من رسوم الراعي والمكافآت مشروع!</string>
+    <string name="place_your_rewards_here">وضع المكافآت الخاصة بك هنا، وتذكر - أن تكون خلاقة وسعر منهم إلى حد ما. هل يمكن أن يكون واحد أو العديد من الجوائز على النحو الذي تريد.</string>
+    <string name="doy_you_want_sponsors">هل تريد الرعاة؟</string>
+    <string name="create_rewards">إنشاء المكافآت</string>
+    <string name="add_new_reward">إضافة مكافأة جديد</string>
+    <string name="supporter_amount">مؤيد المبلغ ($)</string>
+    <string name="year">عام</string>
+    <string name="month">شهر</string>
+    <string name="shipping_details">تفاصيل الشحن</string>
+    <string name="shipping_worldwide">الشحن في جميع أنحاء العالم</string>
+    <string name="reward_limit">الحد مكافأة</string>
+    <string name="limit">حد</string>
+    <string name="unlimited">غير محدود</string>
+    <string name="save_and_add_new">حفظ وإضافة جديد</string>
+    <string name="how_do_i_create_a_reward">كيف يمكنني إنشاء المكافأة؟</string>
+    <string name="enter_limit_number">أدخل الرقم الحد</string>
+    <string name="tell_us_your_story">أخبرنا قصتك!</string>
+    <string name="share_the_reason_behind_your_project">مشاركة السبب وراء المشروع.</string>
+    <string name="project_video">فيديو المشروع</string>
+    <string name="add_url">إضافة رابط</string>
+    <string name="you_must_upload_a_video_here_explaining">يجب تحميل الفيديو هنا شرح المشروع للجمهور. نوصي نشر المرح، قصيرة، فيديو بسيط وجذاب. يضم نفسك في الفيديو يساعد في الحصول على المجتمع للمشاركة وأثق بك على نحو أفضل. يضمن من فيميو أو يوتيوب. يرجى لصق link.eg: http://vimeo.com/6119925، https://youtu.be/-38uPkyH9vI</string>
+    <string name="risk_and_challenges">المخاطر والتحديات</string>
+    <string name="add_new_FAQs">إضافة أسئلة متكررة جديدة</string>
+    <string name="write_question">إرسال سؤال</string>
+    <string name="write_answer">كتابة الإجابة</string>
+    <string name="location">موقع</string>
+    <string name="select_all">اختر الكل</string>
+    <string name="getting_support_for_your_project_is_based_on_all_or_nothing">الحصول على الدعم لمشروعك يقوم على كل شيء أو لا شيء.</string>
+    <string name="a_project_or_idea_could_be_anything_from">مشروع أو فكرة يمكن أن يكون أي شيء من بدء خط الملابس، ونشر الكتاب، وخلق لعبة أو حدث اختراع منتج جديد وغيرها الكثير. كل الخالق يضع هدف المشروع ومهلة زمنية لإنجاز المشروع. المشاريع التي تقع تحت الفئات المذكورة / ينظر إليه على الموقع قد تكون معتمدة / إنشاء / برعاية في Jaribha. ستواصل Jaribha لإضافة / حذف فئات أكثر في المستقبل. يرجى مراجعة موقعنا على الانترنت بانتظام للحصول على التحديثات.</string>
+    <string name="your_project_does_not_contain">لا يحتوي مشروعك واحد أو أكثر من استخدامات Jaribha يحظر</string>
+    <string name="please_refrain_from_using_offensive_content">يرجى الامتناع عن استخدام المحتوى المسيء كجزء من صفحة المشروع الخاص بك أو المكافآت، فضلا عن أي مواد حقوق الطبع والنشر أو براءة اختراع. الامتناع أيضا من إغراق الأفراد وغيرهم من أفراد المجتمع.</string>
+    <string name="we_welcome_you_to_invite_friends_and_family">نحن نرحب بكم لدعوة الأصدقاء والعائلة لعرض المشروع الخاص بك، ولكن تجنب غزو الشبكات الاجتماعية أو إرسال رسائل البريد الإلكتروني الشامل على أمل نشر المشروع. في حين تحتفظ Jaribha الحق في رفض في نهاية المطاف مشروع دون تحديد السبب، كمبدأ عام Jaribha لا يسمح لغة هجومية في / أو نحو المشاريع، صانعي، أنصار أو الرعاة.</string>
+    <string name="search">بحث</string>
+    <string name="jaribha_core_individuals">الأفراد الأساسية Jaribha</string>
+
+    <string name="who_is_jaribha">من هو Jaribha؟</string>
+    <string name="not_who_but_what_jaribha_is">ليس من، ولكن ما - Jaribha هو منصة على الانترنت التي تسهل وتدير المساهمات، السماح لأصحاب المشروع المعروف أيضا باسم المبدعين للمشاركة مشاريعهم للحصول على أنصار للمساهمة وتقديم مشاريعهم تأتي في الحياة. موقع يسمح المبدعين لتطوير والتفاصيل مشاريعهم على الصفحات الفردية الخاصة بهم وكسب الدعم من خلال مؤيدو التي ترغب في دعم المشاريع القائمة على مصالحهم الشخصية وجني المكافآت رمزية ومتواضعة.</string>
+    <string name="who_is_the_creator">من هو الخالق؟</string>
+    <string name="the_creator_is_any_project_owner">الخالق هو صاحب أي مشروع على Jaribha، أو أي شخص تقديم فكرة عن Jaribha التي يرغب التعرض، وردود الفعل والمجتمع الدعم للوصول إلى هدف مشروع وفقا للطريقة كل شيء أو لا شيء.</string>
+    <string name="who_is_the_supporter">من هو مؤيد؟</string>
+    <string name="the_person_contributing_to_a_project_they_can">الشخص المساهمة في المشروع. ويمكن أن تكون الأصدقاء أو العائلة أو ببساطة أي عضو من أعضاء المجتمع الذي أيد المشروع.</string>
+    <string name="what_is_a_community">ما هو المجتمع؟</string>
+    <string name="a_community_is_a_social_unit_of_any">والمجتمع هو وحدة اجتماعية من أي حجم الذي يحمل قيم مشتركة. يمكن للفرد إنشاء مشروع واختيار المجتمع الذي تنتمي إليه، وهذا العطاء يخلق شعورا من المصداقية، والتعرض جيدة المجتمع.</string>
+    <string name="how_can_i_connect_to_jaribha_on_social_media">كيف يمكنني الاتصال Jaribha على وسائل الاعلام الاجتماعية؟</string>
+    <string name="creating_a_project">إنشاء مشروع</string>
+    <string name="how_do_i_create_a_project">كيف يمكنني إنشاء مشروع؟</string>
+    <string name="if_you_have_a_project_or_an_idea_that_you">إذا كان لديك مشروع أو فكرة أن كنت تريد أن ترى تأتي في الحياة، يمكنك إرساله هنا بدء المشروع. عليك التأكد من مشروعك يتبع جميع المبادئ التوجيهية والمتطلبات Jaribha. كما الخالق على Jaribha، كنت مسؤولا في خلق أشرطة الفيديو، والمحتوى، والصور وخطط لديك فكرة أو مشروع، وكذلك قائمة المبلغ الإجمالي للدعم سوف تحتاج إلى رفع من أجل تنفيذه. يجب عليك أيضا إنشاء فئات الدعم المختلفة والمبالغ، والتي تشمل أيضا المكافآت لكل فئة الدعم. عدد فئات الدعم متروك لكم الخالق.</string>
+    <string name="does_jaribha_process_and_review_all">هل عملية Jaribha ومراجعة جميع المشاريع قبل أن يشنوا؟</string>
+    <string name="do_all_submitted_projects_get_approved">لا تحصل الموافقة على جميع المشاريع المقدمة؟</string>
+    <string name="community_steps">خطوات المجتمع</string>
+    <string name="a_community_is_a_social_unit_of_any_size">والمجتمع هو وحدة اجتماعية من أي حجم الذي يحمل قيم مشتركة. يمكن للفرد إنشاء مشروع واختيار المجتمع الذي تنتمي إليه، وهذا العطاء يخلق شعورا من المصداقية، والتعرض جيدة المجتمع.</string>
+    <string name="click_on_add_new_community_on_the">انقر على اضافة مجتمع جديد على الصفحة المجتمعات.</string>
+    <string name="fill_out_the_form">املأ الاستمارة.</string>
+    <string name="jaribha_will_review_the_information">سوف Jaribha مراجعة المعلومات والبريد الإلكتروني للجماعة مع الرد.</string>
+    <string name="if_approved_the_community_will_go_live">إذا تمت الموافقة عليه، فإن الجماعة الذهاب للعيش.</string>
+    <string name="creators_steps">المبدعين خطوات</string>
+    <string name="to_become_a_creator_an_individual">لتصبح الخالق، يجب على الفرد اختيار لإنشاء المشروع.</string>
+    <string name="create_an_account_and_sign_in">إنشاء حساب وتسجيل الدخول</string>
+    <string name="click_start_your_project">انقر فوق بدء المشروع الخاص بك</string>
+    <string name="fill_out_the_application">ملء الطلب</string>
+    <string name="wait_for_approval">الانتظار للحصول على موافقة</string>
+    <string name="if_approved_the_project_will">إذا تمت الموافقة عليه، فإن المشروع يذهب على الانترنت للفترة الزمنية المخصصة.</string>
+    <string name="if_project_is_not_approved_the_creator">إذا لم تتم الموافقة على المشروع، قد يطلب من الخالق لفرز بعض القضايا في إطار المشروع.</string>
+    <string name="after_the_allotted_period_ends">بعد انتهاء الفترة المخصصة الخالق سيكون</string>
+    <string name="not_reached_their_project_goal">لم يتم التوصل لها هدف مشروع.</string>
+    <string name="an_unsuccessfully_supported_project">مشروع تدعمه ناجحة</string>
+    <string name="reached_their_project_goal_or_surpassed_it">وصلت لها هدف مشروع أو تجاوزه.</string>
+    <string name="a_successfully_supported_project">والمشروع الذي تدعمه بنجاح</string>
+    <string name="learn_more_at_help_center">معرفة المزيد في مركز المساعدة</string>
+    <string name="sponsors_steps">الرعاة خطوات</string>
+    <string name="a_sponsor_has_to_pay_a_fee_to_be_seen">هذا الراعي لديه لدفع رسوم لأن ينظر إليه على page.1 المشروع</string>
+    <string name="click_on_become_a_sponsor_button">انقر على زر "اصبح الراعي".</string>
+    <string name="fill_out_the_form_send_it">ملء النموذج، وإرساله والانتظار إلى أن يتم الاتصال من قبلنا.</string>
+    <string name="after_the_payment_is_made_it">بعد أن يتم السداد على ما هو سوف تظهر على صفحة المشروع.</string>
+    <string name="awaits_to_see_if_the_project_is_successful">ينتظر لمعرفة ما إذا كان المشروع ناجحا أو يوفق في الوصول الى المبلغ هدف.</string>
+    <string name="if_the_project_is_unsuccessful_the_creator">إذا كان المشروع غير ناجحة، ورسوم الراعي المبدع أن يكون ردها ناقص رسوم التجهيز (3٪).</string>
+    <string name="if_project_successfully_reaches_its_goal">إذا كان المشروع تصل بنجاح كمية هدفها الكفيل لا تتلقى أجرا، ما لم خلاف ذلك.</string>
+    <string name="supporters_steps">أنصار خطوات</string>
+    <string name="we_call_this_person_the_supporter_because">ونحن نسمي هذا الشخص "مؤيد" لأنه / أنها تدعم الخالق للوصول إلى هدف مشروع للمكافأة في المقابل.</string>
+    <string name="browse_to_look_for_a_project_to_support">تصفح للبحث عن مشروع لدعم.</string>
+    <string name="find_a_project">العثور على المشروع.</string>
+    <string name="when_a_decision_is_made_to_support">وعندما يتم اتخاذ قرار لدعم مشروع أن توجه داعم لبوابة الدفع.</string>
+    <string name="if_the_project_is_unsuccessful_the_supporter">إذا كان المشروع غير ناجحة، فإن مؤيد تحصل على المبلغ بدعم العودة ناقص رسوم التجهيز (3٪)</string>
+    <string name="if_the_project_is_successful_the_creator">إذا كان المشروع ناجحا، سوف الخالق الاتصال داعم في ما يخص الجزاء الموعود، إن وجدت.</string>
+    <string name="how_will_infusion_kw_use_the_$500_if_raised">كيف سيتم ضخ KW استخدام 500 $ إذا رفعت؟</string>
+    <string name="making_a_dream_a_reality">جعل حلم، حقيقة واقعة …</string>
+    <string name="i_would_not_call_it_a_hobby_but_a_lifestyle">وأود أن لا نسميها هواية ولكن نمط الحياة.</string>
+    <string name="the_beginning">البداية</string>
+    <string name="the_kitchen_remained_largely_unaffected_by_architectural_advances">بقي المطبخ بمنأى عن التطورات المعمارية طوال العصور الوسطى. بقي فتح النار الوسيلة الوحيدة لتسخين الطعام. كانت المطابخ الأوروبية في القرون الوسطى الأماكن المظلمة، والدخان، وأسخم، من حيث اسمهم. في مدن القرون الوسطى الأوروبية حول 10 إلى القرون ال12، لا يزال المطبخ تستخدم لموقد نار مفتوحة في وسط الغرفة. في بيوت الأثرياء، وغالبا ما كان يستخدم الطابق الأرضي كدولة مستقرة في حين كان يقع المطبخ في الطابق أعلاه، مثل غرفة النوم والصالة. في القلاع والأديرة، تم فصل الأحياء ومناطق العمل. تم نقل المطبخ في بعض الأحيان إلى مبنى مستقل، وبالتالي لا يمكن أن تكون بعد الآن لتسخين غرف المعيشة. في بعض القلاع كان يحتفظ المطبخ في نفس الهيكل، ولكن الموظفين فصل صارم من النبلاء، من خلال بناء سلالم حجرية دوامة منفصلة للاستخدام الموظفين لجلب الغذاء إلى المستويات العليا. مثال موجود مثل هذا المطبخ في العصور الوسطى مع سلم الخدم هو في قلعة Muchalls في اسكتلندا. في البيوت اليابانية، بدأ المطبخ لتصبح غرفة منفصلة داخل المبنى الرئيسي في ذلك الوقت.</string>
+    <string name="when_i_get_a_new_supporter_every_time">عندما أحصل على داعم جديد في كل مرة</string>
+    <string name="when_i_get_a_new_sponser_every_time">عندما أحصل على الراعي جديد في كل مرة</string>
+    <string name="when_my_project_receives_a_comment">عندما يتلقى مشروع بلدي تعليق</string>
+    <string name="when_one_of_the_projects_i_supported_reaches">عند واحد من مشاريع لقد أيدت تصل الموعد المحدد له</string>
+    <string name="when_one_of_the_projects_i_supported">عند واحد من مشاريع لقد أيدت تم تحديث</string>
+    <string name="projects_with_open_platinum_sponser_spaces">مشاريع مع مساحات مفتوحة الراعي البلاتيني</string>
+    <string name="general">جنرال لواء</string>
+    <string name="newletter_when_i_received_a_private_message">النشرة (عندما وصلتني رسالة خاصة</string>
+    <string name="update_on_new_projects_and_successful_projects">التحديث على المشاريع الجديدة والمشاريع الناجحة</string>
+    <string name="successfully_supported">بدعم بنجاح!</string>
+    <string name="supported_amount">المبلغ المدعومة</string>
+    <string name="please_choose_one_of_the_following_and_add_a_comment">الرجاء اختيار أحد الخيارات التالية وإضافة تعليق إذا اخترت:</string>
+    <string name="update_1">تحديث 1</string>
+    <string name="add_update">الخالق الوحيد للمشروع يمكن أن تقدم التحديثات!</string>
+    <string name="update_error">صانعي فقط للمشروع يمكن أن تقدم التحديثات!</string>
+    <string name="if_you_want_to_access_all_features_go_on_the_website">إذا كنت ترغب في الوصول إلى جميع الميزات الذهاب على الموقع.</string>
+    <string name="only_cteator_does_this">(فقط الخالق يفعل هذا)</string>
+    <string name="rewards_are_a_token_of_appreciation_provided_by_the_creators">المكافآت هي عربون تقدير مقدمة من صانعي أن أشكر كل الذين ساهموا في هذا المشروع. وينبغي أن تكون المكافآت الإبداعي، المادي وغير مبالغ فيها. ومنح الجوائز تتصل مرة أخرى إلى المشروع.</string>
+    <string name="for_example_if_the_project_is_designing">على سبيل المثال، إذا كان المشروع هو تصميم وإنتاج ساعة جديدة، ثم واحدة من المكافآت يمكن إعطاء هذا ساعة، وهذا يتوقف على اختيار الخالق بطبيعة الحال.</string>
+    <string name="how_to_create_a_reward">كيفية إنشاء مكافأة</string>
+    <string name="if_your_project_is_a_product_then_your_supporter">إذا كان المشروع هو نتاج ثم مؤيد الخاص بك يمكن الحصول على المنتج في حد ذاته. يمكنك تضمين حتى شكرا خاصا ملاحظة أو رسالة موقعة. أو يمكنك اختيار لفعل واحد أو أكثر من الإجراءات التالية.</string>
+    <string name="creative_collaboration">التعاون الخلاق</string>
+    <string name="have_your_supporter_appear_as_part_of_your_project">هل لديك مؤيد بك تظهر كجزء من المشروع.</string>
+    <string name="creative_mementos">تذكارات الإبداعية</string>
+    <string name="your_supporter_can_receive_a_special_thank_you_gift">مؤيد الخاص بك يمكن أن يتلقى شكر خاص لك هدية.</string>
+    <string name="creative_experiences">التجارب الإبداعية</string>
+    <string name="your_supporter_could_get_a_chance_to">ومن شأن الدعم الخاص بك الحصول على فرصة للمشاركة في هذا الحدث.</string>
+    <string name="pricing_rewards">المكافآت التسعير</string>
+    <string name="be_sure_to_offer_rewwards_that_will_benifit">تأكد من تقديم مكافآت التي ستستفيد دعمكم بقدر ما تستطيع. تأكد من أنك تجعل من الفرز ونضع في اعتبارنا أن أنصار يدعمون لك لأنهم يعتقدون في المشروع، وليس بسبب المكافآت الخاصة بك.</string>
+    <string name="pricing_rewards_should_be_done_fairly">وينبغي أن يتم المكافآت التسعير إلى حد ما</string>
+    <string name="in_the_list_bellow_you_can_see_the_most_common_rewards">في القائمة أدناه تستطيع أن ترى ثمار الأكثر شيوعا التي قد تقدم مؤيديك.</string>
+    <string name="exclusive_art_peices_with_a_signature">1. قطع فنية حصرية مع توقيع</string>
+    <string name="supporter_name_will_be_listed_in_the_supporter">سيتم سرد 2. اسم أنصار في مجلس مؤيدو التي سيتم عرضها في باب المدخل في المعرض معرض 1ST. وبالإضافة إلى ذلك، سوف تكون عبر البريد الالكتروني مؤيدو مع صورة من مجلس الداعم ل.</string>
+    <string name="full_updates_and_full_story_behind_the_event">3. التحديثات الكاملة والقصة الكاملة وراء الحدث وكبار الشخصيات صور من الحدث نفسه.</string>
+    <string name="invitations_for_every_art_gallery_hosted">استضافت 4. دعوات لكل معرض فني.</string>
+    <string name="priority_of_booking_for_each_dance_show">1. الأولوية الحجز لكل الراقص</string>
+    <string name="supporters_name_will_be_listed_in_the">سيتم سرد 2. اسم أنصار في الاعتمادات باعتباره مؤيدا.</string>
+    <string name="a_dvd_copy_of_the_performance_for_supporters">3. دي في دي نسخة من الأداء للأنصار لمعرفة ما ساعد على خلق.</string>
+    <string name="private_dancing_lessons">4. دروس الرقص الخاصة.</string>
+    <string name="signed_posters_from_the_dancers">5. والملصقات توقيع من الراقصات.</string>
+    <string name="a_gesture_of_choreography_created_in_the_dance">6. وهناك لفتة من الكوريغرافيا التي تم إنشاؤها في الرقص في أنصار الشرف.</string>
+    <string name="select_languages">اختر اللغات</string>
+    <string name="reward_KD_or_more">مكافأة 1 د.ك أو أكثر</string>
+    <string name="we_are_not_giving_an_rewards">نحن لا يعطي المكافآت! هذا هو مجرد اختبار لأعلى!</string>
+    <string name="estimate_delivery">التسليم:</string>
+    <string name="transaction_id">عملية إيد -</string>
+    <string name="creator_free">الخالق الحرة</string>
+    <string name="reward_details">تفاصيل مكافأة</string>
+    <string name="no_thanks_i_just_want_to_help">لا شكرا، أريد فقط أن يساعد هذا المشروع</string>
+    <string name="infusion_KW_try_our_infamous_zazoo_name_on_our_infusions">ضخ KW محاولة لدينا الشهيرة زازو! -اسم على موقعنا الحقن المساهمون الكتاب 1 جرة من الرمان الزعتر 260ml التسليم،: أغسطس 2015 شحن: المحلي</string>
+    <string name="support_caps">الدعم</string>
+    <string name="confirmation">تأكيد</string>
+    <string name="converted_USD_to_KD">تحويل الدولار إلى دينار</string>
+    <string name="payment_gateway">بوابة الدفع</string>
+    <string name="credit">رصيد</string>
+    <string name="selected_reward">مكافأة مختارة</string>
+    <string name="no_thanks_i_just_want_to_help_the_project">لا شكرا أريد فقط للمساعدة في المشروع</string>
+    <string name="shipping_methods">وسائل النقل البحري</string>
+    <string name="continue_payment">مواصلة الدفع</string>
+    <string name="supprt_receipt">دعم إيصال</string>
+    <string name="thank_you_for_your_support_once_again">شكرا لكم على دعمكم مرة أخرى، ونحن سوف تبقي لكم تحديث على نجاحنا</string>
+    <string name="availability_supporters">توافر الغرف (أنصار)</string>
+    <string name="suporter_amount">مؤيد المبلغ</string>
+    <string name="currency_rate">أسعار العملات</string>
+    <string name="payment_id">الدفع رقم #</string>
+    <string name="tracking_id">تتبع رقم #</string>
+    <string name="date_and_time">التاريخ والوقت</string>
+    <string name="supported_this_project">دعمت هذا المشروع:</string>
+    <string name="magic_comedy_show">السحر عرض كوميدي</string>
+    <string name="alrighty">حسنا!</string>
+    <string name="support_amount">دعم المبلغ</string>
+    <string name="reward_selection">اختيار مكافأة</string>
+    <string name="to_change_your_reward_make_a_new">تغيير المكافأة الخاصة بك، وجعل اختيار الجديدة أدناه.</string>
+    <string name="no_reward">لا جائزه</string>
+    <string name="free_download_of_the_tutorial_on_the_apple_store">تحميل مجاني من البرنامج التعليمي على متجر أبل، بالإضافة إلى خطاب شكر (لا شكرا، أريد فقط أن يساعد هذا المشروع)</string>
+    <string name="special_messgae_of_thanks_with_the_publication_of_letter">رسالة شكر خاصة، مع نشر إلكتروني على المواقع الخاصة بهم من قبل حكم التعريف، وعمل الإعلانات، وعلى وجه الخصوص تلك المواقع إذا طلب الدعم، بالإضافة إلى تحميل مجاني لبرامج تعليمية في متجر أبل</string>
+    <string name="refund_policy">سياسة الاسترجاع:</string>
+    <string name="if_project_is_unsuccessful">إذا كان المشروع غير ناجحة</string>
+    <string name="supporter_will_be_refunded_full_amount_minus">سوف مؤيد يكون ردها المبلغ ناقص معالجة كاملة للرسوم ورسوم الخدمات يعادل 3٪.</string>
+    <string name="supporter_will_be_refunded_full_amount_minus_processing_fees">سوف مؤيد يكون ردها المبلغ ناقص معالجة كاملة للرسوم ورسوم الخدمات يعادل 3٪. هذا ينطبق فقط على الراعي رسوم الخالق. رسوم الراعي Jaribha ليس قابل للرد</string>
+    <string name="see_please_oss">معرفة من فضلك الخاصة بك</string>
+    <string name="for_more_details">لمزيد من التفاصيل.</string>
+    <string name="update_contact_information">تحديث معلومات الاتصال</string>
+    <string name="mobile_phone">تليفون محمول</string>
+    <string name="city">مدينة</string>
+    <string name="choose_payment_option">خيار الدفع اختيار</string>
+    <string name="KNET">KNET</string>
+    <string name="master_card_visa_card">بطاقة ماستر كارد / فيزا</string>
+    <string name="next">التالى</string>
+    <string name="your_email_address">عنوان بريدك الإلكتروني</string>
+    <string name="get_fantastic_projects_delivered_to_your_inbox">الحصول على مشاريع رائعة سلمت إلى صندوق البريد الوارد الخاص بك</string>
+    <string name="subscribe">الاشتراك</string>
+    <string name="kitchen_progress">المطبخ التقدم</string>
+    <string name="thank_you_for_all_supporters_you_contribution">شكرا لجميع المشجعين. وقد لمست لي انك مساهمة البناء بعمق حتى الآن تسير على ما يرام المطبخ الإنتاج لدينا. وقد تم بناء الجدران، والأنابيب القيام به، وبدأ البلاط.</string>
+
+    <string name="leave_comment">ترك تعليق (لمؤيد / الرعاة فقط)</string>
+    <string name="you_cant_support_project_that_ended">لا يمكنك دعم المشروع الذي انتهت!</string>
+    <string name="please_press_back_button_again_to_exit">يرجى الضغط على زر العودة مرة أخرى للخروج.</string>
+    <string name="share_using">المشاركة باستخدام</string>
+    <string name="supporter">مؤيد</string>
+    <string name="unlimited_quote">(غير محدود)</string>
+
+    <string name="to_chenge_support_amount">تغيير مبلغ الدعم الخاص بك، أدخل المبلغ الجديد أدناه.</string>
+    <string name="its_up_to_you">&#160;والامر متروك لكم أي مبلغ من</string>
+    <string name="search_projects">مشاريع البحث</string>
+
+    <string name="today">اليوم</string>
+    <string name="yesterday">اليوم السابق</string>
+
+    <string name="invalid_user_image_size">صورتك أكبر من الحد الأقصى المسموح به من 1MB!</string>
+    <string name="invalid_user_image_dimension">يجب أن تكون الصورة بعدا أكبر من أو يساوي 400 * 400</string>
+
+    <string name="invalid_community_image_size">صورتك أكبر من الحد الأقصى المسموح به من 3MB!</string>
+    <string name="invalid_project_image_dimension">يجب أن تكون الصورة بعدا أكبر من أو يساوي 800*600</string>
+
+    <string name="years">"&#009;سنوات،&#009;<br />"</string>
+    <string name="months">"&#009;أشهر&#009;<br />"</string>
+    <string name="weeks">"&#009;أسابيع،&#009;<br />"</string>
+    <string name="days1">"&#009;أيام،&#009;<br />"</string>
+    <string name="hours">"&#009;ساعات،&#009;<br />"</string>
+    <string name="minutes">"&#009;دقيقة،&#009;<br />"</string>
+    <string name="seconds">"&#009;منذ ثوانى&#009;<br />"</string>
+
+    <!-- Nav Drawer Top Menu Items -->
+    <string-array name="nav_drawer_items_top">
+        <item>الصفحة الرئيسية</item>
+        <item>استعراض مشروع</item>
+        <item>بدء المشروع</item>
+        <item>كيف يعمل؟</item>
+        <item>مساعدة</item>
+        <item>محفظة</item>
+        <item>مجتمعات</item>
+        <item>تاريخي</item>
+        <item>رسائل</item>
+        <item>مفضل</item>
+    </string-array>
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons_top_selected">
+        <item>@drawable/ic_menu_home_icon</item>
+        <item>@drawable/icon_browse_unselect</item>
+        <item>@drawable/ic_menu_start_project</item>
+        <item>@drawable/ic_menu_howitwork</item>
+        <item>@drawable/ic_menu_help</item>
+        <item>@drawable/ic_menu_portfolio</item>
+        <item>@drawable/icon_communities_unselect</item>
+        <item>@drawable/ic_menu_history</item>
+        <item>@drawable/ic_menu_messages</item>
+        <item>@drawable/ic_menu_favorites</item>
+    </array>
+
+    <!-- Nav Drawer Bottom Menu Items -->
+    <string-array name="nav_drawer_items_bottom">
+        <item>المكافآت</item>
+        <item>المبادئ التوجيهية</item>
+        <item>اتصل بنا</item>
+        <item>اشترك في النشرة الإخبارية</item>
+    </string-array>
+
+    <string name="subscribe_to_newsletter">اشترك في النشرة الإخبارية</string>
+    <string name="you_cant_sponsor">لا يمكنك رعاية المشروع الذي انتهت!</string>
+    <string name="you_cant_support">لا يمكنك دعم المشروع الذي انتهت!</string>
+    <string name="campaign_ended">المنتهية في حملة</string>
+    <string name="no_community">لا مجتمع المتاح.</string>
+
+    <array name="nav_drawer_icons_top_unselected">
+        <item>@drawable/ic_menu_home_icon_sel</item>
+        <item>@drawable/icon_browse_sel</item>
+        <item>@drawable/ic_menu_start_project_sel</item>
+        <item>@drawable/ic_menu_howitwork_sel</item>
+        <item>@drawable/ic_menu_help_sel</item>
+        <item>@drawable/ic_menu_portfolio_sel</item>
+        <item>@drawable/icon_communities</item>
+        <item>@drawable/ic_menu_history_sel</item>
+        <item>@drawable/ic_menu_messages_sel</item>
+        <item>@drawable/ic_menu_favorites_sel</item>
+    </array>
+
+    <array name="nav_drawer_icons_bottom_selected">
+        <item>@drawable/ic_menu_rewards_sel</item>
+        <item>@drawable/ic_menu_guideline_sel</item>
+        <item>@drawable/ic_menu_contact_us_sel</item>
+        <item>@drawable/ic_menu_sub_newsletter_sel</item>
+    </array>
+
+    <array name="nav_drawer_icons_bottom_unselected">
+        <item>@drawable/ic_menu_rewards</item>
+        <item>@drawable/ic_menu_guideline</item>
+        <item>@drawable/ic_menu_contact_us</item>
+        <item>@drawable/ic_menu_sub_newsletter</item>
+    </array>
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    <string name="open_drawer">فتح</string>
+    <string name="close_drawer">قريب</string>
+    <string name="do_you_want_to_exit">هل تريد الخروج؟</string>
+    <string name="all_fields_req">كل الحقول مطلوبة.</string>
+
+    <!--Login screen-->
+    <string name="session_error">انتهت الجلسة</string>
+    <string name="network">إتصال شبكة</string>
+    <string name="login_title">تسجيل الدخول</string>
+    <string name="email_hint">عنوان البريد الإلكتروني</string>
+    <string name="password_hint">كلمه السر</string>
+    <string name="select_lang">اختار اللغة</string>
+    <string name="english">الإنجليزية</string>
+    <string name="arabic">العربية</string>
+    <string name="forgot_pwd">"<u>هل نسيت كلمة المرور؟</u>"</string>
+    <string name="explore_as_guest">"<u>استكشاف كضيف</u>"</string>
+    <string name="register_now">سجل الان</string>
+    <string name="remember_me">تذكرنى</string>
+    <string name="sign_in_with">تسجيل الدخول ب</string>
+    <string name="results">النتائج</string>
+    <string name="newsletter">النشرة (تحديث على مشاريع جديدة ومشروع ناجح)</string>
+    <string name="dont_have_account">لم يكن لديك حساب؟ سجل</string>
+
+    <string name="i_agree_new">أوافق على Jaribha</string>
+    <!--Registeration screen-->
+    <string name="registeration_title">التسجيل</string>
+    <string name="register">سجل</string>
+    <string name="register_success">سجلت بنجاح</string>
+    <string name="full_name">الاسم الكامل</string>
+    <string name="confirm_email">.تأكيد عنوان البريد الإلكتروني</string>
+    <string name="password">كلمه السر</string>
+    <string name="confirm_pwd">تأكيد كلمة المرور</string>
+    <string name="news_letter">"النشرة (التحديثات على المشاريع الجديدة والمشاريع الناجحة.)"</string>
+    <string name="i_agree">"أوافق على Jaribha الشروط والأحكام وسياسة الخصوصية."</string>
+    <string name="terms">الأحكام والشروط</string>
+    <string name="privacy">سياسة الخصوصية.</string>
+    <string name="and">و</string>
+
+    <!--Project list-->
+    <string name="and_char">"&amp;00,000"</string>
+    <string name="goal">هدف</string>
+    <string name="project_description">وصف</string>
+    <string name="support_project">مشروع الدعم</string>
+    <string name="support_sponser">مؤيد أو الراعي</string>
+    <string name="support_amt">مبلغ الدعم</string>
+    <string name="day_to_go">يوم للذهاب </string>
+    <string name="date">تاريخ: </string>
+    <string name="goal_amt">كمية هدف</string>
+
+    <!--Rewards screen-->
+    <string name="support">الدعم</string>
+    <string name="deliver_estimated">التسليم</string>
+    <string name="shipping">ا&#160;:لشحن</string>
+
+    <!-- Edit profile   -->
+    <string name="supported1">أيد</string>
+    <string name="favourite">مفضل</string>
+    <string name="once_you_update">"بمجرد تقديم طلبك لمرحلة ما بعد المشروع، الذي سيتم تصنيفها على أنها Jaribha" الخالق "التي سيكون لديك مدة أقصاها 120 يوما إطار زمني للوصول إلى المبلغ هدفك (مدة المشروع). يجب تعيين المبلغ هدفك ومدة المشروع مقدما. لا يمكن تغيير المبلغ هدف ومدة المشروع مرة واحدة قد ذهب مشروعك على الهواء مباشرة. هذا المشروع لا يمكن أن تتغير أو تحريرها مرة واحدة ان انتقل للعيش، ويمكن تحديثه فقط ".</string>
+
+    <!--  For GPS Tracker  -->
+    <string name="GPSAlertDialogTitle">ووضع نظام تحديد المواقع</string>
+    <string name="GPSAlertDialogMessage">لم يتم تمكين GPS. هل تريد أن تذهب إلى القائمة وضع</string>
+    <string name="title_activity_login">تسجيل الدخول</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">البريد الإلكتروني</string>
+    <string name="prompt_password">كلمة السر (اختياري)</string>
+    <string name="action_sign_in">تسجيل الدخول أو التسجيل</string>
+
+    <string name="action_sign_in_short">تسجيل الدخول</string>
+    <string name="server_error">حدث خطأ. حاول مرة اخرى.</string>
+    <string name="server">خطأ الخادم</string>
+    <string name="msg">الرسالة</string>
+    <string name="data_not_found">البيانات غير متوفرة.</string>
+    <string name="user_not_found">وقد انتهت جلسة العمل الخاصة بك. يرجى تسجيل الدخول مرة أخرى.</string>
+    <string name="reported">مشروع ذكرت بنجاح</string>
+    <string name="error_incorrect_password">هذه كلمة المرور غير صحيحة</string>
+    <string name="incorrect_email">البريد الالكتروني الذي أدخلته غير صحيح</string>
+    <string name="permission_rationale">"هناك حاجة لاتصالات الأذونات لتوفير الاكمال البريد الإلكتروني."</string>
+
+    <string name="forgot_password">هل نسيت كلمة المرور؟</string>
+    <string name="go_back_to_login"><ul>العودة إلى تسجيل الدخول</ul></string>
+    <string name="same_as_push"><ul>نفس الضغط</ul></string>
+
+    <string name="error_field_required">هذه الخانة مطلوبه</string>
+    <string name="save">حفظ</string>
+    <string name="project_desc">وصف المشروع</string>
+    <string name="incorrect_url">رابط غير صالح</string>
+
+    <string name="greater_thn_1000">يجب أن تكون القيمة أكبر من أو يساوي 1000</string>
+    <string name="smaller_thn_5000000">يجب أن تكون القيمة أقل من أو يساوي 5000000</string>
+    <string name="community_instruction">المجتمع هو وحدة اجتماعية من أي حجم الذي يحمل قيم مشتركة . يمكن للفرد أن إنشاء مشروع واختيار المجتمع الذي ينتمون إليه ، وبالتالي إعطاء المنشئين شعورا من المصداقية ، و تعرض المجتمع جيد.
+ لا تحتاج المجتمعات الى انشاء حساب على موقع جربها. ولكى تصبح مجتمع، يُرجى ملىء النموذج</string>
+
+    <!-- Months Array -->
+    <string-array name="months">
+        <item>كانون الثاني</item>
+        <item>فبراير</item>
+        <item>مارس</item>
+        <item>أبريل</item>
+        <item>قد</item>
+        <item>يونيو</item>
+        <item>يوليو</item>
+        <item>أغسطس</item>
+        <item>سبتمبر</item>
+        <item>شهر اكتوبر</item>
+        <item>تشرين الثاني</item>
+        <item>ديسمبر</item>
+    </string-array>
+
+    <!-- Shipping Array -->
+    <string-array name="shipping">
+        <item>الشحن في جميع أنحاء العالم</item>
+        <item>الشحن داخل "المحلية" فقط</item>
+        <item>لا تشارك الشحن</item>
+    </string-array>
+
+</resources>

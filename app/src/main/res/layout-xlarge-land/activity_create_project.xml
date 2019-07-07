@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/action_bar1" />
+
+    <LinearLayout
+        android:id="@+id/parentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar"
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+        <LinearLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-2dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:id="@+id/textView0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#1BB1C0"
+                android:gravity="center"
+                android:paddingBottom="@dimen/value10"
+                android:text="@string/app_name"
+                android:textStyle="bold"
+                app:font="Lato-Bold_0.ttf" />
+
+            <ImageView
+                android:id="@+id/imageView0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/img_dot" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-2dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#1BB1C0"
+                android:gravity="center"
+                android:paddingBottom="@dimen/value10"
+                android:text="@string/app_name"
+                android:textStyle="bold"
+                app:font="Lato-Bold_0.ttf" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+
+                android:background="@drawable/img_blank" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-2dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#1BB1C0"
+                android:gravity="center"
+                android:paddingBottom="@dimen/value10"
+                android:text="@string/app_name"
+                android:textStyle="bold"
+                app:font="Lato-Bold_0.ttf" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/img_blank" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-2dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#1BB1C0"
+                android:gravity="center"
+                android:paddingBottom="@dimen/value10"
+                android:text="@string/app_name"
+                android:textStyle="bold"
+                app:font="Lato-Bold_0.ttf" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/img_blank" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-2dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#1BB1C0"
+                android:gravity="center"
+                android:paddingBottom="@dimen/value10"
+                android:text="@string/app_name"
+                android:textStyle="bold"
+                app:font="Lato-Bold_0.ttf" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/img_blank" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-2dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#1BB1C0"
+                android:gravity="center"
+                android:paddingBottom="@dimen/value10"
+                android:text="@string/app_name"
+                android:textStyle="bold"
+                app:font="Lato-Bold_0.ttf" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/img_blank" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-2dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#1BB1C0"
+                android:gravity="center"
+                android:paddingBottom="@dimen/value10"
+                android:text="@string/app_name"
+                android:textStyle="bold"
+                app:font="Lato-Bold_0.ttf" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/img_blank" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/parentContainer"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-6dp"
+        android:background="@color/md_black_1000"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/frameCointainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_line" />
+
+</RelativeLayout>

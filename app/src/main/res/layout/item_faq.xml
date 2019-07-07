@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/value10">
+
+    <com.jaribha.customviews.fonts.FontTextView
+        android:id="@+id/tv_que"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top|left"
+        android:drawableLeft="@drawable/question_icon"
+        android:drawablePadding="@dimen/value20"
+        app:font="Lato-Regular.ttf" />
+
+    <com.jaribha.customviews.fonts.FontTextView
+        android:id="@+id/tv_ans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/answer_icon"
+        android:drawablePadding="@dimen/value20"
+        android:paddingTop="@dimen/value10"
+        app:font="Lato-Regular.ttf" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/value10"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_edit_que"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/edit_blue" />
+
+        <ImageView
+            android:id="@+id/iv_delete_que"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/value30"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/delete_red" />
+    </LinearLayout>
+
+</LinearLayout>

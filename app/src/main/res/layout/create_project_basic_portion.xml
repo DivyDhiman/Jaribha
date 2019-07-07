@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:background="#BCBCBC"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/project_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/image_upload" />
+
+        <com.jaribha.customviews.fonts.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value10"
+            android:gravity="center_horizontal"
+            android:text="@string/no_image_available"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/md_grey_400"
+            android:textStyle="italic"
+            android:visibility="gone"
+            app:font="Lato-Italic.ttf" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/value10">
+
+        <com.jaribha.customviews.fonts.FontTextView
+            android:id="@+id/tv_project_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/project_title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/md_red_400"
+            android:textStyle="normal"
+            app:font="Lato-Regular.ttf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/value10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:id="@+id/projectType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/hint_color"
+                app:font="Lato-Regular.ttf" />
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:id="@+id/favImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/value10"
+                android:drawableLeft="@drawable/icon_food_home"
+                android:drawablePadding="@dimen/value5"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/hint_color"
+                android:visibility="gone"
+                app:font="Lato-Regular.ttf" />
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/value10"
+                android:drawableLeft="@drawable/location_icon"
+                android:drawablePadding="@dimen/value5"
+                android:singleLine="true"
+                android:text="@string/project_location"
+                android:textColor="@color/hint_color"
+                app:font="Lato-Regular.ttf" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value5"
+            android:layout_marginTop="@dimen/value10"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/seek_bar_thumb" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/value10">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/zero"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                app:font="Lato-SemiBold.ttf" />
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/supported1"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/hint_color"
+                app:font="Lato-Regular.ttf" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/vertical_line" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/value10">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:id="@+id/tv_goal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/and_char"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                app:font="Lato-SemiBold.ttf" />
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/goal"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/hint_color"
+                app:font="Lato-Regular.ttf" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/vertical_line" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/value10">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:id="@+id/tv_days_left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                app:font="Lato-SemiBold.ttf" />
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/days_left"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/hint_color"
+                app:font="Lato-Regular.ttf" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line_space" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.jaribha.customviews.fonts.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/value10"
+            android:paddingRight="@dimen/value10"
+            android:paddingTop="@dimen/value5"
+            android:text="@string/description"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            app:font="Lato-SemiBold.ttf" />
+
+        <com.jaribha.customviews.fonts.FontEditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:focusable="false"
+            android:gravity="top"
+            android:hint="@string/short_description"
+            android:minLines="4"
+            android:paddingBottom="@dimen/value5"
+            android:paddingLeft="@dimen/value10"
+            android:paddingRight="@dimen/value10"
+            android:paddingTop="@dimen/value5"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColorHint="@color/hint_color"
+            app:font="Lato-Regular.ttf" />
+
+    </LinearLayout>
+
+</LinearLayout>

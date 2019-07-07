@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/value120"
+        android:layout_marginRight="@dimen/value120"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/value70"
+            android:layout_marginRight="@dimen/value70"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/value10">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Community Steps"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#F48481"
+                app:font="Lato-Regular.ttf" />
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value5"
+                android:gravity="center_horizontal"
+                android:text="A community is a social unit of any size that shares common values. An individual can create a project and choose the community they belong to, thus giving Creators a sense of credibility, and the community good exposure."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="italic"
+                app:font="Lato-Italic.ttf" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/value60"
+            android:layout_marginRight="@dimen/value60"
+            android:background="@color/md_white_1000"
+            android:paddingBottom="@dimen/value20">
+
+            <ImageView
+                android:id="@+id/iv_point01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/point_scroll_blue" />
+
+            <View
+                android:id="@+id/view02"
+                android:layout_width="3dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/iv_point01"
+                android:layout_centerHorizontal="true"
+                android:background="@color/md_grey_500" />
+
+            <ImageView
+                android:id="@+id/iv_point03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view02"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/point_scroll_white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/value5"
+                android:layout_marginTop="23dp"
+                android:layout_toLeftOf="@+id/view02"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/purple_background"
+                    android:gravity="center"
+                    android:padding="@dimen/value10"
+                    android:text="Click on Add new Community on the communities page."
+                    android:textColor="@color/md_white_1000"
+                    app:font="Lato-Regular.ttf" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/purple_shape_left" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view12"
+                android:layout_width="3dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/iv_point03"
+                android:layout_centerHorizontal="true"
+                android:background="@color/md_grey_500" />
+
+            <ImageView
+                android:id="@+id/iv_point13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view12"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/point_scroll_white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:layout_toRightOf="@+id/iv_point13"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/purple_shape_right" />
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/purple_background"
+                    android:gravity="center"
+                    android:padding="@dimen/value10"
+                    android:text="Fill out the form."
+                    android:textColor="@color/md_white_1000"
+                    app:font="Lato-Regular.ttf" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view22"
+                android:layout_width="3dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/iv_point13"
+                android:layout_centerHorizontal="true"
+                android:background="@color/md_grey_500" />
+
+            <ImageView
+                android:id="@+id/iv_point23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view22"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/point_scroll_white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="107dp"
+                android:layout_toLeftOf="@+id/iv_point23"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/purple_background"
+                    android:gravity="center"
+                    android:padding="@dimen/value10"
+                    android:text="Jaribha will review the information and email the Community with a response."
+                    android:textColor="@color/md_white_1000"
+                    app:font="Lato-Regular.ttf" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/purple_shape_left" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view42"
+                android:layout_width="3dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/iv_point23"
+                android:layout_centerHorizontal="true"
+                android:background="@color/md_grey_500" />
+
+            <ImageView
+                android:id="@+id/iv_point33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view42"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/point_scroll_white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="173dp"
+                android:layout_toRightOf="@+id/iv_point23"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/purple_shape_right" />
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/purple_background"
+                    android:gravity="center"
+                    android:padding="@dimen/value10"
+                    android:text="If approved, the Community will go live."
+                    android:textColor="@color/md_white_1000"
+                    app:font="Lato-Regular.ttf" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view52"
+                android:layout_width="3dp"
+                android:layout_height="55dp"
+                android:layout_below="@+id/iv_point33"
+                android:layout_centerHorizontal="true"
+                android:background="@color/md_grey_500"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

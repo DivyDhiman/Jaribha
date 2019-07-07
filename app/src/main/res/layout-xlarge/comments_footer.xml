@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/addCommentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.jaribha.customviews.fonts.FontTextView
+            android:id="@+id/tv_add_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/value10"
+            android:text="@string/add_comment"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            app:font="Lato-Semibold.ttf" />
+
+        <com.jaribha.customviews.fonts.FontEditText
+            android:id="@+id/commentEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="left|top"
+            android:hint="@string/description_here"
+            android:minLines="4"
+            android:paddingBottom="@dimen/value5"
+            android:paddingLeft="@dimen/value10"
+            android:paddingRight="@dimen/value10"
+            android:paddingTop="@dimen/value5"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColorHint="@color/hint_color"
+            app:font="Lato-Regular.ttf" />
+
+        <com.jaribha.customviews.fonts.FontTextView
+            android:id="@+id/goWebTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingLeft="@dimen/value10"
+            android:paddingRight="@dimen/value10"
+            android:paddingTop="@dimen/value5"
+            android:text="@string/if_you_want_to_access_all_features_go_on_the_website"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#009BBD"
+            android:visibility="gone"
+            app:font="Lato-Semibold.ttf" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/value10"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/value5"
+        android:paddingTop="@dimen/value5"
+        android:textColor="@color/white">
+
+        <com.jaribha.customviews.fonts.FontButton
+            android:id="@+id/leave_comment_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_button_red"
+            android:text="@string/leave_a_comment"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/md_white_1000"
+            android:textStyle="bold"
+            app:font="Lato-Semibold.ttf" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(Only Supporter does this)"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/md_white_1000"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</LinearLayout>

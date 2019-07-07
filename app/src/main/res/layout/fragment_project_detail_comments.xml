@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <com.jaribha.customviews.fonts.FontTextView
+        android:id="@+id/noComments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="No Records Found!"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:font="Lato-Regular.ttf" />
+
+    <ListView
+        android:id="@+id/list_comments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/leaveCommentBtn"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/value15"
+        android:footerDividersEnabled="false" />
+
+    <LinearLayout
+        android:id="@+id/addCommentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/leaveCommentBtn"
+        android:background="@color/background"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/value70"
+        android:visibility="gone">
+
+        <com.jaribha.customviews.fonts.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/value10"
+            android:text="Add Comment"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            app:font="Lato-Semibold.ttf" />
+
+        <com.jaribha.customviews.fonts.FontEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="left|top"
+            android:hint="Description here"
+            android:minLines="4"
+            android:paddingBottom="@dimen/value5"
+            android:paddingLeft="@dimen/value10"
+            android:paddingRight="@dimen/value10"
+            android:paddingTop="@dimen/value5"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColorHint="@color/hint_color"
+            app:font="Lato-Regular.ttf" />
+
+    </LinearLayout>
+
+    <com.jaribha.customviews.fonts.FontButton
+        android:id="@+id/leaveCommentBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/main_button_red"
+        android:text="Leave a comment"
+        android:textAllCaps="false"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/md_white_1000"
+        android:textStyle="bold"
+        app:font="Lato-Semibold.ttf" />
+
+</RelativeLayout>

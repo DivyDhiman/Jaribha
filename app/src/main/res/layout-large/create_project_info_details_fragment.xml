@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/value40"
+        android:layout_marginRight="@dimen/value40"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:orientation="vertical"
+            android:padding="@dimen/value10">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/almost_there"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/md_red_500"
+                app:font="Lato-Regular.ttf" />
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/value5"
+                android:text="@string/review_your_project_entirely_here"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:font="Lato-Regular.ttf" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:padding="3dp"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/value5"
+                android:layout_weight="1"
+                android:background="@drawable/green_box"
+                android:orientation="vertical"
+                android:padding="@dimen/value15">
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/value10"
+                    android:layout_marginTop="@dimen/value10"
+                    android:background="@drawable/cercle_white"
+                    android:gravity="center"
+                    android:text="@string/before_you_submit"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:font="Lato-Semibold.ttf" />
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/value10"
+                    android:paddingLeft="@dimen/value5"
+                    android:paddingRight="@dimen/value5"
+                    android:text="@string/check_the_page_preview_below_to_make_sure_all_your"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/white"
+                    app:font="Lato-Regular.ttf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/blue_box"
+                android:orientation="vertical"
+                android:padding="@dimen/value15">
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/value10"
+                    android:layout_marginTop="@dimen/value10"
+                    android:background="@drawable/cercle_white"
+                    android:gravity="center"
+                    android:text="@string/after_you_submit"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:font="Lato-Regular.ttf" />
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/value10"
+                    android:paddingLeft="@dimen/value5"
+                    android:paddingRight="@dimen/value5"
+                    android:text="@string/once_you_have_hit_submit"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/white"
+                    app:font="Lato-Regular.ttf" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value5"
+            android:background="@color/background" />
+
+        <LinearLayout
+            android:id="@+id/videoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/md_white_1000"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:padding="@dimen/value10">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_project_review"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/server_error_placeholder"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/value20"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/fav_button"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/play_button"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/value10"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/topLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:id="@+id/tv_proj_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/app_name"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/md_red_400"
+                        android:textStyle="bold"
+                        app:font="Lato-Semibold.ttf" />
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:id="@+id/tv_project_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name"
+                        android:textColor="@color/md_grey_700"
+                        app:font="Lato-Regular.ttf" />
+
+                    <ProgressBar
+                        android:id="@+id/project_reviwe_progress"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/value5"
+                        android:layout_marginTop="@dimen/value10"
+                        android:max="100"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/seek_bar_thumb" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="@dimen/value10">
+
+                        <com.jaribha.customviews.fonts.FontTextView
+                            android:id="@+id/tv_supported_amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="@string/zero"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold"
+                            app:font="Lato-Semibold.ttf" />
+
+                        <com.jaribha.customviews.fonts.FontTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="@string/supported_amount"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/hint_color"
+                            app:font="Lato-Regular.ttf" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="@dimen/value10">
+
+                        <com.jaribha.customviews.fonts.FontTextView
+                            android:id="@+id/tv_review_goal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="@string/and_char"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold"
+                            app:font="Lato-Semibold.ttf" />
+
+                        <com.jaribha.customviews.fonts.FontTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="@string/goal"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/hint_color"
+                            app:font="Lato-Regular.ttf" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="@dimen/value10">
+
+                        <com.jaribha.customviews.fonts.FontTextView
+                            android:id="@+id/tv_review_days_left"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="0"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold"
+                            app:font="Lato-Semibold.ttf" />
+
+                        <com.jaribha.customviews.fonts.FontTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="@string/days_left"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/hint_color"
+                            app:font="Lato-Regular.ttf" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="@dimen/value10">
+
+                        <com.jaribha.customviews.fonts.FontTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="0"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold"
+                            app:font="Lato-Semibold.ttf" />
+
+                        <com.jaribha.customviews.fonts.FontTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="@string/supporter_and_sponsor"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/hint_color"
+                            app:font="Lato-Regular.ttf" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/value10"
+                    android:background="@drawable/button_selector"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/value5">
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/support_project"
+                        android:textAllCaps="false"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/white"
+                        app:font="Lato-Regular.ttf" />
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=""
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:visibility="gone"
+                        app:font="Lato-Regular.ttf" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.jaribha.customviews.fonts.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/background"
+            android:paddingBottom="@dimen/value15"
+            android:paddingTop="@dimen/value15"
+            android:text="@string/our_sponsors"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            app:font="Lato-Bold_0.ttf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/value10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:background="@color/md_grey_500"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitCenter" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/value10"
+                        android:text="@string/your_title"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textStyle="bold"
+                        app:font="Lato-Bold_0.ttf" />
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/value10"
+                        android:text="@string/brief_text_will_go_here"
+                        android:textColor="@color/md_grey_700"
+                        app:font="Lato-Regular.ttf" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.jaribha.customviews.fonts.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/background"
+            android:paddingBottom="@dimen/value15"
+            android:paddingTop="@dimen/value15"
+            android:text="@string/project_details"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            app:font="Lato-Bold_0.ttf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/value10"
+                    android:background="@color/md_white_1000"
+                    android:orientation="vertical"
+                    android:padding="@dimen/value10">
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/story"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/title_colors"
+                        android:textStyle="italic"
+                        app:font="Lato-Italic.ttf" />
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:id="@+id/tv_overview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/black"
+                        app:font="Lato-Regular.ttf" />
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/value10"
+                        android:text="@string/risk_and_challenges"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/title_colors"
+                        android:textStyle="italic"
+                        app:font="Lato-Italic.ttf" />
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:id="@+id/tv_review_risk_challenges"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/value10"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/md_grey_700"
+                        app:font="Lato-Regular.ttf" />
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/value10"
+                        android:text="@string/faqs"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/title_colors"
+                        android:textStyle="italic"
+                        app:font="Lato-Italic.ttf" />
+
+                    <com.jaribha.customviews.ExpandableHeightListView
+                        android:id="@+id/list_review_faq"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <com.jaribha.customviews.fonts.FontButton
+                    android:id="@+id/btn_submit_project"
+                    style="@style/Widget.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/value10"
+                    android:background="@drawable/login_button_unselected"
+                    android:gravity="center"
+                    android:text="@string/submit_your_project"
+                    android:textAllCaps="false"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white"
+                    app:font="Lato-Semibold.ttf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/value10"
+                android:layout_marginLeft="@dimen/value15"
+                android:layout_weight="1.5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.jaribha.customviews.fonts.FontButton
+                        android:id="@+id/btn_review_become_sponsor"
+                        style="@style/Widget.Button.GreenBorder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/green_border_big"
+                        android:paddingLeft="@dimen/value10"
+                        android:paddingRight="@dimen/value10"
+                        android:text="@string/become_a_sponser"
+                        android:textAllCaps="true"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        app:font="Lato-Semibold.ttf" />
+
+                    <com.jaribha.customviews.ExpandableHeightListView
+                        android:id="@+id/list_review_rewards"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/value15" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value15"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/value10">
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/project_by"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold"
+                        app:font="Lato-Semibold.ttf" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.jaribha.customviews.BezelImageView
+                            android:id="@+id/iv_review_user_image"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/user_pic"
+                            app:borderDrawable="@drawable/border_drawable"
+                            app:maskDrawable="@drawable/circle_mask" />
+
+                        <com.jaribha.customviews.fonts.FontTextView
+                            android:id="@+id/tv_review_user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/value10"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold"
+                            app:font="Lato-Semibold.ttf" />
+
+                    </LinearLayout>
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:id="@+id/tv_review_user_bio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        app:font="Lato-Regular.ttf" />
+
+                    <com.jaribha.customviews.fonts.FontButton
+                        android:id="@+id/btn_review_contact_me"
+                        style="@style/Widget.Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/value10"
+                        android:background="@drawable/login_button_unselected"
+                        android:gravity="center"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp"
+                        android:text="@string/contact_me_arrow"
+                        android:textAllCaps="false"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/white"
+                        app:font="Lato-Semibold.ttf" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value15"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/value5">
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/community_by"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold"
+                        app:font="Lato-Semibold.ttf" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.jaribha.customviews.BezelImageView
+                            android:id="@+id/iv_community_user"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/user_pic"
+                            app:borderDrawable="@drawable/border_drawable"
+                            app:maskDrawable="@drawable/circle_mask" />
+
+                        <com.jaribha.customviews.fonts.FontTextView
+                            android:id="@+id/tv_community_user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/value10"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold"
+                            app:font="Lato-Semibold.ttf" />
+
+                    </LinearLayout>
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:id="@+id/tv_review_community_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        app:font="Lato-Regular.ttf" />
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:id="@+id/tv_review_community_more_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/value10"
+                        android:text="@string/more_info_plus"
+                        android:textColor="@color/app_theme_color" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

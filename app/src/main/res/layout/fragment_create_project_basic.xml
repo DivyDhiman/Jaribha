@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value10"
+            android:background="@color/md_red_400" />
+
+        <include
+            layout="@layout/create_project_basic_portion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value10"
+            android:background="@color/md_red_400" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/value20">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/kicking_off_your_new_project"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/md_red_500"
+                app:font="Lato-Regular.ttf" />
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value5"
+                android:gravity="center_horizontal"
+                android:text="@string/start_by_introducing_us_to_the_basics"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                app:font="Lato-Regular.ttf" />
+
+        </LinearLayout>
+
+        <com.jaribha.customviews.fonts.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/value10"
+            android:text="@string/project_image"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/title_colors"
+            app:font="Lato-Regular.ttf" />
+
+        <RelativeLayout
+            android:id="@+id/layout_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/md_white_1000"
+            android:orientation="vertical"
+            android:padding="@dimen/value15">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/gallery_frame"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_camera" />
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:id="@+id/tv_image_error"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value10"
+                    android:gravity="center_horizontal"
+                    android:text="@string/upload_an_image_choose_an_image_from_your_phone"
+                    android:textColor="@color/md_grey_400"
+                    android:textStyle="italic"
+                    app:font="Lato-Italic.ttf" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/value10"
+                android:text="@string/project_title"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/title_colors"
+                app:font="Lato-Regular.ttf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_white_1000"
+                android:orientation="vertical"
+                android:padding="@dimen/value15">
+
+                <com.jaribha.customviews.fonts.FontEditText
+                    android:id="@+id/edt_project_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="@string/write_here"
+                    android:padding="@dimen/value10"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/md_grey_400"
+                    app:font="Lato-Italic.ttf" />
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/select_category"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/md_grey_400"
+                    android:textStyle="italic"
+                    app:font="Lato-Italic.ttf" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/value10"
+                android:text="@string/category"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/title_colors"
+                app:font="Lato-Regular.ttf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_white_1000"
+                android:orientation="vertical"
+                android:padding="@dimen/value10">
+
+                <com.jaribha.customviews.fonts.FontEditText
+                    android:id="@+id/select_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawablePadding="@dimen/value10"
+                    android:drawableRight="@drawable/drop_icon"
+                    android:focusable="false"
+                    android:hint="@string/category_select"
+                    android:textColorHint="@color/md_grey_400"
+                    app:font="Lato-Regular.ttf" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/value10"
+                android:text="@string/short_description"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/title_colors"
+                app:font="Lato-Regular.ttf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_white_1000"
+                android:orientation="vertical"
+                android:padding="@dimen/value10">
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:id="@+id/tv_remaining_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="@string/zero_div_by"
+                    android:textColor="@color/md_grey_400"
+                    android:textStyle="italic"
+                    app:font="Lato-Italic.ttf" />
+
+                <com.jaribha.customviews.fonts.FontEditText
+                    android:id="@+id/edt_short_discription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="@string/write_here"
+                    android:maxLength="200"
+                    android:padding="@dimen/value10"
+                    android:textColorHint="@color/md_grey_400"
+                    app:font="Lato-Regular.ttf" />
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/if_you_had_to_describe_your"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/md_grey_400"
+                    android:textStyle="italic"
+                    app:font="Lato-Italic.ttf" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/value10"
+                android:text="@string/project_location"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/title_colors"
+                app:font="Lato-Regular.ttf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_white_1000"
+                android:orientation="vertical"
+                android:padding="@dimen/value15">
+
+                <com.jaribha.customviews.fonts.FontEditText
+                    android:id="@+id/selectCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawablePadding="@dimen/value10"
+                    android:drawableRight="@drawable/drop_icon"
+                    android:focusable="false"
+                    android:hint="@string/select_country"
+                    android:textColorHint="@color/md_grey_400"
+                    app:font="Lato-Regular.ttf" />
+
+                <com.jaribha.customviews.fonts.FontEditText
+                    android:id="@+id/selectCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/value15"
+                    android:drawablePadding="@dimen/value10"
+                    android:drawableRight="@drawable/drop_icon"
+                    android:focusable="false"
+                    android:hint="@string/select_city"
+                    android:textColorHint="@color/md_grey_400"
+                    app:font="Lato-Regular.ttf" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/value10"
+                android:text="@string/project_period"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/title_colors"
+                app:font="Lato-Regular.ttf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_white_1000"
+                android:orientation="vertical"
+                android:padding="@dimen/value15">
+
+                <com.jaribha.customviews.fonts.FontEditText
+                    android:id="@+id/selectPeriod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawablePadding="@dimen/value10"
+                    android:drawableRight="@drawable/drop_icon"
+                    android:focusable="false"
+                    android:hint="@string/select_period"
+                    android:textColorHint="@color/md_grey_400"
+                    app:font="Lato-Regular.ttf" />
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value5"
+                    android:text="@string/as_a_default_each_project_is_automatically"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/md_grey_400"
+                    android:textStyle="italic"
+                    app:font="Lato-Italic.ttf" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/value10"
+                android:text="@string/project_goal_US_dollar"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/title_colors"
+                app:font="Lato-Regular.ttf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_white_1000"
+                android:orientation="vertical"
+                android:padding="@dimen/value15">
+
+                <com.jaribha.customviews.fonts.FontEditText
+                    android:id="@+id/selectDollar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableLeft="@drawable/doller_sign"
+                    android:drawablePadding="@dimen/value10"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/md_grey_400"
+                    app:font="Lato-Regular.ttf" />
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value5"
+                    android:text="@string/your_project_goal_should_be_the_minimum_amount_needed"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/md_grey_400"
+                    android:textStyle="italic"
+                    app:font="Lato-Italic.ttf" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/value10"
+                android:text="@string/community"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/title_colors"
+                app:font="Lato-Regular.ttf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_white_1000"
+                android:orientation="vertical"
+                android:padding="@dimen/value15">
+
+                <com.jaribha.customviews.fonts.FontEditText
+                    android:id="@+id/selectCommunity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawablePadding="@dimen/value10"
+                    android:drawableRight="@drawable/drop_icon"
+                    android:focusable="false"
+                    android:hint="@string/select_community"
+                    android:textColorHint="@color/md_grey_400"
+                    app:font="Lato-Regular.ttf" />
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value5"
+                    android:text="@string/pick_a_community_you_are_part_of"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/md_grey_400"
+                    android:textStyle="italic"
+                    app:font="Lato-Italic.ttf" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.jaribha.customviews.fonts.FontButton
+            android:id="@+id/btn_basic_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value15"
+            android:background="@drawable/main_button_red"
+            android:text="@string/save_and_next"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            app:font="Lato-Semibold.ttf" />
+
+    </LinearLayout>
+</ScrollView>

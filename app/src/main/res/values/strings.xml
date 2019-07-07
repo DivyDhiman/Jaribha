@@ -1,0 +1,869 @@
+<resources>
+    <string name="app_name">Jaribha</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="open_drawer">Open</string>
+    <string name="close_drawer">Close</string>
+    <string name="edit_profile">Edit Profile</string>
+
+    <string name="do_you_want_to_exit">Do you want to exit?</string>
+    <string name="do_you_want_to_logout">Do you want to LogOut?</string>
+    <string name="all_fields_req">All fields are required.</string>
+    <string name="internet">Please check your Internet connection and try again!</string>
+
+    <!-- GCM project number   -->
+    <string name="project_id">296580390064</string>
+
+    <!--Login screen-->
+
+    <string name="login_cancel_fb">Login Cancel</string>
+    <string name="login_error_fb">Login Error</string>
+    <string name="select_no_community">Select No Community</string>
+    <string name="successfully_login">Successfully Login</string>
+    <string name="please_enter_email">Please enter email id.</string>
+    <string name="email_already_exist_please_different_email">Email already exist. Please enter different email id.</string>
+    <string name="required_information">Required Information</string>
+    <string name="continue2">Continue</string>
+    <string name="cancel">Cancel</string>
+    <string name="invalid_email">Invalid email id</string>
+    <string name="invalid_email_or_password">This email address or password is invalid</string>
+    <string name="invalid_password">This password is too short</string>
+    <string name="field_required">This field is required</string>
+
+    <string name="session_error">Session Expired</string>
+    <string name="network">Network Connection</string>
+    <string name="login_title">Login</string>
+    <string name="logout">LogOut</string>
+    <string name="email_hint">Email Address</string>
+    <string name="password_hint">Password</string>
+    <string name="select_lang">Select language</string>
+    <string name="english">ENGLISH</string>
+    <string name="arabic">ARABIC</string>
+    <string name="forgot_pwd">"<u>Forgot password?</u>"</string>
+    <string name="explore_as_guest">"<u>Explore as Guest</u>"</string>
+    <string name="register_now">Register Now</string>
+    <string name="remember_me">"&#009;Remember me"</string>
+    <string name="skip">SKIP</string>
+    <string name="sign_in_with">Sign in with</string>
+    <string name="newsletter">Newsletter (Update on new projects and successful project)</string>
+    <string name="dont_have_account">Don\&apos;t have an account? Sign Up ></string>
+    <string name="dont_have_account_new">Don\&apos;t have an account?</string>
+    <string name="step_1">Step 1</string>
+    <string name="step_2">Step 2</string>
+    <string name="step_3">Step 3</string>
+
+    <!--Registeration screen-->
+    <string name="registeration_title">Registeration</string>
+    <string name="register">Sign Up</string>
+    <string name="register_success">Registered successfully</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="confirm_email">Confirm Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_pwd">Confirm Password</string>
+    <string name="news_letter">Newsletter (Updates on new projects and successful projects.)</string>
+    <string name="i_agree">I Agree to Jaribha\&apos;s Terms and conditions and Privacy policy.</string>
+    <string name="i_agree_new">I Agree to Jaribha\&apos;s </string>
+    <string name="terms">Terms and conditions</string>
+    <string name="privacy">Privacy Policy</string>
+    <string name="and"> and</string>
+    <string name="email_does_not_match">Email does not match</string>
+    <string name="password_does_not_match">Password does not match</string>
+
+    <!--Project list-->
+    <string name="supported">"124%\nSupported"</string>
+    <string name="and_char">"&amp;00,000"</string>
+    <string name="goal">Goal</string>
+    <string name="project_description">Description</string>
+    <string name="community">Community</string>
+    <string name="support_project">Support Project</string>
+    <string name="support_sponser">Supporter &amp; Sponsor</string>
+    <string name="support_amt">Support amount</string>
+    <string name="day_to_go">Day to go </string>
+    <string name="date">Date: </string>
+    <string name="goal_amt">Goal amount</string>
+
+    <!--Rewards screen-->
+    <string name="support">Support</string>
+    <string name="deliver_estimated">Delivery Estimated</string>
+    <string name="shipping">Shipping:&#160;</string>
+
+    <!-- Edit profile   -->
+    <string name="activity">Activity</string>
+    <string name="created">Created</string>
+    <string name="create_proj">Create Project</string>
+    <string name="supported1">Supported</string>
+    <string name="sponsored">Sponsored</string>
+    <string name="favourite">Favourite</string>
+
+    <string name="leave_comment">Leave a comment (for Supporter/Sponsors only)</string>
+
+    <string name="fb_app_id">1620073134909455</string>
+
+    <string name="once_you_update">"Once you submit your request to post a project, you will be classified as a Jaribha &#34;Creator&#34; by which you will have a maximum of 120-days timeframe to reach your Goal Amount (Project Period). You must set your Goal Amount and Project Period in advance. The Goal Amount and Project Period cannot be changed once your project has gone live. The project cannot be changed or edited once it has gone live, it can only be updated."</string>
+
+    <!--  For GPS Tracker  -->
+    <string name="GPSAlertDialogTitle">GPS is setting</string>
+    <string name="GPSAlertDialogMessage">GPS is not enabled. Do you want to go to setting menu</string>
+
+    <string name="years">"&#009;years,&#009;<br />"</string>
+    <string name="months">"&#009;months,&#009;<br />"</string>
+    <string name="weeks">"&#009;weeks,&#009;<br />"</string>
+    <string name="days1">"&#009;days,&#009;<br />"</string>
+    <string name="hours">"&#009;hours,&#009;<br />"</string>
+    <string name="minutes">"&#009;minutes,&#009;<br />"</string>
+    <string name="seconds">"&#009;seconds ago&#009;<br />"</string>
+
+    <!-- Nav Drawer Top Menu Items -->
+    <string-array name="nav_drawer_items_top">
+        <item>Home</item>
+        <item>Browse Project</item>
+        <item>Start Project</item>
+        <item>How it Works?</item>
+        <item>Help</item>
+        <item>Portfolio</item>
+        <item>Communities</item>
+        <item>My History</item>
+        <item>Messages</item>
+        <item>Favourite</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons_top_selected">
+        <item>@drawable/ic_menu_home_icon</item>
+        <item>@drawable/icon_browse_unselect</item>
+        <item>@drawable/ic_menu_start_project</item>
+        <item>@drawable/ic_menu_howitwork</item>
+        <item>@drawable/ic_menu_help</item>
+        <item>@drawable/ic_menu_portfolio</item>
+        <item>@drawable/icon_communities_unselect</item>
+        <item>@drawable/ic_menu_history</item>
+        <item>@drawable/ic_menu_messages</item>
+        <item>@drawable/ic_menu_favorites</item>
+    </array>
+
+    <array name="nav_drawer_icons_top_unselected">
+        <item>@drawable/ic_menu_home_icon_sel</item>
+        <item>@drawable/icon_browse_sel</item>
+        <item>@drawable/ic_menu_start_project_sel</item>
+        <item>@drawable/ic_menu_howitwork_sel</item>
+        <item>@drawable/ic_menu_help_sel</item>
+        <item>@drawable/ic_menu_portfolio_sel</item>
+        <item>@drawable/icon_communities</item>
+        <item>@drawable/ic_menu_history_sel</item>
+        <item>@drawable/ic_menu_messages_sel</item>
+        <item>@drawable/ic_menu_favorites_sel</item>
+    </array>
+
+    <!-- Nav Drawer Bottom Menu Items -->
+    <string-array name="nav_drawer_items_bottom">
+        <item>Rewards</item>
+        <item>Guidelines</item>
+        <item>Terms and Conditions</item>
+        <item>Privacy Policy</item>
+        <item>Contact us</item>
+        <item>Subscribe to Newsletter</item>
+    </string-array>
+
+    <array name="nav_drawer_icons_bottom_selected">
+        <item>@drawable/ic_menu_rewards_sel</item>
+        <item>@drawable/ic_menu_guideline_sel</item>
+        <item>@drawable/terms_conditions_sel</item>
+        <item>@drawable/privacy_policy_sel</item>
+        <item>@drawable/ic_menu_contact_us_sel</item>
+        <item>@drawable/ic_menu_sub_newsletter_sel</item>
+    </array>
+
+    <array name="nav_drawer_icons_bottom_unselected">
+        <item>@drawable/ic_menu_rewards</item>
+        <item>@drawable/ic_menu_guideline</item>
+        <item>@drawable/terms_conditions_un</item>
+        <item>@drawable/privacy_policy_un</item>
+        <item>@drawable/ic_menu_contact_us</item>
+        <item>@drawable/ic_menu_sub_newsletter</item>
+    </array>
+
+    <string name="subscribe_to_newsletter">Subscribe to Newsletter</string>
+
+    <string name="title_activity_login">Sign in</string>
+
+    <string name="campaign_ended">Campaign Ended</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="error_invalid">This email address or password is invalid</string>
+    <string name="unable_to_get_data">Unable to get data, please check your internet connection.</string>
+    <string name="select_community">Select Community</string>
+    <string name="you_cant_sponsor">You can\'t sponsor a project that ended!</string>
+    <string name="you_cant_ask">You can\'t ask a question to yourself!</string>
+    <string name="you_cant_support">You can\'t support a project that ended!</string>
+    <string name="spamming_me_desc">Project creators are not permitted to spam. This includes sending unsolicited mass emails and unsolicited messages on any social media platform.</string>
+    <string name="this_is_desc">Jaribha is for projects that need supporting only. Projects must have a plan and a clear goal.</string>
+    <string name="prohibited_rewards_desc">Raffles, discounts, coupons, financial returns and investment offers are prohibited. If you have any other reason why the reward is wrong please explain under comments.</string>
+    <string name="action_sign_in_short">Login</string>
+    <string name="server_error">An error occurred.Please try again.</string>
+    <string name="server">Server Error</string>
+    <string name="error">Error</string>
+    <string name="msg">Message</string>
+    <string name="data_not_found">Data not available.</string>
+    <string name="proj_not_found">Project not found</string>
+    <string name="user_not_found">Your session has been expired.Please login again.</string>
+    <string name="community_added">Community Added Successfully</string>
+    <string name="comment_added">Comment Added Successfully</string>
+    <string name="reported">Project Reported Successfully</string>
+    <string name="update_added">Update Added Successfully</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_pass_match">Password and confirm password do not matched.</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="invalid_old_password">Old password is wrong</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="image_required">Image required</string>
+    <string name="greater_thn_1000">Value should be greater than or equal to 1000</string>
+    <string name="smaller_thn_5000000">Value should be smaller than or equal to 5000000</string>
+    <string name="incorrect_email">The Email you entered is incorrect</string>
+    <string name="incorrect_url">Invalid Url</string>
+    <string name="incorrect_mobile">The Mobile number you entered is incorrect</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+
+    <!--Forgot password screen-->
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="go_back_to_login"><ul>Go Back to Login</ul></string>
+    <string name="try_again">Try again</string>
+
+    <string name="same_as_push"><ul>Same as Push</ul></string>
+
+    <!--Ask question Screen -->
+    <string name="msg_add">Message Added</string>
+    <string name="ok">OK</string>
+
+    <!-- My Portfolio Screen -->
+    <string name="no_user_activity">No user activity</string>
+    <string name="no_project_created">No projects created yet</string>
+    <string name="no_projects_supported">No projects supported yet</string>
+    <string name="no_project_sponsored">No projects sponsored yet</string>
+    <string name="no_favorite_projects">No Favorite projects yet</string>
+
+    <!--Login screen-->
+
+    <string name="please_select_image">Please select image</string>
+    <string name="please_check_fb_settings">Please check your Facebook settings and try again</string>
+    <string name="please_check_google_settings">Please check your Google settings and try again</string>
+    <string name="please_check_linkedin_settings">Please check your Linked In settings and try again</string>
+
+    <string name="success">Success</string>
+    <string name="success1">Success!!</string>
+    <string name="email_setting">Email Setting Flags Updated</string>
+    <string name="add_new_community">Add New Community</string>
+
+    <string name="add_image_from">Add Image From</string>
+    <string name="capture">Capture</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera_error">Camera error</string>
+
+    <string name="ask_a_question">Ask a Question</string>
+    <string name="ask_a_question_about">Ask a question about </string>
+    <string name="become_a_sponsor">Become a Sponsor</string>
+    <string name="full_name_required">Full name required</string>
+    <string name="company_name_required">Company name required</string>
+    <string name="email_required">Email id required</string>
+    <string name="please_enter_valid_email">Please enter valid email id</string>
+    <string name="mobile_no_required">Mobile number required</string>
+    <string name="thank_you">Thank You</string>
+    <string name="sponsor_submitted_successfully">Thanks for your interest to become a sponsor!</string>
+    <string name="recently_launched">Recently Launched</string>
+    <string name="all_cat">all categories</string>
+    <string name="all_country">all countries</string>
+    <string name="no_projects">No Project Found!</string>
+    <string name="no_records">No Records Found!</string>
+    <string name="most_popular">Most Popular</string>
+    <string name="ending_soon">Ending Soon</string>
+    <string name="most_supported">Most Supported</string>
+    <string name="filter">Filter</string>
+
+    <string name="please_enter_message">Please enter message</string>
+    <string name="account">Account</string>
+    <string name="community_details">Community Details</string>
+    <string name="projects_under">Projects Under&#160;</string>
+    <string name="no_projects_available_under">No projects available under&#160;</string>
+    <string name="create_a_project">Create a Project</string>
+    <string name="guidelines">Guidelines</string>
+    <string name="basics">Basics</string>
+    <string name="story">Story</string>
+    <string name="about_you">About You</string>
+    <string name="eeward">Reward</string>
+    <string name="review">Review</string>
+    <string name="staff_pics">Staff Picks</string>
+    <string name="categories">Categories</string>
+    <string name="all_features">All Features</string>
+    <string name="results">results</string>
+    <string name="features">All Features</string>
+    <string name="country">Country</string>
+    <string name="how_it_work">How it work</string>
+    <string name="help">Help</string>
+    <string name="history">History</string>
+    <string name="messages">Messages</string>
+    <string name="favourites">Favourites</string>
+    <string name="rewards">Rewards</string>
+    <string name="guideline">Guideline</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="jaribha_weekly_newsletter">Jaribha Weekly Newsletter</string>
+    <string name="hello">Hello!</string>
+    <string name="sign_in_to_jaribha">Sign in to Jaribha</string>
+    <string name="setting">Setting</string>
+    <string name="please_click_back_again_to_exit">Please click BACK again to exit</string>
+    <string name="edit">Edit</string>
+    <string name="edit_project">Edit Project</string>
+    <string name="settings">Settings</string>
+    <string name="login_cancel">Login Cancel</string>
+
+    <string name="login_error">Login Error</string>
+    <string name="email_already_exist_please_enter_different_email_id">Email already exist. Please enter different email id.</string>
+    <string name="more_info">More Info</string>
+    <string name="risk_challenge">Risk &#009; Challenge</string>
+    <string name="faqs">FAQs</string>
+    <string name="joined">Joined-</string>
+    <string name="no_community">No community available.</string>
+    <string name="my_portfolio">My Portfolio</string>
+    <string name="at">&#160;at&#160;</string>
+
+    <string name="push">Push</string>
+    <string name="notifications">Notifications</string>
+    <string name="notification">Notification</string>
+    <string name="project_payment">Project Payment</string>
+
+    <string name="project_by">Project by</string>
+    <string name="project_details">Project Details</string>
+    <string name="info">Info</string>
+    <string name="update">Update</string>
+    <string name="comments">Comments</string>
+    <string name="report">Report</string>
+    <string name="successfully_published">Successfully Published</string>
+    <string name="successfully_completed">Successfully Completed</string>
+    <string name="failed">Failed</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_up_new">Sign Up ></string>
+    <string name="newsletter_update_on_new_projects_and_successful_project">Newsletter (Update on new projects and successful project)</string>
+    <string name="i_agree_to_Jaribha">I agree to Jaribha\&apos;s&#160;</string>
+    <string name="terms_and_conditions">Terms &amp; conditions</string>
+    <string name="terms_and_conditions_new">Terms &amp; conditions</string>
+    <string name="privacy_policy">Privacy Policy.</string>
+
+    <string name="select_language">Select Language</string>
+    <string name="sponsor_details">Sponsor Details</string>
+    <string name="Can_not_play_this_video">Can\&apos;t play this video.</string>
+    <string name="for_your_contact_us">For your Contact us</string>Ok
+
+    <string name="by">By&#160;</string>
+    <string name="days">Days</string>
+    <string name="in">&#160;in&#160;</string>
+    <string name="your_project_has_been_successfully">Your project has been successfully submitted to jaribha\&apos;s Admin Team. Once it is approved, your project will go live.</string>
+    <string name="home">Home</string>
+    <string name="fail">Fail</string>
+    <string name="please_accept_terms_and_condition_privacy_policy">Please accept Terms &#009; Condition and Privacy Policy</string>
+    <string name="should_you_be_able_to_meet_your_project_goal">Should you be able to meet your Project Goal or pass it, Jaribha will provide you with the entire sum within 14 days of the end date, less 10% the Project Fee</string>
+    <string name="should_you_unsuccessfully_meet_your_project_goal">Should you unsuccessfully meet your Project Goal by the timeframe you set, your project will be classified as unsuccessful and the support generated for your project will be returned to all your Supporters.</string>
+    <string name="supporting_a_project_multiple_times">Supporting a project multiple times by a single user is permitted.</string>
+    <string name="jaribha_welcomes_new_project_categories">Jaribha welcomes new project categories and If you do not think your project fits any of our categories, please email us at </string>
+    <string name="support_jaribha_id">support@jaribha.com</string>
+    <string name="We_will_review_your_suggested_category">.We will review your suggested category and email you with the response.</string>
+    <string name="projects_falling_under_categories">Projects falling under categories mentioned/seen on the website may be supported/created/sponsored in Jaribha.</string>
+    <string name="a_project_or_idea_could_be_anything_from_starting">A project or idea could be anything from starting a clothing line, publishing a book, creating a game or an event, inventing a new product and many more. Each Creator sets a Project Goal and a time limit in order to complete the project.</string>
+    <string name="jaribha_will_continue_to_add_or_delete_categories">Jaribha will continue to add/delete categories in the future. Please check our website regularly for updates.</string>
+    <string name="i_understand_that_in_order_to_launch">I understand that in order to launch, my project must meet the Project Guidelines and I must meet eligibility requirements. I also agree to Jaribha\&apos;s</string>
+    <string name="more_info_plus">More info +</string>
+    <string name="more_info_minus">More info -</string>
+    <string name="important">Important:</string>
+    <string name="please_remember_to_include">Please remember to include an English-language version of your description, rewards and other elements. For videos, you can do this with subtitles or a transcript. Don\&apos;t use music, images, video, or other content that you don\&apos;t have the rights to. Reusing copyrighted material is almost always against the law and Jaribha cannot condone any Intellectual Property infringement.</string>
+    <string name="There_are_always_risks_and_challenges_when_completing">There are always risks and challenges when completing your project, and you must be ready and qualified to overcome them.\n\nProduction delays permit mishaps, or even not calculating the amount you need to complete your project are all viable challenges and risks that you might face. Address the challenges and risks related to the completion and delivery of your rewards here.\n\nHelp Supporters better understand you and make them feel confident that you\&apos;ll be working hard to follow-through with your rewards promises.</string>
+    <string name="biography_required">Biography required</string>
+    <string name="please_enter_valid_url">Please enter a valid URL.</string>
+    <string name="user_name_required">User name required</string>
+    <string name="country_required">Country required</string>
+    <string name="city_required">City required</string>
+    <string name="zero">0%</string>
+    <string name="address_required">Address required</string>
+    <string name="phone_number_required">Phone number required</string>
+    <string name="please_accept_terms_condition_and_privacy_policy">Please accept Terms&amp;Condition and Privacy Policy</string>
+    <string name="january">January</string>
+    <string name="february">February</string>
+    <string name="march">March</string>
+    <string name="april">April</string>
+    <string name="may">May</string>
+    <string name="june">June</string>
+    <string name="july">July</string>
+    <string name="august">August</string>
+    <string name="september">September</string>
+    <string name="october">October</string>
+    <string name="november">November</string>
+    <string name="december">December</string>
+    <string name="art">Art</string>
+    <string name="beauty">Beauty</string>
+    <string name="crafts">Crafts</string>
+    <string name="dance">Dance</string>
+    <string name="cosmetics">Cosmetics</string>
+    <string name="comics">Comics</string>
+    <string name="film_and_video">Film &amp; Video</string>
+    <string name="literary">Literary</string>
+    <string name="small_Business">Small Business</string>
+    <string name="food">Food</string>
+    <string name="music">Music</string>
+    <string name="sports">Sports</string>
+    <string name="environment">Environment</string>
+    <string name="games">Games</string>
+    <string name="non_profit">Non-Profit</string>
+    <string name="technology">Technology</string>
+    <string name="design">Design</string>
+    <string name="fashion">Fashion</string>
+    <string name="health">Health</string>
+    <string name="photography">Photography</string>
+    <string name="theater">Theater</string>
+    <string name="staff_picks">Staff Picks</string>
+    <string name="recently">Recently</string>
+    <string name="small_projects">Small Projects</string>
+    <string name="community_by">Community By</string>
+    <string name="not_who_but_what_jaribha_is_an_online_platform">Not who, but what - Jaribha is an online platform that facilitates and manages contributions, allowing project owners also known as Creators to share their projects to get Supporters to contribute and make their projects come to life. The website allows Creators to develop and detail their projects on their own individual pages and gain support through Supporters that want to support projects based on their own personal interests and reaping token and modest rewards.</string>
+    <string name="he_creator_is_any_project_owner_on_jaribha">The Creator is any project owner on Jaribha, or any person submitting an idea on Jaribha that desires exposure, feedback and community support to reach the Project Goal following the all-or-nothing method.</string>
+    <string name="the_person_contributing_to_a_project">The person contributing to a project. They can be friends, family or simply any member of the community who has supported a project.</string>
+    <string name="a_community_is_a_social_unit_of_any_size_that_shares">A community is a social unit of any size that shares common values. An individual can create a project and choose the community they belong to, thus giving Creators a sense of credibility, and the community good exposure.</string>
+    <string name="acknowledgements_must_also_go_to_my_friends">Acknowledgements must also go to my friends and I extend our heartiest thanks to all faculty members for their kind co-operation extended for the completion of the project.</string>
+    <string name="if_you_have_a_project_or_an_idea_that_you_want_to_see_come">If you have a project or an idea that you want to see come to life, you can submit it here Start a Project . You must ensure your project follows all Jaribha guidelines and requirements. As a Creator on Jaribha, you are responsible in creating videos, content, images and plans of your idea or project, as well as list the total amount of support you will need to raise in order to execute it. You must also create different support categories and amounts, which also include rewards for each support category. The number of support categories is up to you the Creator.</string>
+    <string name="yes_after_you_submit_all_your_details">Yes – after you submit all your details, our team will review the details of your project and contact you with a status update within 1–3 weeks. Jaribha\'s review process is to keep the website as safe and secure as possible for Supporters and Creators.</string>
+    <string name="jaribha_is_the_sole_decision_maker_in_approving">Jaribha is the sole decision maker in approving projects. While reserving its right not to approve any project for any reason, only projects that meet Jaribha\&apos;s guidelines and requirements will get approved. To learn more about Jaribha\&apos;s guidelines, please click here</string>
+    <string name="browse_projects">Browse Projects</string>
+    <string name="sponsors">Sponsors</string>
+    <string name="sponsor">Sponsor</string>
+    <string name="creators">Creators</string>
+    <string name="supporters">Supporters</string>
+    <string name="estimated_delivery">Estimated Delivery</string>
+    <string name="oh_no">Oh no!</string>
+    <string name="thanks">Thanks</string>
+    <string name="your_payment_has_been_successfully_performed">Your payment has been successfully performed.</string>
+    <string name="payment_successfully">Payment Successfully!</string>
+
+    <string name="project_to_be_funded_by">Project to be funded by</string>
+    <string name="invalid_video_url">Invalid video url</string>
+    <string name="not_found">Not found</string>
+    <string name="overview_not_found">Overview Not found</string>
+    <string name="no_sponsors_found">No Sponsors Found</string>
+    <string name="popular_projects">Popular Projects</string>
+    <string name="communities">Communities</string>
+    <string name="projects">Project(s)</string>
+    <string name="all_projects">All projects</string>
+    <string name="for_str">for</string>
+    <string name="to_change_your_support_amount">To Change your Support amount enter a new amount below its up to you any amount of &amp;10 or more</string>
+    <string name="its_up_to_you_any_amount_of">Its up to you any amount of $10 or more.</string>
+    <string name="or_more">&#160;or more.</string>
+    <string name="please_select_terms_and_conditions.">Please select terms and conditions.</string>
+    <string name="change_language">Change Language</string>
+    <string name="sponsor_limited">Sponsor (Limited)</string>
+    <string name="supporter_unlimited">Supporter (Unlimited)</string>
+    <string name="Reward_dollar">Reward $&#160;</string>
+    <string name="international">International</string>
+    <string name="none">None</string>
+    <string name="domestic">Domestic</string>
+    <string name="successfully_submitted">Successfully Submitted</string>
+    <string name="incomplete">Incomplete</string>
+    <string name="no_shipping_involved">No shipping involved</string>
+    <string name="sold_out">Sold Out</string>
+    <string name="projects_supported">project(s) supported</string>
+    <string name="apply">Apply</string>
+    <string name="community_details_public">Community Details (Public)</string>
+    <string name="create_a_community_where_the_creators">Create a Community where the creators can assciate a Project with.</string>
+    <string name="community_image">Community Image</string>
+    <string name="community_title_public">Community Title (Public)</string>
+    <string name="write_here">Write here</string>
+    <string name="choose_a_project_title_that_is_simple">Choose a project title that is simple, specific and memorable. If applicable, make sure you include the title or name of any relevant material related to your project.</string>
+    <string name="community_email_public">Community Email (Public)</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="community_description">Community Description</string>
+    <string name="zero_div_by">0/200</string>
+    <string name="if_you_had_to_describe_your">If you had to describe your project in one tweet, how would you do it?</string>
+    <string name="address_public">Address (Public)</string>
+    <string name="phone_number_public">Phone Number (Public)</string>
+    <string name="enter_phone_number">Enter phone number</string>
+    <string name="as_a_default_each_project_is_automatically">As a default each project is automatically set at 120 days. Note : There is a 1–3 weeks processing time for distributing and processing the transaction after your project is successful. Please plan your projects accordingly.</string>
+    <string name="social_connect">Social Connect</string>
+    <string name="website">Website</string>
+    <string name="facebook_page">Facebook page</string>
+    <string name="twitter">Twitter</string>
+    <string name="linkedin_page">Linkedin page</string>
+    <string name="google_plus">Google plus</string>
+    <string name="youtube">Youtube</string>
+    <string name="instagram">Instagram</string>
+    <string name="other">Other</string>
+    <string name="for_jaribha_office_propose">For Jaribha Office Propose</string>
+    <string name="person_name_private">Person Name (Private)</string>
+    <string name="enter_name">Enter name</string>
+    <string name="person_email_private">Person Email (Private)</string>
+    <string name="person_work_mobile_private">Person Work / Mobile (Private)</string>
+    <string name="enter_number">Enter number</string>
+    <string name="submit">Submit</string>
+    <string name="update_error">Only creator of the project can submit updates!</string>
+    <string name="instructions">Instructions</string>
+    <string name="ask_a_question_about_child_cloths">Ask a question about Child Cloths</string>
+    <string name="to">To:</string>
+    <string name="write_your_question_here">Write your Question here!</string>
+    <string name="send">Send</string>
+    <string name="send_caps">SEND</string>
+    <string name="company_name">Company Name</string>
+    <string name="phone">Phone</string>
+    <string name="reply_here">Reply Here…</string>
+    <string name="american_institute_of_architecture_students">American Institute of Architecture Students</string>
+    <string name="the_american_institute_of_architecture_students_AIAS">The American Institute of Architecture Students (AIAS) is an independent, nonprofit, student-run organization dedicated to providing unmatched programs, information, and resources on issues critical to architectural education. The mission of the AIAS is to promote ex…</string>
+    <string name="projects_under_american">Projects under American Institute of Architecture Students</string>
+    <string name="choose_your_language">Choose Your Language</string>
+    <string name="or_caps">OR</string>
+    <string name="continue_to_explainer_video">Continue to Explainer Video</string>
+    <string name="or">or</string>
+    <string name="description">Description</string>
+    <string name="all_features_for_dance_in_all_countries">All Features for Dance in all Countries</string>
+    <string name="bad_video">Bad Video</string>
+    <string name="bad_images">Bad Images</string>
+    <string name="bad_language">Bad Language</string>
+    <string name="prohibited_rewards">Prohibited rewards</string>
+    <string name="this_is_a_project">This is not a project</string>
+    <string name="this_project_creator_is_spamming_me">This project creator is spamming me</string>
+    <string name="please_choose_one_of_the_following">Please choose one of the following and add a comment if you choose below</string>
+    <string name="report_this_project_to_jaribha">Report this Project to jaribha</string>
+    <string name="ask_a_question_about_testing">Ask a question about testing</string>
+    <string name="become_a_sponser">Become a sponsor</string>
+    <string name="change_password">Change Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="add_comment">Add Comment</string>
+    <string name="description_here">Description here</string>
+    <string name="leave_a_comment">Leave a comment</string>
+    <string name="no_image_available">No image available</string>
+    <string name="project_title">Project Title</string>
+    <string name="project_title1">Project\nTitle</string>
+    <string name="by_username_in_select_category">By username in Select category</string>
+    <string name="project_location">Project Location</string>
+    <string name="days_left">Days Left</string>
+    <string name="short_description">Short Description</string>
+    <string name="almost_there">Almost there!</string>
+    <string name="review_your_project_entirely_here">Review your project entirely here and edit before you submit.</string>
+    <string name="before_you_submit">Before you\n submit</string>
+    <string name="check_the_page_preview_below_to_make_sure_all_your">Check the page preview below to make sure all your project material is accurate and complete. If you like what you see then, click Submit Your Project!</string>
+    <string name="after_you_submit">After you\n submit</string>
+    <string name="once_you_have_hit_submit">Once you\'ve hit submit, our team will review your project details to ensure you\'ve met all of Jaribha\'s project guidelines. Our team will notify you within 1–3 weeks in your registered email with your project\'s status. If your project is approved, it will automatically go live.</string>
+    <string name="help_infusions_kw_grow">Help infusions Kw Grow!</string>
+    <string name="by_patty_marotte">By Patty Marotte</string>
+    <string name="days_goal">Days Goal</string>
+    <string name="our_aim_is_to_discover_extraordinary_potential">Our aim is to discover extraordinary potential in the youth and develop it through this once-in-a-lifetime experience. We offer these bright young minds the chance to master skills and techniques necessary to meet their goals. The Protégés are selected based on a thorough screening process ensuring that they meet our high standards of excellence.</string>
+    <string name="overview">Overview</string>
+    <string name="our_sponsors">Our Sponsors</string>
+    <string name="yout_title">Yout Title</string>
+    <string name="brief_text_will_go_here">Brief text will go here…</string>
+    <string name="submit_your_project">Submit Your Project</string>
+    <string name="contact_me">Contact me</string>
+
+    <string name="infusions_kw_leased_a_site_where_we_have_started">Infusions KW leased a site where we have started construction for a production kitchen. Because we were a home business we now have to buy everything from scratch for all our kitchen necessities!</string>
+    <string name="supporter_and_sponsor">Supporter &amp; Sponsor</string>
+    <string name="your_title">Your Title</string>
+    <string name="risk_and_challenge">Risk &amp; Challenge</string>
+    <string name="eghneety">Eghneety</string>
+    <string name="contact_me_arrow">Contact me ></string>
+    <string name="sirdab_lab">Sirdab Lab</string>
+    <string name="please_enter_your_email_id">Required Information</string>
+    <string name="delete">Delete</string>
+    <string name="are_you_sure_to_delete_this_reward">Are you sure to delete this reward?</string>
+    <string name="at_mubarak_center">At Mubarak Center</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="delete_project">Are you sure to delete this project?</string>
+    <string name="all_categories">All Categories</string>
+    <string name="reset">Reset</string>
+    <string name="email_id">Email Id</string>
+    <string name="telephone_mobile">Telephone/ Mobile</string>
+    <string name="fax_number_optional">Fax Number (optional)</string>
+    <string name="comments_message">Comments/Message</string>
+    <string name="telephone_mobile_optional">Telephone/ Mobile (optional)</string>
+    <string name="fax_number">Fax Number</string>
+    <string name="optional">Optional</string>
+    <string name="all_countries">All Countries</string>
+    <string name="tell_us_little_bit_about_you">Tell us little bit about you!</string>
+    <string name="people_would_like_to_get_to_know_you_more">People would like to get to know you more.</string>
+    <string name="profile_photo">Profile Photo</string>
+    <string name="upload_an_image_choose_an_image_from_your_phone">Upload an image\nChoose an image from your phone</string>
+    <string name="biography">Biography</string>
+    <string name="your_location">Your Location</string>
+    <string name="select_country">Select Country</string>
+    <string name="select_city">Select City</string>
+    <string name="address">Address</string>
+    <string name="mobile_phone_number">Mobile/Phone Number</string>
+    <string name="include_links_that_will_help_supporters">Include links that will help Supporters get a sense of who you are and your qualifications to execute your project. Your blog or personal website, your Facebook/Twitter account, and examples of your work are perfect!</string>
+    <string name="save_and_next">Save &amp; Next</string>
+    <string name="save">Save</string>
+    <string name="create_your_jaribha_account_now">Create your Jaribha account now!</string>
+    <string name="verify_your_account_in_the_next_few_steps">Verify your account in the next few steps.</string>
+    <string name="Aaccount_information">Account Information</string>
+    <string name="account_number">Account Number</string>
+    <string name="countries_not_found">Countries not found</string>
+    <string name="community_not_found">Communities not found</string>
+    <string name="cities_not_found">Cities not found</string>
+    <string name="cat_not_found">Categories not found</string>
+    <string name="swift_number">Swift Number</string>
+    <string name="swift_society_for_worldwide_interbank_financial">SWIFT-Society for Worldwide Interbank Financial Telecommunication. Swift is a standard format Bank Identifier Codes (BIC) and it is a unique identification code for a particular bank. These codes are used when transferring money between banks. Please call your bank to ask about your Swift code.</string>
+    <string name="name_of_bank">Name of Bank</string>
+    <string name="routing_number_of_bank_IBAN">Routing Number of Bank(IBAN)</string>
+    <string name="any_other_bank_detail">Any Other Bank Detail</string>
+    <string name="for_all_creators">For all creators</string>
+    <string name="you_are_accountable_for_all_projects_registered">You are accountable for all projects registered under your name and all rewards promised to Supporters and/or Sponsors.</string>
+    <string name="for_all_returning_creators">For all returning creators</string>
+    <string name="if_you_are_not_successful_in_reaching_your_project">If you are not successful in reaching your Project Goal the first time around, you may resubmit your project again. However, please make  viable changes in the project\&apos;s video,presentation and rewards to better improve your success rate the second time around.</string>
+    <string name="kicking_off_your_new_project">Kicking off your new project!</string>
+    <string name="start_by_introducing_us_to_the_basics">Start by introducing us to the basics.</string>
+    <string name="project_image">Project Image</string>
+    <string name="project_image1">Project\nImage</string>
+    <string name="select_category">Choose a project title that is simple, specific and memorable. If applicable, make sure you include the title or name of any relevant material related to your project.</string>
+    <string name="category">Category</string>
+    <string name="category_select">Select Category</string>
+    <string name="if_you_had_to_describe_your_project">If you had to describe your project in one tweet, how would you do it?</string>
+    <string name="project_period">Project Period</string>
+    <string name="select_period">Select Period</string>
+    <string name="project_goal_US_dollar">Project Goal (US Dollar)</string>
+    <string name="your_project_goal_should_be_the_minimum_amount_needed">Your Project Goal should be the minimum amount needed to complete the project and fulfill all rewards. Remember, Jaribha is based on an all-or-nothing concept, which means you can always get more than your Project Goal but never less than the amount you\&apos;ve allocated for the completion of the project.\n\nIf your project is successfully supported, Jaribha will apply the Project Fee (see Terms and Conditions for more details). If you don\&apos;t meet your Project Goal on time, the amounts collected to date will be returned to the Supporters less any transaction fees (See Terms and Conditions for more details).\n\nRemember, there are many knowledgeable members in our community. Don\&apos;t underestimate their ability to determine whether your Goal Amount is realistic or not.\n\nTo ensure the community trusts the accuracy of your goal, ensure your project is well researched and always make sure you share as many details as you can on your project page.</string>
+    <string name="pick_a_community_you_are_part_of">Pick a community you are part of or associated with. Being under a community will help give more exposure to your project through the community\&apos;s network. Only pick a community you are part of, if you are not part of a community leave it as Select No Community.\nSee all jaribha (Communities).</string>
+    <string name="these_are_the_project_guidelines">These are the Project Guidelines.</string>
+    <string name="all_projects_must_meet_the">All projects must meet the guidelines to launch, so please read them carefully.</string>
+    <string name="getting_support_for_your_project">Getting support for your project is based on &#34;all-or-nothing&#34;.</string>
+    <string name="if_your_project_does_not_fall_under">If your project does not fall under one of Jaribha\&apos;s categories you can contact us</string>
+    <string name="startnew_project">Start New Project</string>
+    <string name="list_out_your_sponsor_fee_and_project_rewards">List out your Sponsor Fee and Project Rewards!</string>
+    <string name="place_your_rewards_here">Place your rewards here, and remember - be creative and price them fairly. You can have one or as many rewards as you want.</string>
+    <string name="doy_you_want_sponsors">Do You Want Sponsors?</string>
+    <string name="create_rewards">Create Rewards</string>
+    <string name="add_new_reward">Add New Reward</string>
+    <string name="supporter_amount">Supporter Amount($)</string>
+    <string name="year">Year</string>
+    <string name="month">Month</string>
+    <string name="shipping_details">Shipping Details</string>
+    <string name="shipping_worldwide">Shipping worldwide</string>
+    <string name="reward_limit">Reward Limit</string>
+    <string name="limit">&#160;&#160;Limit</string>
+    <string name="unlimited">&#160;&#160;Unlimited</string>
+    <string name="save_and_add_new">Save &amp; Add New</string>
+    <string name="how_do_i_create_a_reward">How Do I Create A Reward?</string>
+    <string name="enter_limit_number">Enter Limit Number</string>
+    <string name="tell_us_your_story">Tell us your story!</string>
+    <string name="share_the_reason_behind_your_project">Share the reason behind your project.</string>
+    <string name="project_video">Project Video</string>
+    <string name="add_url">Add Url</string>
+    <string name="you_must_upload_a_video_here_explaining">You must upload a video here explaining your project to the public. We recommend posting a fun, short, simple and catchy video. Featuring yourself in your video helps in getting the community to better engage and trust you.\n\nEmbeds from Vimeo or YouTube. Please paste the link.eg : http://vimeo.com/6119925, https://youtu.be/-38uPkyH9vI</string>
+    <string name="risk_and_challenges">Risk and Challenges</string>
+    <string name="add_new_FAQs">Add new FAQs</string>
+    <string name="write_question">Write Question</string>
+    <string name="write_answer">Write Answer</string>
+    <string name="location">Location</string>
+    <string name="select_all">Select All</string>
+    <string name="getting_support_for_your_project_is_based_on_all_or_nothing">Getting support for your project is based on all-or-nothing.</string>
+    <string name="a_project_or_idea_could_be_anything_from">A project or idea could be anything from starting a clothing line, publishing a book, creating a game or an event inventing a new product and many more. Each Creator sets a Project Goal and a time limit in order to complete the project. \n\nProjects falling under categories mentioned/seen on the website may be supported/created/sponsored in Jaribha.\n\nJaribha will continue to add/delete more categories in the future. Please check our website regularly for updates.</string>
+    <string name="your_project_does_not_contain">Your project does not contain one or more Jaribha\&apos;s prohibited uses</string>
+    <string name="please_refrain_from_using_offensive_content">Please refrain from using offensive content as part of your project page or rewards, as well as any copyright or patented material. Also refrain from spamming individuals and other members of the community.</string>
+    <string name="we_welcome_you_to_invite_friends_and_family">We welcome you to invite friends and family to view your project, but avoid invading the social networks or sending mass emails in the hopes of publicizing your project. While Jaribha reserves the right to ultimately reject a project without specifying a reason, as a general guideline Jaribha does not allow offensive language in/or towards projects, Creators, Supporters or Sponsors.</string>
+    <string name="search">Search</string>
+    <string name="jaribha_core_individuals">Jaribha\&apos;s core individuals</string>
+
+    <string name="who_is_jaribha">Who is Jaribha?</string>
+    <string name="not_who_but_what_jaribha_is">Not who, but what - Jaribha is an online platform that facilitates and manages contributions, allowing project owners also known as Creators to share their projects to get Supporters to contribute and make their projects come to life. The website allows Creators to develop and detail their projects on their own individual pages and gain support through Supporters that want to support projects based on their own personal interests and reaping token and modest rewards.</string>
+    <string name="who_is_the_creator">Who is the Creator?</string>
+    <string name="the_creator_is_any_project_owner">The Creator is any project owner on Jaribha, or any person submitting an idea on Jaribha that desires exposure, feedback and community support to reach the Project Goal following the all-or-nothing method.</string>
+    <string name="who_is_the_supporter">Who is the Supporter?</string>
+    <string name="the_person_contributing_to_a_project_they_can">The person contributing to a project. They can be friends, family or simply any member of the community who has supported a project.</string>
+    <string name="what_is_a_community">What is a Community?</string>
+    <string name="a_community_is_a_social_unit_of_any">A community is a social unit of any size that shares common values. An individual can create a project and choose the community they belong to, thus giving Creators a sense of credibility, and the community good exposure.</string>
+    <string name="how_can_i_connect_to_jaribha_on_social_media">How can I connect to Jaribha on social media?</string>
+    <string name="creating_a_project">Creating a project</string>
+    <string name="how_do_i_create_a_project">How do I create a project?</string>
+    <string name="if_you_have_a_project_or_an_idea_that_you">If you have a project or an idea that you want to see come to life, you can submit it here Start a Project . You must ensure your project follows all Jaribha guidelines and requirements. As a Creator on Jaribha, you are responsible in creating videos, content, images and plans of your idea or project, as well as list the total amount of support you will need to raise in order to execute it. You must also create different support categories and amounts, which also include rewards for each support category. The number of support categories is up to you the Creator.</string>
+    <string name="does_jaribha_process_and_review_all">Does Jaribha process and review all projects before they launch?</string>
+    <string name="do_all_submitted_projects_get_approved">Do all submitted projects get approved?</string>
+    <string name="community_steps">Community Steps</string>
+    <string name="a_community_is_a_social_unit_of_any_size">A community is a social unit of any size that shares common values. An individual can create a project and choose the community they belong to, thus giving Creators a sense of credibility, and the community good exposure.</string>
+    <string name="click_on_add_new_community_on_the">Click on Add new Community on the communities page.</string>
+    <string name="fill_out_the_form">Fill out the form.</string>
+    <string name="jaribha_will_review_the_information">Jaribha will review the information and email the Community with a response.</string>
+    <string name="if_approved_the_community_will_go_live">If approved, the Community will go live.</string>
+    <string name="creators_steps">Creators Steps</string>
+    <string name="to_become_a_creator_an_individual">To become a Creator, an individual must choose to create a project.</string>
+    <string name="create_an_account_and_sign_in">Create an account and sign in</string>
+    <string name="click_start_your_project">Click\nStart your Project</string>
+    <string name="fill_out_the_application">Fill out the application</string>
+    <string name="wait_for_approval">Wait for Approval</string>
+    <string name="if_approved_the_project_will">If approved, the project will go online for the alloted time period.</string>
+    <string name="if_project_is_not_approved_the_creator">If project is not approved, the Creator may be asked to sort out some issues within the project.</string>
+    <string name="after_the_allotted_period_ends">After the allotted period ends\nthe creator would have</string>
+    <string name="not_reached_their_project_goal">Not reached their Project Goal.</string>
+    <string name="an_unsuccessfully_supported_project">An unsuccessfully supported project</string>
+    <string name="reached_their_project_goal_or_surpassed_it">Reached their Project Goal or surpassed it.</string>
+    <string name="a_successfully_supported_project">A successfully supported project</string>
+    <string name="learn_more_at_help_center">Learn more at Help Center</string>
+    <string name="sponsors_steps">Sponsors Steps</string>
+    <string name="a_sponsor_has_to_pay_a_fee_to_be_seen">A Sponsor has to pay a fee to be seen on the project page.1</string>
+    <string name="click_on_become_a_sponsor_button">Click on \&apos;Become a Sponsor\&apos; button.</string>
+    <string name="fill_out_the_form_send_it">Fill out the form, send it and wait to be contacted by us.</string>
+    <string name="after_the_payment_is_made_it">After the payment is made it is will appear on the project page.</string>
+    <string name="awaits_to_see_if_the_project_is_successful">Awaits to see if the project is successful\nor unsuccessful in reaching the Goal\nAmount.</string>
+    <string name="if_the_project_is_unsuccessful_the_creator">If the project is unsuccessful, the creator\&apos;s Sponsor fee will be refunded minus the processing fee(3%).</string>
+    <string name="if_project_successfully_reaches_its_goal">If project successfully reaches its goal amountn the sponsor will not receive a reward, unless otherwise.</string>
+    <string name="supporters_steps">Supporters Steps</string>
+    <string name="we_call_this_person_the_supporter_because">We call this person the \&apos;Supporter\&apos; because he/she is supporting the Creator to reach the Project Goal for a reward in return.</string>
+    <string name="browse_to_look_for_a_project_to_support">Browse to look for a project to support.</string>
+    <string name="find_a_project">Find a project.</string>
+    <string name="when_a_decision_is_made_to_support">When a decision is made to support a project the Supporter will be directed to a payment portal.</string>
+    <string name="if_the_project_is_unsuccessful_the_supporter">If the project is unsuccessful, the Supporter will receive the amount supported back minus the processing fee (3%)</string>
+    <string name="if_the_project_is_successful_the_creator">If the project is successful, the Creator will contact the Supporter in regards to the reward promised, if any.</string>
+    <string name="how_will_infusion_kw_use_the_$500_if_raised">How will Infusion KW use the $500 if raised?</string>
+    <string name="making_a_dream_a_reality">Making a dream, a reality…</string>
+    <string name="i_would_not_call_it_a_hobby_but_a_lifestyle">I wouldn\&apos;t call it a hobby but a lifestyle.</string>
+    <string name="the_beginning">The Beginning</string>
+    <string name="the_kitchen_remained_largely_unaffected_by_architectural_advances">The kitchen remained largely unaffected by architectural advances throughout the Middle Ages; open fire remained the only method of heating food. European medieval kitchens were dark, smoky, and sooty places, whence their name. In European medieval cities around the 10th to 12th centuries, the kitchen still used an open fire hearth in the middle of the room. In wealthy homes, the ground floor was often used as a stable while the kitchen was located on the floor above, like the bedroom and the hall. In castles and monasteries, the living and working areas were separated; the kitchen was sometimes moved to a separate building, and thus could not serve anymore to heat the living rooms. In some castles the kitchen was retained in the same structure, but servants were strictly separated from nobles, by constructing separate spiral stone staircases for use of servants to bring food to upper levels. An extant example of such a medieval kitchen with servants\&apos; staircase is at Muchalls Castle in Scotland. In Japanese homes, the kitchen started to become a separate room within the main building at that time.</string>
+    <string name="when_i_get_a_new_supporter_every_time">When i get a new Supporter every time</string>
+    <string name="when_i_get_a_new_sponser_every_time">When i get a new Sponsor every time</string>
+    <string name="when_my_project_receives_a_comment">When my Project receives a comment</string>
+    <string name="when_one_of_the_projects_i_supported_reaches">When one of the Projects I supported reaches its deadline</string>
+    <string name="when_one_of_the_projects_i_supported">When one of the Projects I supported has been updated</string>
+    <string name="projects_with_open_platinum_sponser_spaces">Projects with open Platinum Sponsor spaces</string>
+    <string name="general">General</string>
+    <string name="newletter_when_i_received_a_private_message">Newletter (When i received a private message</string>
+    <string name="update_on_new_projects_and_successful_projects">Update on new projects and successful projects</string>
+    <string name="successfully_supported">Successfully Supported!</string>
+    <string name="supported_amount">Supported Amount</string>
+    <string name="please_choose_one_of_the_following_and_add_a_comment">Please choose one of the following and add a comment if you choose:</string>
+    <string name="update_1">Update 1</string>
+    <string name="add_update">Add Update</string>
+    <string name="if_you_want_to_access_all_features_go_on_the_website">If you want to access all features go on the website.</string>
+    <string name="only_cteator_does_this">(Only cteator does this)</string>
+    <string name="rewards_are_a_token_of_appreciation_provided_by_the_creators">Rewards are a token of appreciation provided by the Creators to thank all those who have contributed to the project. Rewards should be creative, tangible and not overpriced. Rewards should relate back to the project.</string>
+    <string name="for_example_if_the_project_is_designing">For example, if the project is designing and producing a new watch, then one of the rewards could be giving that watch, depending on the Creator\&apos;s choice of course.</string>
+    <string name="how_to_create_a_reward">How to create a reward</string>
+    <string name="if_your_project_is_a_product_then_your_supporter">If your project is a product then your Supporter can receive the product itself. You can even include a special thank you note or a signed letter. Or you can choose to do one or more of the following.</string>
+    <string name="creative_collaboration">Creative Collaboration</string>
+    <string name="have_your_supporter_appear_as_part_of_your_project">Have your Supporter appear as part of your project.</string>
+    <string name="creative_mementos">Creative Mementos</string>
+    <string name="your_supporter_can_receive_a_special_thank_you_gift">Your Supporter can receive a special thank you gift.</string>
+    <string name="creative_experiences">Creative Experiences</string>
+    <string name="your_supporter_could_get_a_chance_to">Your Supporter could get a chance to participate in an event.</string>
+    <string name="pricing_rewards">Pricing rewards</string>
+    <string name="be_sure_to_offer_rewwards_that_will_benifit">Be sure to offer rewwards that will benefit your supporter as much as you can. Make sure you make it count and keep in mind that Supporters are supporting you because they believe in your project, and not because of your rewards.</string>
+    <string name="pricing_rewards_should_be_done_fairly">Pricing rewards should be done fairly</string>
+    <string name="in_the_list_bellow_you_can_see_the_most_common_rewards">In the list bellow you can see the most common rewards that you may offer your supporters.</string>
+    <string name="exclusive_art_peices_with_a_signature">1. Exclusive art peices with a signature</string>
+    <string name="supporter_name_will_be_listed_in_the_supporter">2. Supporter\&apos;s name will be listed in the Supporter\&apos;s board that will be displayed in the entrance door at the 1st exhibition show. In addition to that, Supporters will be emailed with a photograph of the Supporter\&apos;s board.</string>
+    <string name="full_updates_and_full_story_behind_the_event">3. Full updates and full story behind the event and VIP photos of the event itself.</string>
+    <string name="invitations_for_every_art_gallery_hosted">4. Invitations for every art gallery hosted.</string>
+    <string name="priority_of_booking_for_each_dance_show">1. Priority of booking for each dance show</string>
+    <string name="supporters_name_will_be_listed_in_the">2. Supporters name will be listed in the credits as a supporter.</string>
+    <string name="a_dvd_copy_of_the_performance_for_supporters">3. A DVD copy of the performance for Supporters to see what they helped to create.</string>
+    <string name="private_dancing_lessons">4. Private dancing lessons.</string>
+    <string name="signed_posters_from_the_dancers">5. Signed posters from the dancers.</string>
+    <string name="a_gesture_of_choreography_created_in_the_dance">6. A gesture of choreography created in the dance in the Supporter\&apos;s honor.</string>
+    <string name="select_languages">Select Languages</string>
+    <string name="change_languages">Change Languages</string>
+    <string name="reward_KD_or_more">Reward KD 1 or more</string>
+    <string name="we_are_not_giving_an_rewards">We are not giving an rewards! This is just Testing Up!</string>
+    <string name="estimate_delivery">Estimate Delivery:</string>
+    <string name="transaction_id">Transaction Id -</string>
+    <string name="creator_free">Creator Free</string>
+    <string name="reward_details">Reward Details</string>
+    <string name="no_thanks_i_just_want_to_help">No Thanks, I Just Want To Help This Project</string>
+    <string name="infusion_KW_try_our_infamous_zazoo_name_on_our_infusions">Infusion KW Try our Infamous Zazoo! -Name on our Infusions Contributors Book 1 jar of Pomegranate Zaatar 260ml Estimated Delivery: August 2015 Shipping: Domestic</string>
+    <string name="support_caps">SUPPORT</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="converted_USD_to_KD">Converted USD to KD</string>
+    <string name="payment_gateway">Payment Gateway</string>
+    <string name="credit">Credit</string>
+    <string name="selected_reward">Selected Reward</string>
+    <string name="no_thanks_i_just_want_to_help_the_project">No thanks i just want to help the project</string>
+    <string name="shipping_methods">Shipping methods</string>
+    <string name="continue_payment">Continue Payment</string>
+    <string name="supprt_receipt">Support Receipt</string>
+    <string name="thank_you_for_your_support_once_again">Thank you for your support once again,we will keep you updated on our success</string>
+    <string name="availability_supporters">Availability (Supporters)</string>
+    <string name="suporter_amount">Supporter Amount</string>
+    <string name="currency_rate">Currency Rate</string>
+    <string name="payment_id">Payment Id#</string>
+    <string name="tracking_id">Tracking Id#</string>
+    <string name="date_and_time">Date &amp; Time</string>
+    <string name="supported_this_project">Supported this project:</string>
+    <string name="magic_comedy_show">Magic Comedy Show</string>
+    <string name="alrighty">Alrighty!</string>
+    <string name="support_amount">Support Amount</string>
+    <string name="reward_selection">Reward Selection</string>
+    <string name="to_change_your_reward_make_a_new">To Change your Reward, make a new selection below.</string>
+    <string name="no_reward">No Reward</string>
+    <string name="free_download_of_the_tutorial_on_the_apple_store">Free download of the tutorial on the Apple store,in addition to a letter of thank \n(No Thanks, I Just Want To Help This Project)</string>
+    <string name="special_messgae_of_thanks_with_the_publication_of_letter">Special messgae of thanks,with the publication of letter on their own websites by definition rule,and the work of the declarations,in Particular those sites if requested support,in addition to the free download of educational programmes at the Apple store</string>
+    <string name="refund_policy">Refund Policy:</string>
+    <string name="if_project_is_unsuccessful">if project is unsuccessful</string>
+    <string name="supporter_will_be_refunded_full_amount_minus">Supporter will be refunded Full Amount Minus Processing  Fees &amp; Service Charges equal to 3%.</string>
+    <string name="supporter_will_be_refunded_full_amount_minus_processing_fees">Supporter will be refunded Full Amount Minus Processing  Fees &amp; Service Charges equal to 3%. This only apply to  Sponsor Fee Creator. The Jaribha sponsor fee is no  refundable</string>
+    <string name="see_please_oss">See Please our</string>
+    <string name="for_more_details">For More Details.</string>
+    <string name="update_contact_information">Update Contact Information</string>
+    <string name="mobile_phone">Mobile/Phone</string>
+    <string name="city">City</string>
+    <string name="choose_payment_option">Choose payment option</string>
+    <string name="KNET">KNET</string>
+    <string name="master_card_visa_card">Master Card/Visa Card</string>
+    <string name="next">Next</string>
+    <string name="your_email_address">Your email address</string>
+    <string name="get_fantastic_projects_delivered_to_your_inbox">Get fantastic projects delivered to your inbox</string>
+    <string name="subscribe">SUBSCRIBE</string>
+    <string name="kitchen_progress">Kitchen Progress</string>
+    <string name="thank_you_for_all_supporters_you_contribution">Thank You for all supporters. you contribution has touched me deeply so Far construction going well our production kitchen. The walls have been built, piping done, and tiles started.</string>
+    <string name="project_desc">Project Description</string>
+
+    <string name="support_doller">Support $</string>
+    <string name="you_cant_support_project_that_ended">You can\'t support a project that ended!</string>
+    <string name="please_press_back_button_again_to_exit">Please press back button again to exit.</string>
+    <string name="share_using">Share using</string>
+    <string name="supporter">Supporter</string>
+    <string name="unlimited_quote">(Unlimited)</string>
+    <string name="community_instruction">A community is a social unit of any size that shares common values. An individual can create a project and choose the community they belong to, thus giving Creators a sense of credibility, and the community good exposure. Communities do not need to create an account in Jaribha. In order to become a Community, please fill the form.</string>
+
+    <string name="time">00:05</string>
+    <string name="to_chenge_support_amount">To Change your Support amount, enter a new amount below.</string>
+    <string name="its_up_to_you">Its up to you any amount of&#160;</string>
+    <string name="search_projects">Search Projects</string>
+
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="invalid_user_image_size">Your image is larger than the maximum allowed of 1MB!</string>
+    <string name="invalid_user_image_dimension">Image dimension must be greater then or equal to 400*400</string>
+
+    <string name="invalid_community_image_size">Your image is larger than the maximum allowed of 3MB!</string>
+    <string name="invalid_project_image_dimension">Image dimension must be greater then or equal to 800*600</string>
+    <string name="first_letter_not_zero">First letter must not be 0.</string>
+
+    <string name="learn_more">Learn more at Help Center</string>
+
+    <!-- Months Array -->
+    <string-array name="months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <!-- Shipping Array -->
+    <string-array name="shipping">
+        <item>Shipping Worldwide</item>
+        <item>Shipping within "Local" only</item>
+        <item>No shipping involved</item>
+    </string-array>
+</resources>

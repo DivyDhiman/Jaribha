@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/videoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_payment_project_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/server_error_placeholder"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/play_button"
+                    android:visibility="gone" />
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/projectImage"
+                    android:background="@drawable/green_strip_transparent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/value10"
+                    android:text="Successfully Supported!"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    app:font="Lato-Bold_0.ttf" />
+
+                <ImageView
+                    android:id="@+id/iv_payment_project_favourite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/value20"
+                    android:src="@drawable/fav_button" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/topLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/value10">
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:id="@+id/tv_payment_project_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/md_red_400"
+                    app:font="Lato-Regular.ttf" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/value5"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:id="@+id/tv_payment_project_by"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/hint_color"
+                        app:font="Lato-Regular.ttf" />
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:id="@+id/tv_payment_project_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/value10"
+                        android:drawableLeft="@drawable/icon_food_home"
+                        android:drawablePadding="@dimen/value5"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/hint_color"
+                        app:font="Lato-Regular.ttf" />
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:id="@+id/tv_payment_project_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/value10"
+                        android:drawableLeft="@drawable/location_icon"
+                        android:drawablePadding="@dimen/value5"
+                        android:singleLine="true"
+                        android:textColor="@color/hint_color"
+                        app:font="Lato-Regular.ttf" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/payment_project_progress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/value10"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/seek_bar_thumb" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/value10">
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:id="@+id/tv_payment_project_supported"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/value15"
+                        android:singleLine="true"
+                        android:text="0%"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold"
+                        app:font="Lato-Bold_0.ttf" />
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/value15"
+                        android:singleLine="true"
+                        android:text="@string/supported1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/hint_color"
+                        app:font="Lato-Regular.ttf" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/vertical_line" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/value10">
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:id="@+id/tv_payment_project_goal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/value15"
+                        android:singleLine="true"
+                        android:text="@string/and_char"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold"
+                        app:font="Lato-Bold_0.ttf" />
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/value15"
+                        android:singleLine="true"
+                        android:text="@string/goal_amt"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+
+                        android:textColor="@color/hint_color"
+                        app:font="Lato-Regular.ttf" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/vertical_line" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/value10">
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:id="@+id/tv_payment_project_days_left"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/value15"
+                        android:singleLine="true"
+                        android:text="0"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold"
+                        app:font="Lato-Bold_0.ttf" />
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/value15"
+                        android:singleLine="true"
+                        android:text="@string/days_goal"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/hint_color"
+                        app:font="Lato-Regular.ttf" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

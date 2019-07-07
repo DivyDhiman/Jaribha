@@ -1,0 +1,35 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="screen_margin">100dp</dimen>
+    <dimen name="screen_margin_land">100dp</dimen>
+    <dimen name="screen_margin_portrait">120dp</dimen>
+
+    <dimen name="value5">5dp</dimen>
+    <dimen name="value10">10dp</dimen>
+    <dimen name="value13">13dp</dimen>
+    <dimen name="value15">15dp</dimen>
+    <dimen name="value20">20dp</dimen>
+    <dimen name="value30">30dp</dimen>
+    <dimen name="value40">40dp</dimen>
+    <dimen name="value35">35dp</dimen>
+    <dimen name="value45">45dp</dimen>
+    <dimen name="value50">50dp</dimen>
+    <dimen name="value60">60dp</dimen>
+    <dimen name="value105">105dp</dimen>
+    <dimen name="value200">200dp</dimen>
+    <dimen name="value25">25dp</dimen>
+    <dimen name="value70">70dp</dimen>
+    <dimen name="value80">80dp</dimen>
+    <dimen name="value90">90dp</dimen>
+    <dimen name="value100">100dp</dimen>
+    <dimen name="value110">110dp</dimen>
+    <dimen name="value120">120dp</dimen>
+    <dimen name="value130">130dp</dimen>
+    <dimen name="value180">180dp</dimen>
+    <dimen name="value220">220dp</dimen>
+    <dimen name="value250">250dp</dimen>
+    <dimen name="value240">240dp</dimen>
+    <bool name="isTablet">true</bool>
+</resources>

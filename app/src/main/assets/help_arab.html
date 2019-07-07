@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<style>
+body{background-color: #F5F5F5;direction:rtl;}
+.panel-default > .panel-heading {background-color: #fff;}
+.panel-heading .accordion-toggle:after {font-family: 'Glyphicons Halflings';float: left; color: grey;content: "\e114"; }
+.panel-heading .accordion-toggle.collapsed:after {content: "\e114"; }
+.accordion-toggle{text-decoration: none!important;}
+.mainhead h3 {color: #20a1bc;font-size: 16px;font-weight: bold;margin: 15px;}
+.panel-group .panel + .panel {margin-top: 0;}
+.noline {font-size: 14px;font-weight: 600;}
+a:focus {outline: none;}
+@media (max-width:568px){
+.noline {font-size: 13px;font-weight: bold;}
+.panel-body {font-size: 13px;}
+}
+</style>
+<script>
+		$(document).ready(function(){
+			$('#helpSearchBtn').click(function(event){
+				event.preventDefault();
+				var s;
+				s = $('#helpSearchBox').val();
+				$('.help-item-list').hide();
+				$( ".help-item-list :contains(" + s + ")" ).parents(".help-item-list").show();
+			});
+			
+			$('#helpSearchBox').keypress(function(e){
+				if(e.which == 13){//Enter key pressed
+					$('#helpSearchBtn').click();//Trigger search button click event
+				}
+			});	
+		});
+		
+</script>
+</head>
+<body>
+<form method="post" id="searchformID" role="form">
+		<div class="form-group input-group">
+            <input type="text" class="form-control" id="helpSearchBox" value="" name="search">
+            <span class="input-group-btn">
+            <button type="submit" id="helpSearchBtn" class="btn btn-default"><i class="fa fa-search"></i></button>
+            </span>
+        </div>
+</form>
+
+<div class="panel-group" id="accordion">
+
+<div class="help-item-list">
+<div class="row-fluid mainhead">
+ <h3>الأفراد الأساسيين فى "جربها"</h3> 
+</div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">من هى "جربها"؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse">
+      <div class="panel-body">
+        ما هو "جربها"؟
+ليس السؤال ما هو، ولكن ماذا - "جربها" هو برنامج على شبكة الانترنت يسهّل ويدير اسهامات، ويسمح لــ" مالكي مشروعات"، يُطلق عليهم أيضاً "منشئين" أن يتقاسموا مشروعاتهم لإيجاد داعمين يقومون بالمساهمة فى مشروعاتهم وجعلها ترى النور. يسمح الموقع الالكترونى لـ"المنشئين" بتطوير ووصف تفاصيل مشروعاتهم على صفحاتهم الفردية الخاصة بهم والحصول على دعم لها من خلال الداعمين اللذين يرغبون فى دعم مشروعات تقوم على أساس اهتماماتهم الشخصية وجني جوائز رمزية متواضعة
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">من هو "المُنشىء"؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse">
+      <div class="panel-body">
+      المُنشىء هو أى مالك لمشروع على موقع "جربها"، أو أى شخص يقدم فكرة على "جربها" والذى يرغب فى عرضها وتلقى تعليقات بشأنها وتلقى دعم مجتمعى لها للوصول الى "هدف المشروع" باتباع طريقة "الكل أو لا شىء".
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">من هو الداعم ؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse">
+      <div class="panel-body">
+      هو الشخص الذى يساهم فى مشروع ما. يمكن أن يكون هذا الشخص مجموعة من الأصدقاء، عائلة أو ببساطة أى عضو من المجتمع يكون قد دعم مشروع ما.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">من هم الرعاة؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFour" class="panel-collapse collapse">
+      <div class="panel-body">
+    <p>الرعاة هم مستخدمون يختارون الحاق انفسهم بمشروعات ومُنشئين محددين. يقوم الرعاة بدعم مشروعات عن طريق ادراج شعاراتهم على صفحات مختارة من صفحات المشروع.<br>وعلى الرغم من أن ثمة مستخدمين يرعون صفحات، الا أنه لا يزال المُنشئون مسئولون تماماً عن مشروعاتهم الخاصة.<br>لتصبح الراعي ، انقر على زر " الراعي " في صفحة المشروع <br></p>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">ما هو المجتمع ؟ </b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFive" class="panel-collapse collapse">
+      <div class="panel-body">
+   المجتمع هو وحدة اجتماعية من اى حجم تتقاسم قيم مشتركة فيما بينها. يمكن لفرد ما أن يُنشىء مشروع ما ويختار المجتمع الذى ينتمى اليه، وبذلك فهو يُعطى المنشئين احساس بالمصداقية صورة جيدة عن المجتمع.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapsesix">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">كيف يمكننى الاتصال بــ"جربها" عبر وسائل التواصل الاجتماعى؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapsesix" class="panel-collapse collapse">
+      <div class="panel-body">
+   "جربها" متاحة على مختلف مواقع التواصل الاجتماعى. يُرجى ايجاد الروابط الموجودة فى تبويب "اتصل بنا" أو فى ذيل أى صفحة على الموقع الالكترونى.
+
+الاتصال بــ"جربها"- لمزيد من الاستعلام والدعم، يُرجى التواصل على support@jaribha.com
+      </div>
+    </div>
+  </div>
+</div>
+<div class="help-item-list">  
+<div class="row-fluid mainhead">
+ <h3>انشاء مشروع</h3> 
+</div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">كيف أنشىء مشروع؟ </b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">
+   اذا ما كان لديك مشروع أو فكرة ما تريد لها أن ترى النور، يمكنك تقديمها هنا فى "ابدأ مشروع". يجب عليك أن تتأكد من أن مشروعك يتبع كافة المبادىء العامة والمتطلبات التى تحددها "جربها". وبصفتك "مُنشىء" مشروع على موقع "جربها"، فأنت مسئول عن الفيديوهات، المحتوى، الصور والخطط الخاصة بفكرتك أو مشروعك فضلاً عن قائمة باجمالى مبلغ الدعم الذى تحتاجه حتى تقوم بتنفيذ مشروعك أو فكرتك. كما يجب عليك أيضاً أن تنشىء فئات ومبالغ دعم مختلفة والتى تتضمن أيضاً جوائز لكل فئة دعم. يتوقف عدد فئات الدعم عليك أنت "المُنشىء".
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse21">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">هل تقوم "جربها" بمعالجة ومراجعة كافة المشروعات قبل اطلاقها؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse21" class="panel-collapse collapse">
+      <div class="panel-body">
+        نعم- بعد ما تقوم بتقديم كافة التفاصيل الخاصة بك يقوم فريق العمل لدينا بمراجعة كافة التفاصيل الخاصة بمشروعك والاتصال بك واخطارك بالحالة فى غضون 1-3 أسابيع. ان عملية المراجعة التى تقوم بها "جربها" هى للحفاظ على سلامة وأمن الموقع الالكترونى بقدر الامكان لصالح الداعمين والمُنشئين.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse22">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">هل تتم الموافقة على كافة المشروعات المقدمّة؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse22" class="panel-collapse collapse">
+      <div class="panel-body">
+        ان "جربها" هى وحدها صانعة القرار فى الموافقة على المشروعات. وبينما تحتفظ بحقها فى عدم الموافقة على أى مشروع لأى سبب، فإن المشروعات التى تفى بمبادىء ومتطلبات "جربها" فحسب ستلقى موافقة. للمزيد من المعلومات حول المبادىء العامة لـــ"جربها"، برجاء الضغط هنا.  <a href="https://jaribha.com/help/guideline" target="_blank">الرجاء الضغط هنا</a> 
+      </div>
+    </div>
+  </div>
+
+<div class="row-fluid mainhead">
+ <h3>حسابك على "جربها" </h3> 
+</div>  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">كيف لى أن أغير اسمى على البروفايل "الملف التعريفى"؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">
+       قم بتسجيل دخول الى حساب "جربها" ثم اضغط على "اعدادت" ثم "اذهب الى البروفايل".
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse31">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">كيف لى أن أغير عنوان البريد الاكترونى المرتبط بحساب "جربها"؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse31" class="panel-collapse collapse">
+      <div class="panel-body">
+       لا يمكنك فعل ذلك. يمكنك انشاء حساب جديد.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse32">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">كيف ألغى اشتراكى أو اقوم بادارة الرسائل الالكترونية التى اتلقاها من "جربها"؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse32" class="panel-collapse collapse">
+      <div class="panel-body">
+      قم بتسجيل دخول الى حساب "جربها" ثم اضغط على "اعدادت" ثم اضغط على "اشعارات".
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse32">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">لقد نسيت كلمة المرور الخاصة بى، ما الذى علَّى فعله الآن؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse32" class="panel-collapse collapse">
+      <div class="panel-body">
+      اضغط على "نسيت كلمة المرور" على صفحة تسجيل الدخول.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse33">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">كيف ألغى حسابى على "جربها"؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse33" class="panel-collapse collapse">
+      <div class="panel-body">
+       لكى تلغى حسابك يجب عليك الاتصال بنا عبر البريد الالكترونى support@jaribha.com لا يمكنك الغاء حسابك اذا ما تم نشر مشروعك على الموقع.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="help-item-list">
+
+<div class="row-fluid mainhead">
+ <h3>المُنشئوون</h3> 
+</div>  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">ما هو هدف المشروع أو مبلغ الهدف؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse4" class="panel-collapse collapse">
+      <div class="panel-body">
+       ان هدف المشروع أو مبلغ الهدف هو المبلغ الذى يحدده المُنشىء والذى يعتقد المُنشىء أنه يمثل الحد الأدنى من المبلغ الذى يحتاجه لإنجاز المشروع وللإيفاء بكافة الجوائز.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse41">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">ما هى طريقة "الكل-أو-لا شىء"؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse41" class="panel-collapse collapse">
+      <div class="panel-body">
+       هذه هى الطريقة التى تقوم على أساسها "جربها". يُقصد بطريقة "الكل أو لا شىء" أنه يجب على المنشئين الحصول على المبلغ المطلوب بأكمله لتحقيق هدف المشروع الذى يرغبون فى تحقيقه فى غضون "فترة المشروع". اذا عجز المنشئون عن تحصيل مبلغ الهدف، فمن ثمَّ لا يحصلون على شيىء فى المقابل وسيتم اعادة كافة الدعم الذى تم تحصيله خلال فترة المشروع الى الداعمين.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse42">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">بعد اذا ما حقق المشروع مبلغ الهدف وتم دعمه بنجاح، هل تكتسب "جربها" نسبة من ملكية المشروع؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse42" class="panel-collapse collapse">
+      <div class="panel-body">
+       لا تحصل "جربها" على أية ملكية فى أى مشروع أو فكرة مقدَّمة. انها مسئولية المُنشىء بالكامل فى مواصلة العمل حتى انجاز مشروعه.
+      </div>
+    </div>
+  </div>
+
+   <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse43">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">من الذى يمكنه انشاء مشروع؟ </b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse43" class="panel-collapse collapse">
+      <div class="panel-body">
+       تقبل "جربها" صناَّع الأفلام، الموسيقيين، الفنانين، المصممين، متطوعى منظمات غير حكومية، رياضيين والمزيد والذين لديهم مشروع مستقل، أو حملة أو ابتكار أو حدث ما يحتاجون الى تحقيقه على أرض الواقع. فالمنشىء هو أى شخص يمتلك مشروع أو فكرة تتوافق مع الميادىء العامة ومتطلبات "جربها".
+      </div>
+    </div>
+  </div>
+
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse44">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">هل يمكن قبول دعم بعد انتهاء المدة؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse44" class="panel-collapse collapse">
+      <div class="panel-body">
+      ان فرص الدعم على "جربها" محددة بفترة المشروع وسيتم اغلاقها تلقائياً بعد انتهاء فترة المشروع. لن يُسمح لك بقبول أية مساهمات لمشروعاتك على "جربها" بعد انتهاء الموعد المحدد. 
+      </div>
+    </div>
+  </div>
+
+   <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse45">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">ما هى فترة المشروع؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse45" class="panel-collapse collapse">
+      <div class="panel-body">
+      انها الموعد النهائى للمنشىء للوصول الى هدف المشروع. هذا الموعد يحدده المُنشىء ولكنه لا يتجاوز 120 يوم.
+      </div>
+    </div>
+  </div>
+
+  <!--div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse46">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">What happens when my Goal Amount is not reached?</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse46" class="panel-collapse collapse">
+      <div class="panel-body">
+      Jaribha will set your project's status as unsuccessful. You may create a new project with the same exact idea if you wish. Unsuccessfully supported projects will be kept on the site.
+      </div>
+    </div>
+  </div-->
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse47">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">ما الذى يحدث اذا ما تم تحقيق مبلغ الهدف و/أو تجاوزه؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse47" class="panel-collapse collapse">
+      <div class="panel-body">
+      سيقوم فريق العمل لدينا بمراجعة التفاصيل وتزويد المُنشىء بالدعم الزائد فى مدة 1-3 أسابيع اعتباراً من نهاية فترة المشروع بعد خصم رسم المشروع.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse48">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">ما هو رسم المشروع؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse48" class="panel-collapse collapse">
+      <div class="panel-body">
+     سوف تتكبد المشروعات المدعمة بنجاح رسم قدره 10% يُخصم من اجمالى مبلغ الهدف المحصَّل. يتضمن هذا الرسم الرسم الخاص بــ"جربها"، رسوم الغير ورسوم التحويل البنكى وهى خاضعة للتغير دون اشعار (لمزيد من التفاصيل، يُرجى الرجوع الى الشروط والأحكام).
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse49">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">ما هو الحد الأدنى والحد الأقصى لمبلغ الهدف؟ </b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse49" class="panel-collapse collapse">
+      <div class="panel-body">
+     لا يوجد حد أدنى أو حد أقصى لمبلغ الهدف للمنشئين. وهذا متروك لمتطلبات مشروعهم.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse491">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">هل تتطلب كافة المشروعات وجود مبلغ للهدف وفترة للمشروع؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse491" class="panel-collapse collapse">
+      <div class="panel-body">
+     نعم، تتطلب كافة المشروعات تحديد مبلغ للهدف وفترة للمشروع وهى بحد أقصى 120 يوم.
+      </div>
+    </div>
+  </div>
+
+   <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse492">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">هل يمكننى انشاء أكثر من مشروع فى ذات الوقت؟ </b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse492" class="panel-collapse collapse">
+      <div class="panel-body">
+     نعم، يُسمح لكل مُنشىء أن يكون لديه اى عدد من المشروعات الفعالة والعامة فى أى وقت. 
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse493">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">ما نوعية المشروعات التى لا تلقى قبول؟ </b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse493" class="panel-collapse collapse">
+      <div class="panel-body">
+    يجب أن تتبع كافة المشروعات المبادىء العامة ومتطلبات "جربها". كما يجب أن تكون المشروعات ضمن واحدة من فئات المشروعات التى تحددها "جربها". لمزيد من المعلومات، انظر المبادىء العامة والشروط والأحكام. <a href="https://jaribha.com/help/terms" target="_blank">الأحكام والشروط.</a> 
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse494">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">هل يمكننى تعديل مشروعى بعد نشره على الموقع؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse494" class="panel-collapse collapse">
+      <div class="panel-body">
+    يمكن للمنشئين تعديل وضبط مشروعاتهم وحتى الوصول الى مرحلة اطلاقه على الموقع الالكترونى. حالما تم تحديد كافة التفاصيل ويتمكن العامة من رؤية المشروع، لم يعد المُنشىء قادراً على تعديل صفحة مشروعه. وعلى الرغم من ذلك، يمكن للمشئين ادخال تحديثات على مشروعاتهم فى أى وقت مع القدرة على التواصل مع داعميهم فى أى وقت. 
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse495">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">هل يمكن تغيير مبلغ الهدف بعد اطلاق المشروع على الموقع؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse495" class="panel-collapse collapse">
+      <div class="panel-body">
+      لا، فإن مبلغ الهدف يمكن تعديله فحسب قبل تقديم المشروع الينا. وحال تم تقديمه، لم يعد المُنشىء قادراً على تغيير المبلغ. تشجع "جربها" كافة المنشئين على تفصيل وتخطيط مشروعاتهم قبل اطلاقها للتأكد من أنها تفى وتحقق هدفها.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse496">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">هل يمكن تغيير جوائزى؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse496" class="panel-collapse collapse">
+      <div class="panel-body">
+      حال تم تقديم المشروع، لم يعد المُنشىء قادراً على تغيير جوائزه. تشجع "جربها" كافة المنشئين على تفصيل وتخطيط مشروعاتهم قبل اطلاقها للتأكد من أنها تضع جوائز دقيقة وواقعية.
+      </div>
+    </div>
+  </div>
+
+   <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse497">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">هل يمكن انهاء مشروعى قبل تاريخ الانتهاء؟ </b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse497" class="panel-collapse collapse">
+      <div class="panel-body">
+      حالما تم اطلاق المشروع على الموقع، لا يمكن للمنشىء حذف أو انهاء المشروع. سيتم تفويض فريق عمل "جربها" بازالة المشروعات فى اى وقت اذا ما شعروا أنها تنتهك أية مبادىء عامة أو متطلبات. ونناشد المنشئون تنبيه فريق عمل "جربها" عن أية اسباب لإزالة مشروع ما وسيقوم فريق "جربها" بمراجعة الطلبات حالة بحالة. 
+      </div>
+    </div>
+  </div>
+<!-- collap 5 start-->
+</div>
+<div class="help-item-list">
+<div class="row-fluid mainhead">
+ <h3>الداعمون</h3> 
+</div>  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">من هو "الداعم"؟ </b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse5" class="panel-collapse collapse">
+      <div class="panel-body">
+       هو الشخص الذى يساهم فى مشروع ما. يمكن أن يكون مجموعة من الأصدقاء، عائلة أو ببساطة أى عضو من المجتمع يكون قد دعم مشروع ما.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse51">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">كيف أدعم مشروع؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse51" class="panel-collapse collapse">
+      <div class="panel-body">
+       لكى تدعم مشروع ما، يجب أولاً أن تنشىء حساب على موقع "جربها". وحالما قمت بعملية التسجيل اللازمة يمكنك رؤية مشروعات مختلفة ودعمها من خلال بطاقتك الائتمانية. الحد الأدنى للمساهمة فى "جربها" هو 10$ (لمزيد من التفاصيل انظر الشروط والأحكام).
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse52">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">من الذى يمكنه دعم مشروع ما؟ </b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse52" class="panel-collapse collapse">
+      <div class="panel-body">
+      اى شخص يمكنه دعم مشروع ما! بالطبع طالما أن عمرك لا يقل عن 18 سنة ولديك بطاقة ائتمان. ادعم مشروع تود له أن يرى النور، أى مشروع يثير اهتمامك أو ربما تدعم مُنشىء تريد له النجاح. تذكر أن المشروعات والمنشئين يحققون النجاح بسببك أنت.
+      </div>
+    </div>
+  </div>
+
+   <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse53">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">كيف يتم عمل الدعم؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse53" class="panel-collapse collapse">
+      <div class="panel-body">
+       أولاً، اختر المشروع الذى تود ان تدعمه ومن ثمَّ اختر المبلغ الذى تود أن تساهم به. مبالغ المساهمات محددة سلفاً استناداً الى الجوائز. وعلى الرغم من ذلك، يجوز لك أن تقدم مبلغ ليس محدد سلفاً طالما أن المبلغ يعادل او أعلى من مبلغ الجائزة التى ترغب فى استلامها.
+       </div>
+    </div>
+  </div>
+
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse54">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">ما الذى يحدث اذا لم يتم تحقيق مبلغ الهدف؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse54" class="panel-collapse collapse">
+      <div class="panel-body">
+      اذا لم يصل المشروع الى هدف المشروع فى الوقت المحدد له، فمن ثمَّ سوف ترد "جربها" الى الداعمين المبالغ التى أسهموا بها. توجد بعض المبالغ يتم خصمها استناداً الى أية رسوم لصالح الغير (لمزيد من التفاصيل، انظر الشروط والأحكام).
+      </div>
+    </div>
+  </div>
+
+   <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse55">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">هل يوجد حد أدنى وحد أقصى لمبلغ المساهمة؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse55" class="panel-collapse collapse">
+      <div class="panel-body">
+      ان الحد الأدنى للمساهمة فى موقع "جربها" هو 10$ (لمزيد من التفاصيل، انظر الشروط والأحكام). وعلى الرغم من ذلك، لا يوجد حد أقصى.<br>
+
+المبلغ الذى تساهم به سيعرفه المُنشىء فحسب. اما العامة لن تكون لهم صلاحية الوصول الى المبلغ الذى أسهمت به. يمكنك الاطلاع على ذلك فى الملف التعريفى الخاص بك "البروفايل".
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse56">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">عند دعم مشروع ما، ما هى المعلومات التى يتلقاها المُنشىء من اسهامى؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse56" class="panel-collapse collapse">
+      <div class="panel-body">
+      يتمكن المنشئون من معرفة المبلغ الذى أسهمت به لمشروعهم بالاضافة الى اية معلومات شخصية تختار أن يتعرفوا عليها.<br>
+يُرجى الانتباه الى أن المنشئون سيكون لهم صلاحية الحصول على رقم هاتفك وعنوان التسليم حتى يتسنى تقديم جوائز الاسهام حال تحقيق المشروع هدفه بنجاح. 
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse57">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">كيف لى أن اعرف أن المشروع الذى أقوم بدعمه هو مشروع شرعى؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse57" class="panel-collapse collapse">
+      <div class="panel-body">
+      يجب ان يقرر الداعمون بأنفسهم مدى مصداقية واستحقاق أى مشروع ويساهمون فى المشروعات مع المنشئين الذين يقدمون تفاصيل عن خطة انتاجهم. تمتلك "جربها" فريق عمل من المحترفين لتقييم وتقدير قيمة كل مشروع وكذلك تقييم المُنشىء قبل السماح له بانشاء صفحة للمشروع. كما تمتلك "جربها" معايير أساسية يجب على المنشئين الايفاء بها قبل منحهم صفحات لمشروعاتهم. وعلى الرغم من ذلك، وطالما ان "جربها" لا تمتلك أية ملكية فى المشروعات، فانه المُنشىء وحده هو المسئول عن متابعه مشروعه حتى انجازه. <br><br>
+
+      طرق أساسية لتحديد مصداقية المشروع
+      <ul>
+      <li>هل يمتلك المُنشىء معلومات أساسية، خطوات، ملخصات وتفاصيل الخ عن مشروعه؟</li>
+      <li>هل يعرف الداعم أشخاص آخرين قد قاموا بدعم المشروع؟</li>
+      <li>هل يعرف الداعم المُنشىء بشكل شخصى؟</li>
+      <li>هل سمع الداعم عن المشروع وعن المُنشىء من صديق ما أو من عضو عائلة ما؟</li>
+      <li>هل سمع الداعم الكثير من التعليقات الايجابية عن المشروع وعن المُنشىء عبر الانترنت او من خلال وسائل التواصل الاجتماعى؟ تطالب "جربها" المُنشئون بمشاركة أسمائهم ومعلوماتهم الأساسية عن انفسهم والتى تعنى ان المُنشئون يخاطرون بسمعتهم اذا لم ينجزوا مشروعاتهم كما وعدوا بذلك. يمكن للداعمين أيضاً الاتصال بالمنشئين وطرح أسئلة قبل وبعد تقديم اسهاماتهم. </li>
+      </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse58">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">طرق أساسية لتحديد مصداقية المشروع</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse58" class="panel-collapse collapse">
+      <div class="panel-body">
+        طرق أساسية لتحديد مصداقية المشروع
+		<ul>
+		<li>هل يمتلك المُنشىء معلومات أساسية، خطوات، ملخصات وتفاصيل الخ عن مشروعه؟</li>
+		<li>هل يعرف الداعم أشخاص آخرين قد قاموا بدعم المشروع؟</li>
+		<li>هل يعرف الداعم المُنشىء بشكل شخصى؟</li>
+		<li>هل سمع الداعم عن المشروع وعن المُنشىء من صديق ما أو من عضو عائلة ما؟</li>
+		<li>هل سمع الداعم الكثير من التعليقات الايجابية عن المشروع وعن المُنشىء عبر الانترنت او من خلال وسائل التواصل الاجتماعى؟ تطالب "جربها" المُنشئون بمشاركة أسمائهم ومعلوماتهم الأساسية عن انفسهم والتى تعنى ان المُنشئون يخاطرون بسمعتهم اذا لم ينجزوا مشروعاتهم كما وعدوا بذلك. يمكن للداعمين أيضاً الاتصال بالمنشئين وطرح أسئلة قبل وبعد تقديم اسهاماتهم.</li>
+		</ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse59">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">أنا لا أعيش فى الكويت؛ هل ما زلت قادراً على أن ادعم مشروع ما؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse59" class="panel-collapse collapse">
+      <div class="panel-body">
+     بالطبع! أى شخص فى أى مكان يمكنه دعم مشروع على موقع "جربها" بافتراض أنه لا يقل عمره عن 18 سنة يملك بطاقة ائتمان او اية بطاقة صالحة تعمل من خلال بوابات الدفع الالكترونى. لا تقوم "جربها" بحفظ أياً من هذه المعلومات ليس لها صلاحية الوصول اليها. كما ان لدينا شهادات "EVSSL" من شركة "Thwarte".
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse591">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">هل سيتم اخطارى اذا ومتى يحقق المشروع مبلغ الهدف؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse591" class="panel-collapse collapse">
+      <div class="panel-body">
+     ثق فى ذلك! يتم حث المُنشىء لتزويد الداعمين بأية تحديثات خلال المراحل الأساسية للمشروع. أيضاً، ستقوم "جربها" بارسال رسالة الكترونية الى كافة الداعمين عندما يبلغ المشروع مبلغه المستهدف بنجاح.
+      </div>
+    </div>
+  </div>
+
+   <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse592">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">هل يمكن سحب دعمى؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse592" class="panel-collapse collapse">
+      <div class="panel-body">
+     حال قام الداعم باسهام فى مشروع ما، لا يجوز سحب دعمه. وهذا لنؤكد أننا لا نضع أية تحديات أو خيبات أمل أمام مشروع المُنشىء. واذا لم يحقق المشروع هدفه، سيتم اعادة المبلغ الى الداعم (لمزيد من التفاصيل، انظر الشروط والأحكام). 
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse593">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">تم رفض بطاقتى الائتمانية، ما الذى يحدث الآن؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse593" class="panel-collapse collapse">
+      <div class="panel-body">
+    اذا ما تم رفض بطاقتك الائتمانية نحن ننصحك بأن تقوم مباشرة بمراجعة البنك التابع له لحل هذه المشكلة ومن ثمّ تعاود المحاولة باستخدام بطاقة ائتمانية بديلة. واذا ما تم رفض هذه البطاقة الائتمانية، فمن ثمّ فقد حدث فشل فى تنفيذ اسهامك.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse594">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">كيف يمكننى الاتصال بالمُنشىء؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse594" class="panel-collapse collapse">
+      <div class="panel-body">
+        يجوز أن تقوم مباشرة بطرح سؤال على المُنشىء من خلال صفحة المشروع او من خلال زيارة الصفحة التعريفية "البروفايل" للمنُشىء للحصول على معلومات الاتصال به.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse595">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">هل يمكننى فحص كافة عمليات الدعم الخاصة بى؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse595" class="panel-collapse collapse">
+      <div class="panel-body">
+      نعم، يمكنك رؤية ذلك على صفحة تاريخك.
+      </div>
+    </div>
+  </div>
+</div>
+<div class="help-item-list">
+ <div class="row-fluid mainhead">
+ <h3>الرعاة</h3> 
+</div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">من هم الرعاة؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse6" class="panel-collapse collapse">
+      <div class="panel-body">
+    الرعاة هم مستخدمون يختارون الحاق أنفسهم مع مشروعات ومنشئين محددين. فالرعاة يدعمون مشروعات عن طريق ادراج شعاراتهم على صفحات مختارة من صفحات المشروع. وعلى الرغم من أن المستخدمين يرعون صفحات، لا يزال المنشئين هم المسئولين كليةً عن مشروعاتهم الشخصية.
+
+يتعين على كل راعى أن يدفع "رسم راعى جربها" و "رسم راعى مُنشىء". وتخضع هذه الرسوم الى التغيير. يجوز ان يكون الراعى شركة مؤسسة أو فرد يكون لديه موهبة ويرغب فى "رعاية" مشروع ما. (لمزيد من التفاصيل، يُرجى الاطلاع على الشروط والأحكام).
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse61">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">ما هو "رسم راعى جربها" و "رسم راعى مُنشىء"؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse61" class="panel-collapse collapse">
+      <div class="panel-body">
+        يدفع الراعي رسومآ غير قابلة للاسترداد لصالح جربها و هذه الرسوم تسمى " رسوم راعي جربها "، وهناك رسم ثابت للمنشئ يسمى "رسم راعي المنشئ "، رسم المنشئ يمكن أن يكون قابلآ للاسترداد اذا لم يحقق المشروع هدفه بنجاح. و لا يمكن استرداد المبلغ في اي حالة اخري. 
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse62">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">كيف يمكن للرعاة تتبع رعايتهم؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse62" class="panel-collapse collapse">
+      <div class="panel-body">
+        يمكن لرعاة الاطلاع على المشروعات المرعية بالمبالغ التى قاموا بدفعها وذلك من خلال صفحة تاريخهم. كما يمكنهم الضغط على تبويب يسمى "مرعى" فى صفحة التعريف بهم "البروفايل" للإطلاع على المشروعات التى قاموا برعايتها دون وجود تفاصيل.
+      </div>
+    </div>
+  </div> 
+
+   <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse63">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">كيف تصبح الراعي؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse63" class="panel-collapse collapse">
+      <div class="panel-body">
+        اضغط علي زر " الراعي" في اعلى الصفحة او في صفحة تفاصيل المشروع. ثم املأ الاستماره و ارسل النموذج. يجب للرعاة التوقيع علي عقد فعلي. 
+      </div>
+    </div>
+  </div> 
+</div> 
+
+<div class="help-item-list">
+<div class="row-fluid mainhead">
+ <h3>المجتمع</h3> 
+</div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">ماذا اذا انتمى شخص ما لأكثر من مجتمع؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse7" class="panel-collapse collapse">
+      <div class="panel-body">
+    اختر المجتمع الذى ترتبط به أكثر او الذى تشعر ان مشروعك يرتبط به أكثر.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse71">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">هل يدفع المجتمع أى رسم؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse71" class="panel-collapse collapse">
+      <div class="panel-body">
+        لا تحتاج المجتمعات الى دفع اى رسم. (لمزيد من التفاصيل، يُرجى الاطلاع على الشروط والأحكام).
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse72">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">ماذا لو أن المنشئ لا ينتمي في الجماعة اختاروا ؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse72" class="panel-collapse collapse">
+      <div class="panel-body">
+        تتصل "جربها" بالمجتمع لترى اذا ما كان المُنشىء ينتمى الى المجتمع قبل الموافقة على المشروع.
+      </div>
+    </div>
+  </div> 
+
+
+<div class="row-fluid mainhead">
+ <h3>الجوائز / المكافآت</h3> 
+</div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse8">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">ما هي الجزائز الجوائز ؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse8" class="panel-collapse collapse">
+      <div class="panel-body">
+        الجوائز هى هدايا متواضعة تُمنح للداعمين كرمز لتقدير اسهامهم فى المشروع. يتم تحديد الجوائز ووضعها عن طريق المنُشىء خلال مرحلة التخطيط للمشروع. يجب على المُنشئين تقديم الجوائز المخصصة لداعميهم اذا ما تم دعم مشروعاتهم بنجاح. واذا لم يتم نجاح دعم المشروع، فمن ثمَّ لا يلتزم المُنشىء بتقديم جوائز.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse81">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">كيف انشئ جائزة؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse81" class="panel-collapse collapse">
+      <div class="panel-body">
+        يجب أن تكون الجوائز بسيطة ومتواضعة. يمكن انشاء جوائز مختلفة ويجب أن تكون عادلة. فعلى سبيل المثال، الداعم الذى أسهم بمبلغ 500$ يجب ان يتلقى جائزة أكثر جاذبية من الداعم الذى أسهم بمبلغ 30$.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse82">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">كيف أسترد جائزتى؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse82" class="panel-collapse collapse">
+      <div class="panel-body">
+        اذا ما قمت بدعم مشروع ناجح، فمن ثمَّ يجب ان تستلم جائزتك وفق الوعد الذى وعد به المُنشىء بحلول التاريخ المتوقع. يمكن للمُنشىء اما أن يختار تسليم الجائزة الى العنوان الذى تحدده حال قيامك بانشاء حساب على "جربها" أو ان يطلب منك استلامها من مكان ما. سيتم تقديم تحديثات مباشرة من المُنشىء حول كيفية استرداد جوائزك. 
+      </div>
+    </div>
+  </div> 
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse83">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">من المسئول عن تحويل الجوائز الى الداعمين؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse83" class="panel-collapse collapse">
+      <div class="panel-body">
+        انها مسئولية المنُشىء أن يقوم بتسليم الجوائز بحسب تفاصيل الوعد الذى أقر به. يمكن للمنشئين أن يختاروا أن يطلبوا من الداعمين استلام جوائزهم. انها مسئولية الداعم أن يقدم عنوان تسليم صحيح ليستلم الجائزة اذا ما أراد المُنشىء تسليم الجائزة.
+      </div>
+    </div>
+  </div> 
+</div> 
+
+<div class="help-item-list">
+<div class="row-fluid mainhead">
+ <h3>أسئلة متنوعة</h3> 
+</div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse9">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">هل يمكننى دعم مشروعى؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse9" class="panel-collapse collapse">
+      <div class="panel-body">
+        بالطبع، يمكن للمنشئين دعم مشروعاتهم الخاصة. يمكن للمنشئين اختيار رد الدعم وأيضاً دعم مشروعات أخرى من منشئين آخرين.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse91">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">ما هى تحديثات المشروع وكيف يمكن لداعم تلقى تحديثات المشروع؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse91" class="panel-collapse collapse">
+      <div class="panel-body">
+        حالما يقوم الداعم بتقديم اسهامه الى مشروع ما، يجوز للداعم ان يتلقى التحديثات ذات الصلة فيما يتعلق بالمشروع المدعم من المُنشىء مباشرةً اذا ما توفر ذلك عن طريق البريد الالكترونى.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse92">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">تعليمات انشاء مقطع فيديو للمشروع </b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse92" class="panel-collapse collapse">
+      <div class="panel-body">
+        تأكد من انه مقطع مسلى وقصير وبسيط ولافت للنظر. كما أن اظهار سماتك فى المقطع يساعد فى جذب المجتمع بطريقة أفضل للمشاركة والوثوق فيك. كن واضحاً ودقيقاً وفى صُلب الموضوع. لا تقرأ من ورقة لأنك تريد ان تتواصل مع المجتمع وليس أن تقرأ لهم الأخبار! فقط كن نفسك وسوف يتفاعل معك الناس.
+      </div>
+    </div>
+  </div> 
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse93">
+          <span style="color:#EA5D4C;" class="glyphicon glyphicon-check"></span>
+          <b class="noline">هل يمكننى فحص ومعرفة كافة الرعاة والداعمين لمشروعى؟</b>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse93" class="panel-collapse collapse">
+      <div class="panel-body">
+        نعم، يمكنك عمل ذلك عندما تفتح الملف التعريفى الخاص بك "البروفايل" ثم اضغط على "مُنشىَء" ثم اضغط على الايقونة الصغيرة المسماة "داعمون ورعاة" الموجودة فى كل مشروع من مشروعاتك. 
+      </div>
+    </div>
+  </div>  
+</div> 
+
+   
+<!-- collapse div end here-->
+</div>
+</div>
+
+</body>
+</html>

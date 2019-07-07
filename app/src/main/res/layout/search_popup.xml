@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/popupElement"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/become_sponsor"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <com.jaribha.customviews.fonts.FontEditText
+        android:id="@+id/searchEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_toLeftOf="@+id/searchIv"
+        android:background="@color/transparent"
+        android:gravity="center_vertical"
+        android:hint="@string/search_projects"
+        android:imeActionId="@+id/searchproject"
+        android:imeActionLabel="@string/search"
+        android:imeOptions="actionUnspecified"
+        android:inputType="text"
+        android:padding="@dimen/value5"
+        android:textColor="@color/black"
+        android:textColorHint="@color/md_grey_500"
+        app:font="Lato-Regular.ttf" />
+
+    <ImageView
+        android:id="@+id/searchIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/value10"
+        android:src="@drawable/ic_action_search" />
+
+</RelativeLayout>

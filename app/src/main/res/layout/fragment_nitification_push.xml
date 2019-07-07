@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <View
+        android:id="@+id/viewTop"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/line_space" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_push_update"
+        android:layout_below="@+id/viewTop">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:id="@+id/sameAsPush"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:padding="@dimen/value10"
+                android:text="@string/same_as_push"
+                android:textColor="#05C6B5"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:font="Lato-Regular.ttf" />
+
+            <LinearLayout
+                android:id="@+id/radioGroupEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="?android:attr/dividerHorizontal"
+                android:orientation="vertical"
+                android:showDividers="middle|beginning|end">
+
+                <com.jaribha.customviews.fonts.FontCheckBox
+                    android:id="@+id/email_push_Radio_btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:button="@null"
+                    android:checked="false"
+                    android:drawableRight="@drawable/radio_selector"
+                    android:padding="@dimen/value15"
+                    android:text="When i get a new Supporter every time"
+                    android:textColor="@color/md_grey_700"
+                    app:font="Lato-Regular.ttf" />
+
+                <com.jaribha.customviews.fonts.FontCheckBox
+                    android:id="@+id/email_push_Radio_btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:button="@null"
+                    android:drawableRight="@drawable/radio_selector"
+                    android:padding="@dimen/value15"
+                    android:text="When i get a new Sponser every time"
+                    android:textColor="@color/md_grey_700"
+                    app:font="Lato-Regular.ttf" />
+
+                <com.jaribha.customviews.fonts.FontCheckBox
+                    android:id="@+id/email_push_Radio_btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:button="@null"
+                    android:drawableRight="@drawable/radio_selector"
+                    android:padding="@dimen/value15"
+                    android:text="When my Project receives a comment"
+                    android:textColor="@color/md_grey_700"
+                    app:font="Lato-Regular.ttf" />
+
+            </LinearLayout>
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:id="@+id/txtSupporter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/value15"
+                android:text="@string/supporter"
+                android:textColor="#1686B0" />
+
+            <LinearLayout
+                android:id="@+id/radioGroupSupporter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="?android:attr/dividerHorizontal"
+                android:orientation="vertical"
+                android:showDividers="middle|beginning|end">
+
+                <com.jaribha.customviews.fonts.FontCheckBox
+                    android:id="@+id/supporter_push_Radio_btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:button="@null"
+                    android:drawableRight="@drawable/radio_selector"
+                    android:padding="@dimen/value15"
+                    android:text="When one of the Projects I supported reaches its deadline"
+                    android:textColor="@color/md_grey_700"
+                    app:font="Lato-Regular.ttf" />
+
+                <com.jaribha.customviews.fonts.FontCheckBox
+                    android:id="@+id/supporter_push_Radio_btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:button="@null"
+                    android:drawableRight="@drawable/radio_selector"
+                    android:padding="@dimen/value15"
+                    android:text="When one of the Projects I supported has been updated"
+                    android:textColor="@color/md_grey_700"
+                    app:font="Lato-Regular.ttf" />
+
+            </LinearLayout>
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:id="@+id/txtSponser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/value15"
+                android:text="@string/sponsor"
+                android:textColor="#1686B0"
+                app:font="Lato-Regular.ttf" />
+
+            <LinearLayout
+                android:id="@+id/radioGroupSponser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="?android:attr/dividerHorizontal"
+                android:orientation="vertical"
+                android:showDividers="middle|beginning|end">
+
+                <com.jaribha.customviews.fonts.FontCheckBox
+                    android:id="@+id/sponser_push_Radio_btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:button="@null"
+                    android:drawableRight="@drawable/radio_selector"
+                    android:padding="@dimen/value15"
+                    android:text="Projects with open Platinum Sponser spaces"
+                    android:textColor="@color/md_grey_700"
+                    app:font="Lato-Regular.ttf" />
+
+            </LinearLayout>
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:id="@+id/txtGeneral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/value15"
+                android:text="@string/general"
+                android:textColor="#1686B0"
+                app:font="Lato-Regular.ttf" />
+
+            <LinearLayout
+                android:id="@+id/radioGroupGeneral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="?android:attr/dividerHorizontal"
+                android:orientation="vertical"
+                android:showDividers="middle|beginning|end">
+
+                <com.jaribha.customviews.fonts.FontCheckBox
+                    android:id="@+id/General_push_Radio_btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:button="@null"
+                    android:drawableRight="@drawable/radio_selector"
+                    android:padding="@dimen/value15"
+                    android:text="Newletter (When i received a private message"
+                    android:textColor="@color/md_grey_700"
+                    app:font="Lato-Regular.ttf" />
+
+                <com.jaribha.customviews.fonts.FontCheckBox
+                    android:id="@+id/General_push_Radio_btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:button="@null"
+                    android:drawableRight="@drawable/radio_selector"
+                    android:padding="@dimen/value15"
+                    android:text="Update on new projects and successful projects"
+                    android:textColor="@color/md_grey_700"
+                    app:font="Lato-Regular.ttf" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.jaribha.customviews.fonts.FontButton
+        android:id="@+id/btn_push_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/value15"
+        android:background="@drawable/main_button_red"
+        android:text="@string/update"
+        android:textAllCaps="false"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white"
+        app:font="Lato-Regular.ttf" />
+
+</RelativeLayout>

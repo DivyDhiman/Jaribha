@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="app_theme_color">#0BC0B9</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="hint_color">#92000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="background">#E9E9E9</color>
+    <color name="orange">#FF543D</color>
+    <color name="title_colors">#21A8C5</color>
+    <color name="light_orange">#F48481</color>
+    <color name="transform_color">#adaeb1</color>
+    <color name="menu_text_color">#0C4442</color>
+    <color name="windowBackground">#1C1C1C</color>
+    <color name="overlay">#AA1C1C1C</color>
+    <color name="learn_more_color">#dd2c00</color>
+</resources>

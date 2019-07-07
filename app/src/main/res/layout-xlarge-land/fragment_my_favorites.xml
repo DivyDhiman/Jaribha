@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <com.jaribha.customviews.fonts.FontTextView
+        app:font="Lato-Regular.ttf"
+        android:id="@+id/noFavs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:text="No Records Found!" />
+
+    <GridView
+        android:id="@+id/projectsGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="2dp"
+        android:numColumns="2"
+        android:horizontalSpacing="15dp"
+        android:verticalSpacing="15dp"
+        android:layout_marginTop="@dimen/value15"
+        android:layout_marginLeft="@dimen/screen_margin_land"
+        android:layout_marginRight="@dimen/screen_margin_land"
+        tools:listitem="@layout/portfolio_projectby_created_items" />
+
+</RelativeLayout>

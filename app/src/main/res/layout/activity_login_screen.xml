@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_bg_green"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/value20">
+
+                <ImageView
+                    android:id="@+id/eImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:padding="10dp"
+                    android:src="@drawable/icon_arabic" />
+
+                <ImageView
+                    android:id="@+id/vImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:padding="10dp"
+                    android:src="@drawable/video_icon" />
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/value10"
+                    android:padding="@dimen/value5"
+                    android:src="@drawable/ic_login_logo" />
+            </FrameLayout>
+
+            <com.jaribha.customviews.fonts.FontAutoCompleteTextView
+                android:id="@+id/edt_email"
+                style="@style/Widget.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value15"
+                android:background="@null"
+                android:drawableLeft="@drawable/email_icon"
+                android:drawablePadding="@dimen/value10"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/value10"
+                android:paddingLeft="@dimen/value30"
+                android:paddingRight="@dimen/value30"
+                android:singleLine="true"
+                android:textCursorDrawable="@drawable/cursor_white"
+                app:font="Lato-Semibold.ttf" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#7BD2D9" />
+
+            <com.jaribha.customviews.fonts.FontAutoCompleteTextView
+                android:id="@+id/edt_password"
+                style="@style/Widget.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value20"
+                android:background="@null"
+                android:drawableLeft="@drawable/password_icon"
+                android:drawablePadding="@dimen/value10"
+                android:hint="@string/password_hint"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/value10"
+                android:paddingLeft="@dimen/value30"
+                android:paddingRight="@dimen/value30"
+                android:password="true"
+                android:singleLine="true"
+                android:textColor="@color/md_white_1000"
+
+                android:textColorHint="@color/md_grey_50"
+                android:textCursorDrawable="@drawable/cursor_white"
+                app:font="Lato-Semibold.ttf" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#7BD2D9" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/value10"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/value30"
+                android:paddingRight="@dimen/value30">
+
+                <com.jaribha.customviews.fonts.FontCheckBox
+                    android:id="@+id/rememberMe"
+                    style="@style/Widget.CheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:checked="false"
+                    android:text="@string/remember_me"
+                    app:font="Lato-Regular.ttf" />
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:id="@+id/forgetPwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/forgot_pwd"
+                    android:textAllCaps="false"
+                    android:textColor="@color/md_white_1000"
+                    app:font="Lato-Regular.ttf" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/value30">
+
+                <com.jaribha.customviews.fonts.FontButton
+                android:id="@+id/loginBtn"
+                style="@style/Widget.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/value30"
+                android:layout_marginRight="@dimen/value30"
+                android:layout_marginTop="@dimen/value10"
+                android:text="@string/login_title"
+                android:textAllCaps="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                app:font="Lato-Regular.ttf" />
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:id="@+id/tv_explore_as_guest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/value20"
+                    android:padding="@dimen/value5"
+                    android:text="@string/explore_as_guest"
+                    android:textAllCaps="false"
+                    android:textColor="@color/md_white_1000"
+                    app:font="Lato-Regular.ttf" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/no_account_bg"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:id="@+id/tv_dont_have_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/value5"
+                    android:text="@string/dont_have_account_new"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/md_black_1000"
+                    android:textStyle="bold"
+                    app:font="Lato-Semibold.ttf" />
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:id="@+id/signupBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/value5"
+                    android:paddingLeft="@dimen/value5"
+                    android:text="@string/sign_up_new"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#E7877C"
+                    android:textStyle="bold"
+                    app:font="Lato-Semibold.ttf" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_alignParentBottom="true">
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:id="@+id/orText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/or"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/or"
+                    android:textColor="@color/md_grey_500"
+                    app:font="Lato-Semibold.ttf" />
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:id="@+id/signWith"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="@dimen/value15"
+                    android:text="@string/sign_in_with"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/md_black_1000"
+                    android:textStyle="bold"
+                    app:font="Lato-Semibold.ttf" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/value30"
+            android:layout_marginRight="@dimen/value30"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/value15"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/iv_facebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/facebook_icon" />
+
+                <ImageView
+                    android:id="@+id/iv_linked_in"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/linkedin_icon" />
+
+                <ImageView
+                    android:id="@+id/iv_google"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/google_plus_icon" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

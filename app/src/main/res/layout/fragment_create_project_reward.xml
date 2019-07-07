@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/value5"
+            android:paddingLeft="@dimen/value20"
+            android:paddingRight="@dimen/value20">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="@string/list_out_your_sponsor_fee_and_project_rewards"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/md_red_500"
+                app:font="Lato-Regular.ttf" />
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value5"
+                android:gravity="center_horizontal"
+                android:text="@string/place_your_rewards_here"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                app:font="Lato-Regular.ttf" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/value5"
+                android:text="Do You Want Sponsors?"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/title_colors" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_white_1000"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/value15"
+                android:paddingLeft="@dimen/value15"
+                android:paddingRight="@dimen/value15"
+                android:paddingTop="@dimen/value10">
+
+                <RadioGroup
+                    android:id="@+id/rg_sponsors"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/yes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/radio_selector_red"
+                        android:checked="true"
+                        android:paddingLeft="@dimen/value10"
+                        android:text="Yes"
+                        android:textColor="@color/hint_color" />
+
+                    <RadioButton
+                        android:id="@+id/no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/value10"
+                        android:button="@drawable/radio_selector_red"
+                        android:checked="false"
+                        android:paddingLeft="@dimen/value10"
+                        android:text="No"
+                        android:textColor="@color/hint_color" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/value10"
+                android:text="@string/create_rewards"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/title_colors"
+                app:font="Lato-Regular.ttf" />
+
+            <com.jaribha.customviews.ExpandableHeightListView
+                android:id="@+id/list_rewards"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/value10"
+                android:text="@string/add_new_reward"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/title_colors"
+                app:font="Lato-Regular.ttf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_white_1000"
+                android:orientation="vertical"
+                android:padding="@dimen/value15">
+
+                <com.jaribha.customviews.fonts.FontEditText
+                    android:id="@+id/edt_supporter_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableLeft="@drawable/doller_sign"
+                    android:drawablePadding="@dimen/value5"
+                    android:hint="@string/supporter_amount"
+                    android:inputType="number"
+                    android:padding="@dimen/value10"
+                    android:textColorHint="@color/md_grey_500"
+                    app:font="Lato-Regular.ttf" />
+
+                <com.jaribha.customviews.fonts.FontEditText
+                    android:id="@+id/edt_rewards_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/value10"
+                    android:gravity="top"
+                    android:hint="@string/description"
+                    android:inputType="text"
+                    android:minHeight="@dimen/value105"
+                    android:padding="@dimen/value10"
+                    android:textColorHint="@color/md_grey_500"
+                    app:font="Lato-Regular.ttf" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/value10"
+                android:text="@string/estimated_delivery"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/title_colors"
+                app:font="Lato-Regular.ttf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_white_1000"
+                android:orientation="vertical"
+                android:padding="@dimen/value15">
+
+                <com.jaribha.customviews.fonts.FontEditText
+                    android:id="@+id/edt_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:focusable="false"
+                    android:hint="@string/year"
+                    android:textColorHint="@color/md_grey_500"
+                    app:font="Lato-Regular.ttf" />
+
+                <com.jaribha.customviews.fonts.FontEditText
+                    android:id="@+id/edt_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/value15"
+                    android:focusable="false"
+                    android:hint="@string/month"
+                    android:textColorHint="@color/md_grey_500"
+                    app:font="Lato-Regular.ttf" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/value10"
+                android:text="@string/shipping_details"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/title_colors"
+                app:font="Lato-Regular.ttf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_white_1000"
+                android:orientation="vertical"
+                android:padding="@dimen/value15">
+
+                <com.jaribha.customviews.fonts.FontEditText
+                    android:id="@+id/edt_shipping_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:focusable="false"
+                    android:hint="@string/shipping_worldwide"
+                    android:textColorHint="@color/md_grey_500"
+                    app:font="Lato-Regular.ttf" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/value10"
+                android:text="@string/reward_limit"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/title_colors"
+                app:font="Lato-Regular.ttf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_white_1000"
+                android:orientation="horizontal"
+                android:padding="@dimen/value15">
+
+                <RadioGroup
+                    android:id="@+id/rg_rewards_limit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.jaribha.customviews.fonts.FontRadioButton
+                        android:id="@+id/rb_limit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/radio_selector_red"
+                        android:checked="true"
+                        android:padding="@dimen/value5"
+                        android:text="@string/limit"
+                        android:textColor="@color/hint_color"
+                        app:font="Lato-Regular.ttf" />
+
+                    <com.jaribha.customviews.fonts.FontRadioButton
+                        android:id="@+id/rb_unlimited"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/value10"
+                        android:button="@drawable/radio_selector_red"
+                        android:padding="@dimen/value5"
+                        android:text="@string/unlimited"
+                        android:textColor="@color/hint_color"
+                        app:font="Lato-Regular.ttf" />
+
+                </RadioGroup>
+
+                <com.jaribha.customviews.fonts.FontEditText
+                    android:id="@+id/edt_limit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/value20"
+                    android:hint="@string/enter_limit_number"
+                    android:inputType="number"
+                    android:textColorHint="@color/md_grey_500"
+                    app:font="Lato-Regular.ttf" />
+
+            </LinearLayout>
+
+            <com.jaribha.customviews.fonts.FontButton
+                android:id="@+id/btn_save_add_new"
+                style="@style/Widget.Button.GreenBorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/value10"
+                android:layout_marginTop="@dimen/value10"
+                android:gravity="center"
+                android:text="@string/save_and_add_new"
+                android:textAllCaps="false"
+                android:textColor="@color/app_theme_color"
+                android:textStyle="bold"
+                app:font="Lato-Bold_0.ttf" />
+        </LinearLayout>
+
+        <com.jaribha.customviews.fonts.FontButton
+            android:id="@+id/btn_rewards_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_button_red"
+            android:text="@string/save_and_next"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            app:font="Lato-Bold_0.ttf" />
+
+    </LinearLayout>
+
+</ScrollView>

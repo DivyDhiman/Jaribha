@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/value40"
+        android:layout_marginRight="12dp"
+        android:contentDescription="@string/app_name" />
+
+    <com.jaribha.customviews.fonts.FontTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icon"
+        android:ems="7"
+        android:gravity="center_vertical"
+        android:paddingBottom="20dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/md_white_1000"
+        app:font="Lato-Regular.ttf" />
+
+    <com.jaribha.customviews.fonts.FontTextView
+        android:id="@+id/counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/title"
+        android:background="@drawable/counter_bg"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#44B2CA"
+        app:font="Lato-Regular.ttf" />
+
+</RelativeLayout>

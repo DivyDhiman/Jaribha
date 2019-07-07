@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#E9E9E9"
+    android:orientation="vertical">
+
+    <com.jaribha.customviews.PagerSlidingTabStrip
+        android:id="@+id/filter_sliding_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value45"
+        android:background="@color/md_white_1000"
+        android:textColor="@color/selector1"
+        app:pstsDividerColor="@color/transparent"
+        app:pstsIndicatorColor="#FF543D"
+        app:pstsIndicatorHeight="3dp"
+        app:pstsTextAllCaps="false"
+        app:pstsShouldExpand="true" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/filter_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+</LinearLayout>

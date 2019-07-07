@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value5"
+            android:layout_marginLeft="@dimen/value50"
+            android:layout_marginRight="@dimen/value50"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/value15">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Getting support for your project is based on all-or-nothing."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/title_colors" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value5"
+                android:textStyle="bold"
+                android:text="@string/once_you_update" />
+
+            <TextView
+                android:id="@+id/info1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/value10"
+                android:layout_marginBottom="@dimen/value10"
+                android:gravity="center"
+                android:text="More info +"
+                android:textStyle="bold"
+                android:textColor="@color/app_theme_color" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value5"
+                android:text="Should you be able to meet your Project Goal or pass it, Jaribha will provide you with the entire sum within 14 days of the end date, less 10% the Project Fee Terms and Conditions. Should you unsuccessfully meet your Project Goal by the timeframe you set, your project will be classified as unsuccessful and the support generated for your project will be returned to all your Supporters.\n\nSupporting a project multiple times by a single user is permitted."
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value15"
+            android:layout_marginLeft="@dimen/value50"
+            android:layout_marginRight="@dimen/value50"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/value15">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="If your project does not fall under one of Jaribha's categories you can contact us"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/md_purple_900" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value5"
+                android:textStyle="bold"
+                android:text="Jaribha welcomes new project categories and If you do not think your project fits any of our categories, please email us at support@jaribha.com .We will review your suggested category and email you with the response." />
+
+            <TextView
+                android:id="@+id/info2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/value10"
+                android:layout_marginBottom="@dimen/value10"
+                android:gravity="center"
+                android:text="More info +"
+                android:textStyle="bold"
+                android:textColor="@color/app_theme_color" />
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A project or idea could be anything from starting a clothing line, publishing a book, creating a game or an event inventing a new product and many more. Each Creator sets a Project Goal and a time limit in order to complete the project. \n\nProjects falling under categories mentioned/seen on the website may be supported/created/sponsored in Jaribha.\n\nJaribha will continue to add/delete more categories in the future. Please check our website regularly for updates."
+                android:visibility="gone"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value15"
+            android:layout_marginLeft="@dimen/value50"
+            android:layout_marginRight="@dimen/value50"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/value15">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Your project does not contain one or more Jaribha's prohibited uses"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#E4A818" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value5"
+                android:text="Please refrain from using offensive content as part of your project page or rewards, as well as any copyright or patented material. Also refrain from spamming individuals and other members of the community." />
+
+            <TextView
+                android:id="@+id/info3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/value10"
+                android:layout_marginBottom="@dimen/value10"
+                android:gravity="center"
+                android:text="More info +"
+                android:textColor="@color/app_theme_color" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/value10"
+                android:textStyle="bold"
+                android:text="We welcome you to invite friends and family to view your project, but avoid invading the social networks or sending mass emails in the hopes of publicizing your project. While Jaribha reserves the right to ultimately reject a project without specifying a reason, as a general guideline Jaribha does not allow offensive language in/or towards projects, Creators, Supporters or Sponsors."
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

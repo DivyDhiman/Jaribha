@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <include
+        android:id="@+id/actionBar"
+        layout="@layout/action_bar1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/actionBar"
+        android:layout_marginTop="@dimen/value30"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="?android:attr/dividerHorizontal"
+            android:orientation="vertical"
+            android:showDividers="middle|beginning|end">
+
+            <com.jaribha.customviews.fonts.FontRadioButton
+                android:id="@+id/eng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:button="@null"
+                android:drawableRight="@drawable/radio_selector"
+                android:padding="@dimen/value15"
+                android:text="English"
+                android:textColor="@color/md_grey_700"
+                app:font="Lato-Medium.ttf" />
+
+            <com.jaribha.customviews.fonts.FontRadioButton
+                android:id="@+id/arb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:button="@null"
+                android:drawableRight="@drawable/radio_selector"
+                android:padding="@dimen/value15"
+                android:text="Arabic"
+                android:textColor="@color/md_grey_700"
+                app:font="Lato-Medium.ttf" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <com.jaribha.customviews.fonts.FontButton
+        android:id="@+id/btn_user_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/value15"
+        android:background="@drawable/main_button_red"
+        android:text="@string/update"
+        android:textAllCaps="false"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white"
+        app:font="Lato-Regular.ttf" />
+
+</RelativeLayout>

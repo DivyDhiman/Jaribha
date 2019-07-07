@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/value30"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_select_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:background="@color/md_white_1000"
+            android:gravity="center"
+            android:padding="@dimen/value20"
+            android:text="Select All"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/app_theme_color" />
+
+        <TextView
+            android:id="@+id/tv_featured_reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:background="@color/md_white_1000"
+            android:gravity="center"
+            android:padding="@dimen/value20"
+            android:text="Reset"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/app_theme_color" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_filter_featured"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/screen_margin_portrait"
+        android:layout_marginRight="@dimen/screen_margin_portrait"
+        android:layout_marginTop="@dimen/value25"
+        android:background="@color/white"
+        android:divider="@color/transparent"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>

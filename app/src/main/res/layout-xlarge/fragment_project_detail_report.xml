@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/heder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewTop"
+        android:layout_marginLeft="@dimen/screen_margin_portrait"
+        android:layout_marginRight="@dimen/screen_margin_portrait"
+        android:background="@color/background"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/value10"
+        android:paddingLeft="@dimen/value10"
+        android:paddingRight="@dimen/value10"
+        android:paddingTop="@dimen/value15">
+
+        <com.jaribha.customviews.fonts.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/report_this_project_to_jaribha"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"
+            app:font="Lato-Regular.ttf" />
+
+        <com.jaribha.customviews.fonts.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/please_choose_one_of_the_following_and_add_a_comment"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/hint_color"
+            app:font="Lato-Regular.ttf" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/heder">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/heder"
+                android:layout_marginBottom="@dimen/value20"
+                android:layout_marginLeft="@dimen/value70"
+                android:layout_marginRight="@dimen/value70"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <com.jaribha.customviews.ExpandableHeightListView
+                    android:id="@+id/list_filter_featured"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/screen_margin_portrait"
+                    android:layout_marginRight="@dimen/screen_margin_portrait"
+                    android:background="@color/white"
+                    android:divider="@color/background"
+                    android:dividerHeight="1dp" />
+
+                <com.jaribha.customviews.fonts.FontEditText
+                    android:id="@+id/edtTxtReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/btn_send"
+                    android:layout_marginBottom="@dimen/value10"
+                    android:layout_marginLeft="@dimen/screen_margin_portrait"
+                    android:layout_marginRight="@dimen/screen_margin_portrait"
+                    android:layout_marginTop="@dimen/value15"
+                    android:background="@drawable/rectangle"
+                    android:gravity="left|top"
+                    android:hint="Add comment"
+                    android:minLines="5"
+                    android:paddingBottom="@dimen/value5"
+                    android:paddingLeft="@dimen/value10"
+                    android:paddingRight="@dimen/value10"
+                    android:paddingTop="@dimen/value5"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColorHint="@color/md_grey_400"
+                    app:font="Lato-Regular.ttf" />
+
+            </LinearLayout>
+
+            <com.jaribha.customviews.fonts.FontButton
+                android:id="@+id/btn_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/value15"
+                android:background="@drawable/main_button_red"
+                android:gravity="center"
+                android:text="Send"
+                android:textAllCaps="false"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:font="Lato-Semibold.ttf" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

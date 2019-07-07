@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<style>
+    /* Webfont: Lato-Black */@font-face {
+        font-family: 'LatoWebBlack';
+        src: url('fonts/Lato-Black.eot'); /* IE9 Compat Modes */
+        src: url('fonts/Lato-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('fonts/Lato-Black.woff2') format('woff2'), /* Modern Browsers */
+        url('fonts/Lato-Black.woff') format('woff'), /* Modern Browsers */
+        url('fonts/Lato-Black.ttf') format('truetype');
+        font-style: normal;
+        font-weight: normal;
+        text-rendering: optimizeLegibility;
+    }
+
+/* Webfont: Lato-BlackItalic */@font-face {
+    font-family: 'LatoWebBlack';
+    src: url('fonts/Lato-BlackItalic.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-BlackItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Lato-BlackItalic.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Lato-BlackItalic.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Lato-BlackItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-Bold */@font-face {
+    font-family: 'LatoWebBold';
+    src: url('fonts/Lato-Bold.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Lato-Bold.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Lato-Bold.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Lato-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-BoldItalic */@font-face {
+    font-family: 'LatoWebBold';
+    src: url('fonts/Lato-BoldItalic.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Lato-BoldItalic.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Lato-BoldItalic.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Lato-BoldItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-Hairline */@font-face {
+    font-family: 'LatoWebHairline';
+    src: url('fonts/Lato-Hairline.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-Hairline.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Lato-Hairline.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Lato-Hairline.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Lato-Hairline.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-HairlineItalic */@font-face {
+    font-family: 'LatoWebHairline';
+    src: url('fonts/Lato-HairlineItalic.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-HairlineItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Lato-HairlineItalic.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Lato-HairlineItalic.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Lato-HairlineItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-Heavy */@font-face {
+    font-family: 'LatoWebHeavy';
+    src: url('fonts/Lato-Heavy.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-Heavy.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Lato-Heavy.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Lato-Heavy.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Lato-Heavy.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-HeavyItalic */@font-face {
+    font-family: 'LatoWebHeavy';
+    src: url('fonts/Lato-HeavyItalic.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-HeavyItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Lato-HeavyItalic.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Lato-HeavyItalic.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Lato-HeavyItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-Italic */@font-face {
+    font-family: 'LatoWeb';
+    src: url('fonts/Lato-Italic.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Lato-Italic.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Lato-Italic.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Lato-Italic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-Light */@font-face {
+    font-family: 'LatoWebLight';
+    src: url('fonts/Lato-Light.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Lato-Light.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Lato-Light.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Lato-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-LightItalic */@font-face {
+    font-family: 'LatoWebLight';
+    src: url('fonts/Lato-LightItalic.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-LightItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Lato-LightItalic.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Lato-LightItalic.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Lato-LightItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-Medium */@font-face {
+    font-family: 'LatoWebMedium';
+    src: url('fonts/Lato-Medium.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Lato-Medium.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Lato-Medium.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Lato-Medium.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-MediumItalic */@font-face {
+    font-family: 'LatoWebMedium';
+    src: url('fonts/Lato-MediumItalic.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-MediumItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Lato-MediumItalic.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Lato-MediumItalic.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Lato-MediumItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-Regular */@font-face {
+    font-family: 'LatoWeb';
+    src: url('fonts/Lato-Regular.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Lato-Regular.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Lato-Regular.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Lato-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-Semibold */@font-face {
+    font-family: 'LatoWebSemibold';
+    src: url('fonts/Lato-Semibold.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Lato-Semibold.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Lato-Semibold.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Lato-Semibold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-SemiboldItalic */@font-face {
+    font-family: 'LatoWebSemibold';
+    src: url('fonts/Lato-SemiboldItalic.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-SemiboldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Lato-SemiboldItalic.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Lato-SemiboldItalic.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Lato-SemiboldItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-Thin */@font-face {
+    font-family: 'LatoWebThin';
+    src: url('fonts/Lato-Thin.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Lato-Thin.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Lato-Thin.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Lato-Thin.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-ThinItalic */@font-face {
+    font-family: 'LatoWebThin';
+    src: url('fonts/Lato-ThinItalic.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Lato-ThinItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Lato-ThinItalic.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Lato-ThinItalic.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Lato-ThinItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+.timeline-body p {color: #fff;}
+.nclear p {background: #fff ;}
+.heade {background: #ddd;}
+.topheading h2 {text-align: center;color: #22a8c4;}
+.topheading h3 {font-size: 16px;margin-bottom: 30px;text-align: center;}
+.timeline {
+    list-style: outside none none;
+    margin: 0 auto;
+    padding: 20px 0;
+    position: relative;
+    width: 50%;
+}
+.timeline:before {top: 0;bottom: 0;position: absolute;content: " ";width: 3px;background-color: #eeeeee;left: 50%;margin-left: -1.5px;}
+.timeline > li {margin-bottom: 20px;position: relative;}
+.timeline > li:before, .timeline > li:after {content: " ";display: table;}
+.timeline > li:after {clear: both;}
+.timeline > li:before, .timeline > li:after {content: " ";display: table;}
+.timeline > li:after {clear: both;}
+
+.timeline > li.timeline-inverted > .timeline-panel {float: right;}
+.timeline > li.timeline-inverted > .timeline-panel:before {border-left-width: 0;border-right-width: 10px;left: -12px;right: auto;}
+.timeline > li.timeline-inverted > .timeline-panel::after {
+    border-left-width: 0;
+    border-right-width: 10px;
+    left: -11px;
+    right: auto;
+}
+.timeline-badge.primary {background-color: #2e6da4 !important;}
+.timeline-badge.success {background-color: #3f903f !important;}
+.timeline-badge.warning {background-color: #f0ad4e !important;}
+.timeline-badge.danger {background-color: #d9534f !important;}
+.timeline-badge.info {background-color: #5bc0de !important;}
+.timeline-title {margin-top: 0;color: inherit;}
+.timeline-body > p, .timeline-body > ul {margin-bottom: 0;}
+.timeline-body > p{margin-top: 5px;}
+.timeline-title {
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 22px;
+    text-align: center;
+}
+.timeline-badge.blueimg {
+    background-attachment: scroll !important;
+    background-clip: border-box !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+    background-image: url("img/bluebtn.png") !important;
+    background-origin: padding-box !important;
+    background-position: 0 0 !important;
+    background-repeat: repeat !important;
+    background-size: 100% 100%;
+    top: -33px !important;
+}
+
+
+
+@media screen and (max-width: 1920px) {
+    .timeline > li > .timeline-panel {width: 46%;float: left;border: 1px solid #178FA5;border-radius: 2px;padding: 20px;position: relative;
+        -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);}
+.timeline > li > .timeline-panel::before {
+    border-color: transparent #91D4E2;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    right: -11px;
+    top: 30px;
+}
+.timeline > li > .timeline-panel::after {
+    border-color: transparent #91D4E2;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    right: -12px;
+    top: 30px;
+}
+    .timeline > li > .timeline-badge {
+        background: #000;
+        border-radius: 50px;
+        color: #fff;
+        font-size: 18px;
+        height: 30px;
+        left: 50%;
+        line-height: 30px;
+        margin-left: -15px;
+        position: absolute;
+        text-align: center;
+        top: 65px;
+        width: 30px;
+    }
+    .timeline-panel {top: 35px;}
+}
+
+@media screen and (max-width: 1600px) {
+.timeline li .timeline-panel {background: #178fa5;width: 45%;}
+.noclear {clear: none !important;top: -3em;}
+.timeline-inverted.last {top: 2em;}
+.noclear.last {top: -6em;}
+.timeline-inverted.secondlast {top: 5em;}
+.nclear{clear:none;text-align: center;top: 5em;}
+}
+
+
+@media screen and (max-width: 1280px) {
+    .timeline li .timeline-panel {width: 47%;}
+}
+
+@media screen and (max-width: 1024px) {
+    .timeline li .timeline-panel {width: 43%;}
+    .timeline {width: 95%;}
+}
+
+
+@media screen and (max-width: 800px) {
+    .timeline li .timeline-panel {width: 45%;}
+    .timeline > li > .timeline-panel::before {top: 115px;}
+    .timeline > li > .timeline-panel::after {top: 116px;}
+    .timeline > li > .timeline-badge {top: 115px;}
+}
+
+@media screen and (max-width: 768px) {
+    .timeline li .timeline-panel {width: 40%;}
+    .timeline > li > .timeline-panel::before {top: 26px;}
+    .timeline > li > .timeline-panel::after {top: 25px;}
+    .timeline li .timeline-panel {min-height: auto;}
+.timeline > li > .timeline-badge {
+    top: 60px;
+}
+}
+
+@media screen and (max-width: 736px) {
+    .timeline li .timeline-panel {width: 45%;}
+    .timeline-title {font-size: 12px;}
+}
+
+@media screen and (max-width: 667px) {
+    .timeline > li > .timeline-panel::before {top: 25px;}
+    .timeline > li > .timeline-panel::after {top: 26px;}
+    .timeline > li > .timeline-badge {top: 58px;}
+    .timeline li .timeline-panel {width: 45%;}
+    .noclear.last {top: -110px;}
+    .noclear {clear: none !important;top: -46px;}
+}
+
+
+@media screen and (max-width: 640px) {
+    .timeline li .timeline-panel {width: 37%;}
+    .timeline > li > .timeline-badge {top: 60px;}
+    .timeline li .timeline-panel {width: 45%;}
+}
+
+@media screen and (max-width: 600px) {
+    .timeline li .timeline-panel {width: 43%;}
+}
+
+
+@media screen and (max-width: 568px) {
+.timeline > li > .timeline-panel::before {top: 25px;}
+    .timeline > li > .timeline-panel::after {top: 26px;}
+    .timeline li .timeline-panel {width: 44%;}
+    .timeline > li > .timeline-badge {top: 60px;}
+}
+
+
+@media screen and (max-width: 480px) {
+    .timeline-body > p, .timeline-body > ul {font-size: 13px;}
+    .timeline > li > .timeline-panel::after {top: 26px;}
+    .timeline li .timeline-panel {width: 43%;padding: 10px;}
+    .topheading h2 {font-size: 26px;}
+    .topheading h3 {font-size: 12px; font-weight: bold;}
+    .timeline > li > .timeline-badge {top: 60px;}
+    .timeline > li > .timeline-panel::before {top: 25px;}
+    .noclear.last {top: -8em;}
+}
+
+@media screen and (max-width: 414px) {
+    .timeline li .timeline-panel {width: 42%;}
+    .timeline-title {font-size: 13px;}
+    .timeline {width: 100%;}
+    .timeline > li > .timeline-badge {height: 25px;line-height: 24px;width: 25px;}
+    .timeline > li > .timeline-badge {line-height: 24px;font-size: 14px;font-weight: bold;line-height: 30px;}
+    .timeline li .timeline-panel {width: 40%;}
+}
+
+@media screen and (max-width: 414px) {
+.timeline > li > .timeline-badge {font-size: 14px;font-weight: bold;line-height: 24px;}
+}
+
+
+
+@media screen and (max-width: 375px) {
+.timeline-inverted.secondlast {top: 118px;}
+.noclear.last {top: -133px;}
+.noclear {clear: none !important;top: -44px;}
+}
+
+@media screen and (max-width: 360px) {
+.noclear.last {top: -155px;}
+}
+
+@media screen and (max-width: 320px) {
+.timeline > li > .timeline-badge {
+    font-size: 14px;
+    height: 25px;
+    left: 50%;
+    line-height: 24px;
+    margin-left: -11px;
+    position: absolute;
+    text-align: center;
+    width: 25px;
+    font-weight: bold;
+}
+
+.noclear {top: -92px;}
+.noclear.last {top: -178px;}
+}
+    </style>
+</head>
+<body>
+
+<div class="container-fluid">
+ <div class="row heade">
+    <div class="topheading">
+      <h2>Creators Steps</h2>
+      <h3>To became a creator, an individual must choose to create a project</h3>
+    </div>
+  </div>
+  <ul class="timeline">
+    <li>
+      <div class="timeline-badge"><span>1</span></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">Create an account and sign in</h4>
+        </div>
+      </div>
+    </li>
+    <li class="timeline-inverted">
+      <div class="timeline-badge"><span>2</span></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">Click Start your Project</h4>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="timeline-badge"><span>3</span></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">Fill out the application</h4>
+        </div>
+      </div>
+    </li>
+    <li class="nclear"><p>Wait for Approval</p></li>
+    <li class="timeline-inverted secondlast">
+      <div class="timeline-badge"><span>4</span></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">If approved, the project will go online for the alloted time period.</h4>
+        </div>        
+      </div>
+    </li>
+    <li class="noclear">
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">If project is not approved, the Creator may be asked to sort out some issues within the project.</h4>
+        </div>
+      </div>
+    </li>
+    <li class="nclear"><p>After the allotted period ends the creator would have</p></li>
+    <li class="timeline-inverted last">
+      <div class="timeline-badge"><span>5</span></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title"><li>Reached their Project Goal or surpassed it.</li><li>A successfully supported project</li></h4>
+        </div>        
+      </div>
+    </li>
+    <li class="noclear last">
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title"><li>Not reached their Project Goal.</li><li>An unsuccessfully supported project</li></h4>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+</body>
+</html>

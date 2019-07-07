@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/actionBar"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/value45"
+                android:background="#15B6BD"
+                android:orientation="horizontal" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/value5"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/value10">
+
+        <com.jaribha.customviews.fonts.FontTextView
+            android:id="@+id/projectCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            app:font="Lato-Bold_0.ttf" />
+
+        <com.jaribha.customviews.fonts.FontTextView
+            android:id="@+id/filterTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/md_grey_600"
+            app:font="Lato-Regular.ttf" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/filteredProjectList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/value5"
+        android:divider="@color/background"
+        android:dividerHeight="@dimen/value5"
+        android:visibility="gone"
+        tools:listitem="@layout/project_list_item_card_view" />
+
+    <com.jaribha.customviews.fonts.FontTextView
+        app:font="Lato-Regular.ttf"
+        android:id="@+id/noProjects"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:text="No Projects Found!" />
+
+    <GridView
+        android:id="@+id/filteredProjectListGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:horizontalSpacing="15dp"
+        android:numColumns="2"
+        android:paddingLeft="@dimen/value40"
+        android:paddingRight="@dimen/value40"
+        android:paddingTop="@dimen/value5"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="15dp"
+        tools:listitem="@layout/project_list_item_card_view" />
+
+
+</LinearLayout>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9E9E9"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00A651"
+            android:orientation="vertical"
+            android:padding="@dimen/value5">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/supprt_receipt"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:font="Lato-Bold_0.ttf" />
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:gravity="center"
+                android:text="@string/thank_you_for_your_support_once_again"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:font="Lato-Regular.ttf" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/value80"
+            android:layout_marginRight="@dimen/value80"
+            android:layout_marginTop="@dimen/value10"
+            android:orientation="horizontal">
+
+            <include
+                layout="@layout/project_list_item_card_view_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/value10"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/value5">
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="@string/selected_reward"
+                        android:textColor="#00C3A8"
+                        android:textSize="16sp"
+                        app:font="Lato-Italic.ttf" />
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:id="@+id/tv_rewards"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:font="Lato-SemiboldItalic.ttf" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/value5">
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="@string/availability_supporters"
+                        android:textColor="#00C3A8"
+                        android:textSize="16sp"
+                        app:font="Lato-Italic.ttf" />
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:id="@+id/tv_availability"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:font="Lato-SemiboldItalic.ttf" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/value5">
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="@string/supporter_amount"
+                        android:textColor="#00C3A8"
+                        android:textSize="16sp"
+                        app:font="Lato-Italic.ttf" />
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:id="@+id/tv_supported_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:font="Lato-SemiboldItalic.ttf" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/value5">
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="@string/currency_rate"
+                        android:textColor="#00C3A8"
+                        android:textSize="16sp"
+                        app:font="Lato-Italic.ttf" />
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:id="@+id/tv_currency_rate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:font="Lato-SemiboldItalic.ttf" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/value5">
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="@string/converted_USD_to_KD"
+                        android:textColor="#00C3A8"
+                        android:textSize="16sp"
+                        app:font="Lato-Italic.ttf" />
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:id="@+id/tv_kd_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:font="Lato-SemiboldItalic.ttf" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/value5">
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="@string/payment_gateway"
+                        android:textColor="#00C3A8"
+                        android:textSize="16sp"
+                        app:font="Lato-Italic.ttf" />
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:id="@+id/tv_payment_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:font="Lato-SemiboldItalic.ttf" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/value5">
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="@string/payment_id"
+                        android:textColor="#00C3A8"
+                        android:textSize="16sp"
+                        app:font="Lato-Italic.ttf" />
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:id="@+id/tv_payment_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:font="Lato-SemiboldItalic.ttf" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/value5">
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="@string/tracking_id"
+                        android:textColor="#00C3A8"
+                        android:textSize="16sp"
+                        app:font="Lato-Italic.ttf" />
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:id="@+id/tv_tracking_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:font="Lato-SemiboldItalic.ttf" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/value5">
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="@string/date_and_time"
+                        android:textColor="#00C3A8"
+                        android:textSize="16sp"
+                        app:font="Lato-Italic.ttf" />
+
+                    <com.jaribha.customviews.fonts.FontTextView
+                        android:id="@+id/tv_date_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:font="Lato-SemiboldItalic.ttf" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/rewardHeaderTab"
+        style="@style/Widget.Button.GreenBorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_tab_2"
+        android:drawableRight="@drawable/icon_downarrow"
+        android:gravity="center"
+        android:padding="@dimen/value15"
+        android:text="Support $25 or more"
+        android:textAllCaps="false"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/title_colors" />
+
+    <LinearLayout
+        android:id="@+id/supportDetailLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#22A8C4"
+        android:orientation="vertical">
+
+        <com.jaribha.customviews.fonts.FontTextView
+            android:id="@+id/rewardTitleTab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:drawableRight="@drawable/arrow_up_white"
+            android:padding="@dimen/value10"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            app:font="Lato-Regular.ttf" />
+
+        <com.jaribha.customviews.fonts.FontTextView
+            android:id="@+id/rewardTypeTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/value10"
+            android:layout_marginLeft="@dimen/value10"
+            android:layout_marginRight="@dimen/value10"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:font="Lato-Semibold.ttf" />
+
+        <com.jaribha.customviews.fonts.FontTextView
+            android:id="@+id/rewardDescTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/value10"
+            android:layout_marginRight="@dimen/value10"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white"
+            app:font="Lato-Regular.ttf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/value10"
+            android:layout_marginRight="@dimen/value10"
+            android:layout_marginTop="@dimen/value10"
+            android:orientation="horizontal">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/estimate_delivery"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:font="Lato-Semibold.ttf" />
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:id="@+id/tv_estimate_delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/value10"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white"
+                app:font="Lato-Regular.ttf" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/value10"
+            android:layout_marginRight="@dimen/value10"
+            android:orientation="horizontal">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shipping"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:font="Lato-Semibold.ttf" />
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:id="@+id/tv_shipping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/value10"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white"
+                app:font="Lato-Regular.ttf" />
+        </LinearLayout>
+
+        <com.jaribha.customviews.fonts.FontButton
+            android:id="@+id/supportBtnTab"
+            style="@style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/value10"
+            android:layout_marginLeft="@dimen/value40"
+            android:layout_marginRight="@dimen/value40"
+            android:layout_marginTop="@dimen/value15"
+            android:background="@drawable/login_button_unselected"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            app:font="Lato-Regular.ttf" />
+    </LinearLayout>
+
+</LinearLayout>

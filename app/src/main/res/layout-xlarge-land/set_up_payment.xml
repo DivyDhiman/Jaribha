@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/value120"
+        android:layout_marginRight="@dimen/value120"
+        android:orientation="vertical">
+
+        <com.jaribha.customviews.fonts.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/alrighty"
+            android:textColor="@color/md_red_500"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:font="Lato-Regular.ttf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/support_amount"
+                android:textColor="@color/title_colors"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:font="Lato-Semibold.ttf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:id="@+id/headerTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="10dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    app:font="Lato-Bold_0.ttf" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".05"
+                        android:gravity="center|right"
+                        android:text="$"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/value10"
+                        android:layout_marginTop="@dimen/value5"
+                        android:layout_weight=".95"
+                        android:orientation="vertical">
+
+                        <com.jaribha.customviews.fonts.FontEditText
+                            android:id="@+id/edt_payment_amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@null"
+                            android:padding="@dimen/value5"
+                            android:text="10"
+                            android:inputType="number"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/md_grey_500"
+                            app:font="Lato-Regular.ttf" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#E2E2E2" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="5dp"
+                    android:text="@string/its_up_to_you_any_amount_of"
+                    android:textColor="@color/md_grey_500"
+                    android:textSize="12sp"
+                    app:font="Lato-Bold_0.ttf" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.jaribha.customviews.fonts.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:text="@string/reward_selection"
+            android:textColor="@color/title_colors"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:font="Lato-Semibold.ttf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/value5"
+                android:paddingLeft="5dp"
+                android:text="@string/to_change_your_reward_make_a_new"
+                android:textColor="@color/md_black_1000"
+                android:textSize="14sp"
+                app:font="Lato-Bold_0.ttf" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E2E2E2" />
+
+            <com.jaribha.customviews.ExpandableHeightListView
+                android:id="@+id/listPaymentRewards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/value10" />
+
+        </LinearLayout>
+
+        <com.jaribha.customviews.fonts.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/refund_policy"
+            android:textColor="@color/title_colors"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:font="Lato-Semibold.ttf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/tik"
+                android:drawablePadding="@dimen/value5"
+                android:gravity="center_vertical"
+                android:padding="@dimen/value5"
+                android:text="@string/if_project_is_unsuccessful"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                app:font="Lato-Regular.ttf" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#12000000" />
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/tik"
+                android:drawablePadding="@dimen/value5"
+                android:padding="@dimen/value5"
+                android:text="@string/supporter_will_be_refunded_full_amount_minus"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                app:font="Lato-Regular.ttf" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#12000000" />
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/tik"
+                android:drawablePadding="@dimen/value5"
+                android:padding="@dimen/value5"
+                android:text="@string/supporter_will_be_refunded_full_amount_minus_processing_fees"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                app:font="Lato-Regular.ttf" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#12000000">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/tik"
+                    android:drawablePadding="@dimen/value5"
+                    android:gravity="center_vertical"
+                    android:text="@string/see_please_oss"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    app:font="Lato-Regular.ttf" />
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="3dp"
+                    android:text="@string/terms"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    app:font="Lato-Regular.ttf" />
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="3dp"
+                    android:text="@string/for_more_details"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    app:font="Lato-Regular.ttf" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.jaribha.customviews.fonts.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/value5"
+            android:layout_marginTop="@dimen/value10"
+            android:padding="5dp"
+            android:text="@string/update_contact_information"
+            android:textColor="@color/title_colors"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:font="Lato-Semibold.ttf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <com.jaribha.customviews.fonts.FontEditText
+                    android:id="@+id/edt_payment_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:background="@null"
+                    android:hint="@string/address"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/md_grey_500"
+                    android:textSize="14sp"
+                    app:font="Lato-Italic.ttf" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#12000000" />
+
+                <com.jaribha.customviews.fonts.FontEditText
+                    android:id="@+id/edt_payment_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edit_box_drawable"
+                    android:drawableRight="@drawable/drop_icon"
+                    android:focusable="false"
+                    android:hint="@string/country"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/md_grey_500"
+                    android:textSize="14sp"
+                    app:font="Lato-Italic.ttf" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#12000000" />
+
+                <com.jaribha.customviews.fonts.FontEditText
+                    android:id="@+id/edt_payment_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edit_box_drawable"
+                    android:drawableRight="@drawable/drop_icon"
+                    android:focusable="false"
+                    android:hint="@string/city"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/md_grey_500"
+                    android:textSize="14sp"
+                    app:font="Lato-Italic.ttf" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#12000000" />
+
+                <com.jaribha.customviews.fonts.FontEditText
+                    android:id="@+id/edt_payment_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edit_box_drawable"
+                    android:hint="@string/mobile_phone"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/md_grey_500"
+                    android:textSize="14sp"
+                    app:font="Lato-Italic.ttf" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.jaribha.customviews.fonts.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/value5"
+            android:layout_marginTop="@dimen/value5"
+            android:padding="5dp"
+            android:text="@string/choose_payment_option"
+            android:textColor="@color/title_colors"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:font="Lato-Semibold.ttf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/payGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.jaribha.customviews.fonts.FontRadioButton
+                    android:id="@+id/knet_radio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/radio_selector_red"
+                    android:checked="true"
+                    android:paddingLeft="@dimen/value10"
+                    android:text="@string/KNET"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:font="Lato-Bold_0.ttf" />
+
+                <com.jaribha.customviews.fonts.FontRadioButton
+                    android:id="@+id/card_radio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value10"
+                    android:button="@drawable/radio_selector_red"
+                    android:paddingLeft="@dimen/value10"
+                    android:text="@string/master_card_visa_card"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:font="Lato-Bold_0.ttf" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/value10"
+                android:orientation="horizontal">
+
+                <com.jaribha.customviews.fonts.FontCheckBox
+                    android:id="@+id/paymentTerms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/checkbox_selector"
+                    android:checked="false"
+                    android:paddingLeft="@dimen/value5"
+                    android:textColor="@color/md_grey_600"
+                    app:font="Lato-Bold_0.ttf" />
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:id="@+id/termsCheckBox"
+                    style="@style/Widget.CheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:textColor="@color/md_grey_600"
+                    android:paddingLeft="@dimen/value10"
+                    android:text="@string/i_agree_new"
+                    app:font="Lato-Regular.ttf" />
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:id="@+id/terms"
+                    style="@style/Widget.CheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:checked="false"
+                    android:text="@string/terms_and_conditions_new"
+                    android:textStyle="bold"
+                    app:font="Lato-Bold_0.ttf" />
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:id="@+id/and"
+                    style="@style/Widget.CheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/value2"
+                    android:textColor="@color/md_grey_600"
+                    android:checked="false"
+                    android:text="@string/and"
+                    app:font="Lato-Regular.ttf" />
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:id="@+id/privacy"
+                    style="@style/Widget.CheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:textColor="@color/black"
+                    android:paddingLeft="@dimen/value10"
+                    android:text="@string/privacy_policy"
+                    android:textStyle="bold"
+                    app:font="Lato-Bold_0.ttf" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <com.jaribha.customviews.fonts.FontButton
+            android:id="@+id/setPayBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/value10"
+            android:background="@drawable/main_button_red"
+            android:text="@string/next"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            app:font="Lato-Bold_0.ttf" />
+
+    </LinearLayout>
+
+</ScrollView>

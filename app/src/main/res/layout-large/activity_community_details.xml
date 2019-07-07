@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <include
+        android:id="@+id/actionBar"
+        layout="@layout/action_bar1" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/actionBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/value45"
+                android:background="@drawable/bottom_actionbar"
+                android:orientation="horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/value50"
+                android:layout_marginRight="@dimen/value50"
+                android:background="@color/white"
+                android:minHeight="@dimen/value45">
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <com.jaribha.customviews.BezelImageView
+            android:id="@+id/communityPic"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:src="@drawable/comunity_pic_demo"
+            app:borderDrawable="@drawable/border_drawable"
+            app:maskDrawable="@drawable/circle_mask" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frameLayout"
+        android:layout_marginLeft="@dimen/value50"
+        android:layout_marginRight="@dimen/value50"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/value10"
+        android:paddingRight="@dimen/value10">
+
+        <com.jaribha.customviews.fonts.FontTextView
+            android:id="@+id/commDetailTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/value10"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/md_red_400"
+            app:font="Lato-Regular.ttf" />
+
+        <com.jaribha.customviews.fonts.FontTextView
+            android:id="@+id/commDetailDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value10"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/hint_color"
+            app:font="Lato-Medium.ttf" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_social"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1"
+        android:layout_marginLeft="@dimen/value50"
+        android:layout_marginRight="@dimen/value50"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/value20"
+        android:paddingTop="@dimen/value20">
+
+        <ImageView
+            android:id="@+id/commDetailEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/value10"
+            android:src="@drawable/email_icon_green" />
+
+        <ImageView
+            android:id="@+id/commDetailPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/value10"
+            android:src="@drawable/phone_icon" />
+
+        <ImageView
+            android:id="@+id/commDetailWeb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/value10"
+            android:src="@drawable/window_icon" />
+
+        <ImageView
+            android:id="@+id/commDetailFb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/value10"
+            android:src="@drawable/facebook_icon_small" />
+
+        <ImageView
+            android:id="@+id/commDetailTwit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/value10"
+            android:src="@drawable/twitter_icon_small" />
+
+        <ImageView
+            android:id="@+id/commDetailInsta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/value10"
+            android:src="@drawable/instagram_icon" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_social"
+        android:layout_marginTop="@dimen/value10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/line_space" />
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:id="@+id/commProjectTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/value10"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    app:font="Lato-Regular.ttf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/value30"
+                android:layout_marginRight="@dimen/value30"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/value30"
+                    android:visibility="visible">
+
+                    <com.jaribha.customviews.ExpandableHeightListView
+                        android:id="@+id/commMoreProjList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                       >
+
+                    </com.jaribha.customviews.ExpandableHeightListView>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

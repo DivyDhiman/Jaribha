@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "E:\\Manish\\Android Projects\\Jariba\\Jaribha\\Jaribha\\imagepicker\\build\\intermediates\\res\\merged\\release\\menu\\menu_select_all.xml",
+        "source": "E:\\Manish\\Android Projects\\Jariba\\Jaribha\\Jaribha\\imagepicker\\src\\main\\res\\menu\\menu_select_all.xml"
+    },
+    {
+        "merged": "E:\\Manish\\Android Projects\\Jariba\\Jaribha\\Jaribha\\imagepicker\\build\\intermediates\\res\\merged\\release\\menu\\menu_take_photo.xml",
+        "source": "E:\\Manish\\Android Projects\\Jariba\\Jaribha\\Jaribha\\imagepicker\\src\\main\\res\\menu\\menu_take_photo.xml"
+    },
+    {
+        "merged": "E:\\Manish\\Android Projects\\Jariba\\Jaribha\\Jaribha\\imagepicker\\build\\intermediates\\res\\merged\\release\\menu\\menu_deselect_all.xml",
+        "source": "E:\\Manish\\Android Projects\\Jariba\\Jaribha\\Jaribha\\imagepicker\\src\\main\\res\\menu\\menu_deselect_all.xml"
+    },
+    {
+        "merged": "E:\\Manish\\Android Projects\\Jariba\\Jaribha\\Jaribha\\imagepicker\\build\\intermediates\\res\\merged\\release\\menu\\cwac_cam2_confirm.xml",
+        "source": "E:\\Manish\\Android Projects\\Jariba\\Jaribha\\Jaribha\\imagepicker\\build\\intermediates\\exploded-aar\\com.commonsware.cwac\\cam2\\0.2.3\\res\\menu\\cwac_cam2_confirm.xml"
+    }
+]

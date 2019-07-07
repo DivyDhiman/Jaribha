@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_white_1000"
+        android:padding="@dimen/value10">
+
+        <com.jaribha.customviews.BezelImageView
+            android:id="@+id/iv_user_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/user_pic"
+            app:borderDrawable="@drawable/orange_border_drawable"
+            app:maskDrawable="@drawable/circle_mask" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/value10"
+            android:layout_toRightOf="@+id/iv_user_image"
+            android:orientation="vertical">
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:id="@+id/commentName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mohammed Albesharah"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                app:font="Lato-Semibold.ttf" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/value5">
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:id="@+id/commentDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/value10"
+                    android:drawableLeft="@drawable/calender_icon"
+                    android:drawablePadding="@dimen/value5"
+                    android:text="1 Apr, 2015"
+                    android:textColor="@color/md_grey_500"
+                    android:textStyle="italic"
+                    app:font="Lato-Italic.ttf" />
+
+                <com.jaribha.customviews.fonts.FontTextView
+                    android:id="@+id/commentTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/value5"
+                    android:drawableLeft="@drawable/view_icon"
+                    android:drawablePadding="@dimen/value5"
+                    android:text="20 min ago"
+                    android:textStyle="italic"
+                    app:font="Lato-Italic.ttf" />
+
+            </LinearLayout>
+
+            <com.jaribha.customviews.fonts.FontTextView
+                android:id="@+id/commentDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/value5"
+                android:text="All the best..."
+                android:textColor="@color/md_grey_500"
+                android:textStyle="italic"
+                app:font="Lato-Italic.ttf" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

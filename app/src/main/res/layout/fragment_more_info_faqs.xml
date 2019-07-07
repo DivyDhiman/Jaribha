@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value5"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line_space" />
+    </LinearLayout>
+
+    <com.jaribha.customviews.fonts.FontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/value15"
+        android:paddingRight="@dimen/value15"
+        android:paddingTop="@dimen/value10"
+        android:text="How will Infusion KW use the $500 if raised?"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#32ABC6"
+        android:visibility="gone"
+        app:font="Lato-Regular.ttf" />
+
+    <ListView
+        android:id="@+id/list_que_ans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+
+
+</LinearLayout>
